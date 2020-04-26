@@ -5,3 +5,16 @@
 .cardtitle {
     font-weight: bold;
 }
+
+mat-card-title {
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+}
+
+mat-card-subtitle {
+    FONT-WEIGHT: 400;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+}

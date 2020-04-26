@@ -1,4 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.emboxes {
+    -webkit-border-radius: 0px 21px 0px 0px;
+    -moz-border-radius: 0px 21px 0px 0px;
+    border-radius: 0px 21px 0px 0px;
+    border-color: rgba(14, 182, 244, 0.8);
+    border-width: thin;
+    border-style: groove;
+    padding: 5%;
+    margin: 1%;
+    -webkit-box-shadow: 4px 2px 9px -1px rgba(0, 0, 0, 0.72);
+    box-shadow: 4px 2px 9px -1px rgba(0, 0, 0, 0.72);
+}
