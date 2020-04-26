@@ -1,0 +1,54 @@
+<!-- <span class="csspublications csspublicationstitle">{{publication.authors.name}}</span> -->
+
+
+<!-- <div>
+    <ol>
+        <li *ngFor="let publication of publications">
+            <div>
+                <app-publication-entry-authors [authors]="publication.authors "></app-publication-entry-authors>
+
+                <span class="csspublications csspublicationstitle ">{{publication.title}}</span>
+                <span class="csspublications " style="font-weight: bold; ">{{publication.journal}}</span>
+                <span class="csspublications csspublicationstitle " style="font-weight: bold; ">{{publication.date}}</span>
+                <span class="csspublications csspublicationstitle ">{{publication.link}}</span>
+                <button (click)="getCitation($event, publication.link) ">get citation</button>
+                <button (click)="togleAbstract(publication) ">showabstract</button>
+                <span class="csspublications " style="font-style: italic; " *ngIf="publication.showabstract ">{{publication.abstract}}</span>
+            </div>
+        </li>
+    </ol>
+
+</div> -->
+
+
+
+
+<!-- <div class="grid-container">
+    <div class="grid-item" *ngFor="let publication of publications">
+
+        <app-publication-card [publication]=publication></app-publication-card>
+    </div>
+</div> -->
+
+
+<div style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;align-items: stretch;">
+    <div *ngFor=" let publication of publications " style="width:420px;margin: 1em;">
+
+        <app-publication-card [publication]=publication></app-publication-card>
+    </div>
+</div>
+
+
+<!-- <mat-accordion>
+    <mat-expansion-panel *ngFor="let publication of publications ">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{publication.title}}
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <app-publication-card [publication]=publication></app-publication-card>
+
+    </mat-expansion-panel>
+
+</mat-accordion> -->
