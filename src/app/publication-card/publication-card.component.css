@@ -18,3 +18,13 @@ mat-card-subtitle {
     font-weight: 300;
     text-align: center;
 }
+
+.cardpublication {
+    /* border-color: black !important;
+    border-width: thick !important;
+    border-style: double; */
+}
+
+.cardabstract {
+    /* border-color: grey !important; */
+}

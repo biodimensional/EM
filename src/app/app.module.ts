@@ -18,6 +18,10 @@ import {MatIconModule} from '@angular/material/icon';
 import { PublicationCardComponent } from './publication-card/publication-card.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { PublicationEntryTagsComponent } from './publication-entry-tags/publication-entry-tags.component';
+import { PeopleMainComponent } from './people-main/people-main.component';
+import { AuthorsUniverseComponent } from './authors-universe/authors-universe.component';
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -28,6 +32,8 @@ import { PublicationEntryTagsComponent } from './publication-entry-tags/publicat
     PublicationEntryAuthorsComponent,
     PublicationCardComponent,
     PublicationEntryTagsComponent,
+    PeopleMainComponent,
+    AuthorsUniverseComponent,
    
 
   ],
@@ -42,8 +48,8 @@ import { PublicationEntryTagsComponent } from './publication-entry-tags/publicat
     MatGridListModule,
     MatDialogModule,
     MatIconModule,
-    MatCheckboxModule
-
+    MatCheckboxModule,
+    FontAwesomeModule
  
   ],
   providers: [],

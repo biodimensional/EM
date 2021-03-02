@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {PUBLICATIONS} from '../publicationslist';
- 
+
+import { AuthorList } from 'src/app/CODE/publicationsOperations';
 
 @Component({
   selector: 'app-publication-entry',
@@ -13,11 +14,13 @@ export class PublicationEntryComponent implements OnInit {
 
 
 
-  
-  
+
+
   constructor() { }
 
   ngOnInit(): void {
+
+
   }
 
 }
