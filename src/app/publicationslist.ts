@@ -43,6 +43,9 @@ var PP={id:4,name:"Paolo", surname:"Potepan",affiliation:"int"};
 
 var LuBr={id:4,name:"Luca", surname:"Brambilla",affiliation:"int"};
 var DaVe={id:4,name:"Daniele", surname:"Vergnaghi",affiliation:"int"};
+var RGr={id:4,name:"R", surname:"Granata",affiliation:"int"};
+var ECi={id:4,name:"E", surname:"Civelli",affiliation:"int"};
+var AGi={id:4,name:"A", surname:"Gianluca",affiliation:"int"};
 
 var SiCe={id:4,name:"Simona", surname:"Celi",affiliation:_iODC};
 
@@ -62,6 +65,7 @@ var GiCa={id:4,name:"Giuseppina", surname:"Calareso",affiliation:"int"};
 var CaRe={id:4,name:"Carlo", surname:"Resteghini",affiliation:"int"};
 var SiSd={id:4,name:"Silvana", surname:"Sdao",affiliation:"int"};
 var LL={id:4,name:"Lisa", surname:"Licitra",affiliation:"int"};
+var LaLo={id:4,name:"Laura", surname:"Locati",affiliation:"int"};
 var PaBo={id:4,name:"Paolo", surname:"Bossi",affiliation:"int"};
 
 
@@ -108,7 +112,7 @@ var PaCo={id:4,name:"Paolo", surname:"Corradini",affiliation:"int"}
 
 var ElCu={id:4,name:"Elena", surname:"Cutrì",affiliation:"poli"}
 var GrSp={id:4,name:"Grazia", surname:"Spatafora",affiliation:"poli"}
-var GaFr={id:4,name:"Gaia", surname:"franzetti",affiliation:"int"}
+var GaFr={id:4,name:"Gaia", surname:"Franzetti",affiliation:"int"}
 var FeCr={id:4,name:"Federica", surname:"Crippa",affiliation:"int"}
 var GiSp={id:4,name:"Giuseppe", surname:"Spadola",affiliation:"ieo"}
 var AlTe={id:4,name:"Alessandro", surname:"Testori",affiliation:"ieo"}
@@ -135,19 +139,21 @@ var _tcsd="csd";
 var _tcad="cad";
 var _tcardio="cardionvascularimaging";
 var _tem="electromagnetic fields";
-var _tir="image registration";
-var _tis="image segmentation";
-var _tped="pediatric";
-var _tbrain="brain";
-var _tneuro="neuro";
+var _tir="Image Registration";
+var _tis="Image Segmentation";
+var _tped="Pediatric";
+var _tbrain="Brain";
+var _tneuro="Neuro";
 var _toncology="oncology";
 var _ttretresp="treatmentresponse";
 var _thn="H&N";
-var _tsarcomas="softtissuessarcomas";
+var _tsnr="SNR";
+var _tpmr="Pseudo Multiple REpliccas";
+var _tsarcomas="Soft Tissues Sarcomas";
 var _trecist="RECIST";
 var _tfeatureselection="featuresselection";
-var _tml="machine learning";
-var _tcloud="cloud computing";
+var _tml="Machine Learning";
+var _tcloud="cloud Computing";
 var _twebapp="webgui";
 var _tstaging ="staging";
 var _tradiotherapy ="radiotherapy";
@@ -156,13 +162,38 @@ var IMG="http://biodimensional.com/RESOURCES/img/";
 var DOC="http://biodimensional.com/RESOURCES/doc/";
 
 export const PUBLICATIONS: Publication[] = [
+    {
+        id:-2,
+        title :"Seeking a widely adoptable practical standard to estimate signal-to-noise ratio in magnetic resonance imaging for multiple-coil reconstructions",
+        abstract:"Background: Signal-to-noise ratio (SNR) is used to evaluate the performance of magnetic resonance (MR) imaging systems Accurate and consistent estimations are needed to routinely use SNR to assess coils and image reconstruction techniques.Purpose: To identify a reliable and practical method for SNR estimation in multiple-coil reconstructions.Study Type: Technical evaluation and comparison.Subjects/Phantom: A uniform phantom and four healthy volunteers: 35, 38, 39 y/o males, 25 y/o female. Assessment: Reference-standard SNR was calculated from 100 multiple replicas. Six SNR methods were compared against it: difference image (DI), analytic array combination (AC), pseudo-multiple-replica (PMR), generalized pseudo-replica (GPR), smoothed image subtraction (SIS), and DI with temporal instability correction (TIC). The assessment was repeated for different multiple-coil reconstructions.Statistical Tests: SNR methods were evaluated in terms of relative deviation (RD) and normalized mutual information (NMI) with respect to the reference-standard, using a linear regression (0.05 significance level) to assess how different factors affect accuracy.Results: Average RD (phantom) for DI, AC, PMR, GPR, SIS, TIC was 7.9%, 6%, 6.7%, 10.1%, 40%, 14.6%, respectively. RD increased with acceleration. SNR maps with AC were the most similar to the reference-standard (NMI=0.358). Considering all brain ROIs, average RD for all SNR methods varied 96% among volunteers, but remained approximately 10% for AC, PMR and GPR, whereas it was more than 30% for DI, SIS, and TIC. RD was mainly affected by image reconstruction (beta=12) for AC and SNR entropy for SIS (beta=19).Data Conclusion: AC provided accurate and robust SNR estimation. PMR and GPR are more generally applicable than AC. DI and TIC should be used only at low acceleration factors, when an additional noise-only scan cannot be acquired. SIS is a single-acquisition alternative to DI for Generalized Autocalibrating Partial Parallel Acquisition (GRAPPA) reconstructions.",
+        authors:[EM,RL],
+        journal: "Journal of Magneti Resoncace Imaging JMRI",
+        date:"2021",
+        link:"" ,
+        type:"article",
+        tags:[_tmri,_twebapp,_tsimulation,_tsnr,_tismrm,_tcloud],
+        image: IMG + "snr.png",
+        download:undefined
 
-{
-  id:0,
+      },{
+        id:-1,
+        title :"A web-accessible tool for rapid analytical simulations of MR coils via cloud computing",
+        abstract:"DGF is a web-based application to simulate MR coils in the case of simple geometries that mimic actual anatomy. For example, spheres can model the head, whereas cylinders can model the torso, abdomen or extremities. Ultimate intrinsic performance limits can be calculated within the same framework and used as absolute references to evaluate coil designs. DGF relies on rapid analytical electrodynamic simulations based on dyadic Green’s functions, which are executed using Docker containers, either on local computers or via cloud computing. A web-GUI enables users to set up simulations and display results. DGF is part of the Cloud MR project.",
+        authors:[EM,GC,RL],
+        journal: "ISMRM 29th annual meeting and exhibition 15-20 May 2021",
+        date:"2021",
+        link:"https://ismrm-smrt21.us3.pathable.com/" ,
+        type:"conference",
+        tags:[_tmri,_tcloud,_tem,_tismrm],
+        image: IMG + "dgf.png",
+        download:undefined
+
+      },
+ { id:0,
   title :"Retrospective study of late radiation-induced damages after focal radiotherapy for childhood brain tumors",
   abstract:"Purpose: To study a robust and reproducible procedure to investigate a relation between focal brain radiotherapy (RT) low doses, neurocognitive impairment and late White Matter and Gray Matter alterations, as shown by Diffusion Tensor Imaging (DTI), in children. Methods and materials Forty-five patients (23 males and 22 females, median age at RT 6.2 years, median age at evaluations 11.1 years) who had received focal RT for brain tumors were recruited for DTI exams and neurocognitive tests. Patients’ brains were parceled in 116 regions of interest (ROIs) using an available segmented atlas. After the development of an ad hoc, home-made, multimodal and highly deformable registration framework, we collected mean RT doses and DTI metrics values for each ROI. The pattern of association between cognitive scores or domains and dose or DTI values was assessed in each ROI through both considering and excluding ROIs with mean doses higher than 75% of the prescription. Subsequently, a preliminary threshold value of dose discriminating patients with and without neurocognitive impairment was selected for the most relevant associations.Results: The workflow allowed us to identify 10 ROIs where RT dose and DTI metrics were significantly associated with cognitive tests results (p<0.05). In 5/10 ROIs, RT dose and cognitive tests were associated with p<0.01 and preliminary RT threshold dose values, implying a possible cognitive or neuropsychological damage, were calculated. The analysis of domains showed that the most involved one was the “school-related activities”. Conclusion: This analysis, despite being conducted on a retrospective cohort of children, shows that the identification of critical brain structures and respective radiation dose thresholds is achievable by combining, with appropriate methodological tools, the large amount of data arising from different sources. This supported the design of a prospective study to gain stronger evidence.",
   authors:[ClCa,SM,EM,MaO,EmPe,MaLe,BaDi,OmAl,DP,VBi,ElSc,MB,MaMa,GePo,LM,FA,PaVe,EmPi,LG],
-  journal: " PLoS One,",
+  journal: "PLoS One",
   date:"2021",
   link:"https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0247748" ,
   type:"article",
@@ -518,7 +549,7 @@ export const PUBLICATIONS: Publication[] = [
         title :"Results of a Prospective Study Comparing Whole-Body Diffusion-Weighted Magnetic Resonance Imaging with Skeletal X-Ray and Magnetic Resonance of the Spine for Assessing Bone Disease in Multiple Myeloma",
         abstract:"Standard assessment of bone disease in multiple myeloma (MM) is based on skeletal X-ray (XR) and magnetic resonance (MR) of the spine (MRS). Diffusion-weighted MR (DW-MR) is a novel functional MR that detects changes of water diffusion through cells in tissues. To assess the value of DW-MR to detect bone lesions in MM, we designed a prospective study comparing whole-body DW-MR with XR and MRS. The study included symptomatic patients (pts) at diagnosis or at relapse before the start of the treatment; they performed XR, MRS, conventional whole-body MR (WB-MR), and whole-body DW-MR at enrolment (time point 1, T1), after treatment (T2), and after 6 months of follow-up (T3). Clinical and hematologic, including bone marrow (BM), disease evaluations were done at the same time points. The study was approved by the Institutional Review Board in 2008 (protocol 44/08).Methods:The primary objective was to assess whether DW-MR could detect more focal lesions (FL) than XR and MRS. Secondary objectives were to correlate the changes of FL detected by DW-RM with response, to assess the prognostic value of DW-RM, and to compare DW-MR with WB-MR. MRS, WB-MR and DW-MR were done in a single 45-minute session on a standard 1.5 Tesla MR scanner. DW-MR consisted of multiple stacked axial Echo Planar Imaging sequences at 4 b-values, evaluated by PET-like Maximum Intensity Projection and Multi-Planar reconstructions at the highest b-value (1000). Each exam was independently read by 3 radiologists experienced in MM. 53 bone segments per exam were evaluated in whole-body imaging (XR, WB-MR and DW-MR); 25 segments were evaluated in spine imaging (MRS and DW-MR). All the patterns (focal, diffuse, mixed, and salt-and-pepper) of bone lesions were recorded. Matching FL detected by >=2 radiologists were counted for the present analysis. Statistics were carried out with the Wilcoxon signed rank test for methods comparisons and the Kruskal-Wallis test to assess intra-patient changes through the time points. Survival and relapse were analyzed by Kaplan-Meier and Cumulative Incidence method with log-rank and Gray's tests. All tests were 2-sided.Results:Between 2008 and 2010, 36 symptomatic pts were enrolled: 43% were at diagnosis, 57% at relapse; 71% of pts had ISS stage 1 MM. The most frequent isotype was IgG (57%), median BM infiltration was 30%. FISH on selected CD138+ plasma cells detected t(4;14) and del(17) in 9 and 6% of pts. At T1, the DW-MR detected more FL than standard XR (306 vs 117 FL, p<0.01), WB-MR (306 vs 225 FL, p=0.02), and MRS (165 vs 116 FL, trend, p=0.08). At T2, a similar number of FL was detected by DW-MR and XR (97 vs 104 FL, p=0.99) and MRS (20 vs 20 FL, p=1.00); DW-MR detected more FL than WB-MR (97 vs 60 FL, p=0.01). At T3, the DW-MR detected more FL than WB-MR (88 vs 45 FL, p<0.01) and MRS (24 vs 11 FL, p=0.05), and similar FL compared to XR (88 vs 62 FL, p=0.27). Considering all the time points, the DW-MR detected more FL than XR (p=0.01), WB-MR (p<0.01) and MRS (p=0.02).Between T1 and T2, all pts were treated with IMIDS or bortezomib–based regimens, 33% underwent a stem cell transplant. Overall response rate (ORR) was 73%. DW-MR detected significant changes of FL according to disease response at T2 (from 79 to 15 FL in >=VGPR, from 69 to 27 in PR, and from 34 to 55 FL in SD or PD, p=0.04 [whole body]; p=0.02 [spine]). Also MRS consistently detected response (p=0.04), whereas WB-MR showed only a weak correlation (p=0.13); XR did not detect response (p=0.55). Between T2 and T3, pts had minor changes of disease status (72% ORR), and, accordingly, all the radiological exams did not show significant changes in FL.One-, 2- and 3-year progression-free survival (PFS) was 80, 62 and 37% (median, 30 months), OS was 88, 79 and 76% (median not reached), and relapse incidence was 15, 32, and 54% (median, 21 months). Since the median number of FL detected by DW-MR at T1 was 4 (range, 0–49 FL), we compared PFS, relapse, and OS by the presence of <=4 FL or >4 FL before treatment. Patients with <=4 FL at DW-MR had better PFS (72 vs 50% at 2 years, p=0.02) and less relapse incidence (17 vs 50%, p<0.01) than those with >4 FL, whereas OS was not different (84 vs 75%, p=0.76).Conclusions:DW-MR is superior to XR, MRS, and WB-MR in detecting FL in MM. The number of FL detected by DW-MR before treatment predicts PFS and relapse incidence. DW-MR is a functional imaging that effectively detects the bone disease changes according to treatment response and can be used to monitor disease response.",
         authors:[FrSp,PP, GiTr,EM, ViMo, AlLa,LuMa, PaPa, LM,PaCo],
-        journal: "Blood (2012)",
+        journal: "The Journal of the American Society of Hematology Blood (2012)",
         date:"2013",
         link:"https://ashpublications.org/blood/article/120/21/2913/102443/Results-of-a-Prospective-Study-Comparing-WholeBody" ,
         type:"conference",
@@ -565,7 +596,49 @@ export const PUBLICATIONS: Publication[] = [
         image:IMG+"passera2010.png",
         download:"https://epos.myesr.org/esr/viewing/index.php?module=viewing_posteraction&task=downloadpdf&pi=101103"
 
-    }, {
+    },
+     {
+      id:28.1,
+      title :"An efficient and effective segmentation software to investigate the apparent diffusion coefficient in multiple myeloma lesions.",
+      abstract:"",
+      authors:[EM,PP,LM],
+      journal: "II Congresso Nazionale di Bioingegneria, 2010",
+      date:"2010",
+      link:"https://re.public.polimi.it/handle/11311/580342#.YMJzCZpKikA" ,
+      type:"conference",
+      tags:[],
+      image:IMG+"montin2012a.png",
+      download:undefined
+
+  },
+     {
+      id:28.2,
+      title :"Whole-body DWI, whole-body and whole-spine MRI in multiple myeloma",
+      abstract:"",
+      authors:[PP,FrSp,EM,LM,ViMo,],
+      journal: "European Congress of Radiology-ECR 2010",
+      date:"2010",
+      link:"https://re.public.polimi.it/handle/11311/580342#.YMJzCZpKikA" ,
+      type:"conference",
+      tags:[],
+      image:IMG+"montin2012a.png",
+      download:undefined
+
+  }, {
+      id:28.3,
+      title :"WHOLE-BODY DIFFUSION MRI AND SKELETAL LESIONS IN THYROID CANCER: DIAGNOSTIC AND THERAPEUTIC IMPLICATIONS",
+      abstract:"Forty-fifty percent of the patients with metastatic TC suffer from bone metastases. 99mTc scintigraphy is employed to assess bone lesions although it lacks of accuracy, mostly in lytic lesions of differentiated thyroid cancer (DTC). CT scan has a sensitivity of 71-100% while data on the accuracy of 18F-FDG-PET/CT are scanty. MRI captures both bone and bone marrow involvement, more common in medullary thyroid cancer (MTC). Whole body MRI (WB) and whole-body diffusion (WB-DWI) are emerging as accurate tools for detection and therapy monitoring of bone metastases. We investigated the role of WB and WB-DWI in bone lesions from TC i) sensitivity and specificity; ii) evaluation of response during TKIs.",
+      authors:[LaLo,FrSp,RGr,AGi,ECi,PaBo,EM,LL],
+      journal: "European Thyroid Journal",
+      date:"2010",
+      link:"https://www.sciencedirect.com/science/article/pii/S0923753420336073" ,
+      type:"conference",
+      tags:[],
+      image:IMG+"montin2012a.png",
+      download:undefined
+
+  },
+   {
         id:29,
         title :"Exploring cortical attentional system by using fMRI during a continuous perfomance test",
         abstract:"Functional magnetic resonance imaging (fMRI) was performed in eight healthy subjects to identify the localization, magnitude, and volume extent of activation in brain regions that are involved in blood oxygen level-dependent (BOLD) response during the performance of Conners' Continuous Performance Test (CPT). An extensive brain network was activated during the task including frontal, temporal, and occipital cortical areas and left cerebellum. The more activated cluster in terms of volume extent and magnitude was located in the right anterior cingulate cortex (ACC). Analyzing the dynamic trend of the activation in the identified areas during the entire duration of the sustained attention test, we found a progressive decreasing of BOLD response probably due to a habituation effect without any deterioration of the performances. The observed brain network is consistent with existing models of visual object processing and attentional control and may serve as a basis for fMRI studies in clinical populations with neuropsychological deficits in Conners' CPT performance.",
