@@ -135,6 +135,8 @@ export class authorsListNoInterfaces{
         let logossc='http://biodimensional.com/RESOURCES/logos/SClogo.png';
         let logoiodc='http://biodimensional.com/RESOURCES/logos/IODClogo.jpg';
         let logobr='http://biodimensional.com/RESOURCES/logos/BRlogo.png';
+        let logoasst='http://biodimensional.com/RESOURCES/logos/layout_set_logo.jpeg';
+        let logoge='http://biodimensional.com/RESOURCES/logos/AINI.png';
         
 
       
@@ -172,6 +174,14 @@ export class authorsListNoInterfaces{
                       
                       case "br":
                       image={src:logobr,name:"Brighton & Sussex University Hospitals NHS Trust",url:"https://www.bsuh.nhs.uk/"};
+                      break;
+
+                      case "asst":
+                      image={src:logoasst,name:"ASST dei Sette Laghi",url:"https://www.asst-settelaghi.it//"};
+                      break;
+                      
+                      case "ge":
+                      image={src:logoge,name:"Department of Neuroscience, Rehabilitation, Ophthalmology, Genetics and Maternal Child Health (DINOGMI)",url:"https://www.aini.it/department-of-neurology-rehabilitation-ophthalmology-genetics-maternal-and-child-health-dinogmi/"};
                       break;
                       
                     default:
