@@ -17,6 +17,7 @@ var CeDe={id:4,name:"Cem Murat", surname:"Deniz",affiliation:"nyu"};
 var SoGy={id:4,name:"Soterios", surname:"Gyftopoulos",affiliation:"nyu"};
 var RiKi={id:4,name:"Richard", surname:"Kijowski",affiliation:"nyu"};
 var TaRo={id:4,name:"Tatiane Cantarelli", surname:"Rodrigues",affiliation:"nyu"};
+var ThYo={id:4,name:"Thomas", surname:"Youm",affiliation:"nyu"};
 
 
 
@@ -164,6 +165,7 @@ var _tcloud="cloud Computing";
 var _twebapp="webgui";
 var _tstaging ="staging";
 var _tradiotherapy ="radiotherapy";
+var _tradiomic ="radiomic";
 
 var IMG="http://biodimensional.com/RESOURCES/img/";
 var DOC="http://biodimensional.com/RESOURCES/doc/";
@@ -172,21 +174,34 @@ var DOC="http://biodimensional.com/RESOURCES/doc/";
 
 
 export const PUBLICATIONS: Publication[] = [{
+  id:-11,
+  title :"A radiomics approach to the diagnosis of femoroacetabular impingement",
+  abstract:"Introduction: Femoroacetabular Impingement (FAI) is a hip pathology characterized by impingement of the femoral head-neck junction against the acetabular rim, due to abnormalities in bone morphology. FAI is normally diagnosed by manual evaluation of morphologic features on magnetic resonance imaging (MRI). In this study, we assess, for the first time, the feasibility of using radiomics to detect FAI by automatically extracting quantitative features from images.Material and methods: 17 patients diagnosed with monolateral FAI underwent pre-surgical MR imaging, including a 3D Dixon sequence of the pelvis. An expert radiologist drew regions of interest on the water-only Dixon images outlining femur and acetabulum in both impingement (IJ) and healthy joints (HJ). 182 radiomic features were extracted for each hip. The dataset numerosity was increased by 60 times with an ad-hoc data augmentation tool. Features were subdivided by type and region in 24 subsets. For each, a univariate ANOVA F-value analysis was applied to find the 5 features most correlated with IJ based on p-value, for a total of 48 subsets. For each subset, a K-nearest neighbor model was trained to differentiate between IJ and HJ using the values of the radiomic features in the subset as input. The training was repeated 100 times, randomly subdividing the data with 75%/25% training/testing. Results: The texture-based gray level features yielded the highest prediction max accuracy (0.972) with the smallest subset of features. This suggests that the gray image values are more homogeneously distributed in the HJ in comparison to IJ, which could be due to stress-related inflammation resulting from impingement. Conclusions: We showed that radiomics can automatically distinguish IJ from HJ using water-only Dixon MRI. To our knowledge, this is the first application of radiomics for FAI diagnosis. We reported an accuracy greater than 97%, which is higher than the 90% accuracy for detecting FAI reported for standard diagnostic tests (90%). Our proposed radiomic analysis could be combined with methods for automated joint segmentation to rapidly identify patients with FAI, avoiding time-consuming radiological measurements of bone morphology.",
+  authors:[EM,RiKi,ThYo,RL],
+  journal: "Frontiers in Radiology. Artificial Intelligence in Radiology",
+  date:"2023",
+  link:"https://www.frontiersin.org/articles/10.3389/fradi.2023.1151258/full" ,
+  type:"article",
+  tags:[_tmri,_tradiomic,_tml,_tfeatureselection],
+  image: "https://www.frontiersin.org/files/Articles/1151258/fradi-03-1151258-HTML-r1/image_m/fradi-03-1151258-g001.jpg",
+  download:"https://www.frontiersin.org/articles/10.3389/fradi.2023.1151258/pdf"
+
+},{
+        id:-10,
+        title :"Oral Presentation: A deep learning model for the estimation of RF field trained from an analytical solution",
+        abstract:"In the article we describe a neural network able to estimate the electric field from SNR and B1+ maps. The network was trained using the images obtained from a 2D analytical solution of an infinitely long circular cylinder excited by a conductive wire. The predicted images are in good agreement with the targets with a maximum mean square error of 0.28%. The performance of the network was also tested on a human body model with an error of 13.96%. These preliminary results are very promising and open the possibility to use the network on numerically simulated and experimentally acquired images.",
+        authors:[EM,GC,CC,RL],
+        journal: "IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting, July 23–28, 2023 • Portland, Oregon, USA",
+        date:"2022",
+        link:"https://esmed.org/video-detail/?id=147" ,
+        type:"conference",
+        tags:[_tmri,_twebapp,_tsimulation,_tsnr,_tismrm,_tcloud],
+        image: IMG + "ursi23.png",
+        download:undefined
+
+      },{
   id:-9,
   title :"TESS: A Web-Accessible Tool for Temperature Estimation From Sar Simulation",
-  abstract:"Purpose: Temperature, one of the most relevant parameters to assess MRI safety, is mainly estimated through numerical simulations. Several methods to compute temperature increase due to SAR exposure were recently proposed, with different levels of accuracy and computation speed [1-3].Most of the temperature computation methods rely on the bioheat equation where W represents the blood perfusion,  the material density, C the heat capacity, k the thermal conductivity, and Q the heat generated by metabolism. The subscripts bl denotes a blood property.Recently, there has been a growing interest in temperature increase estimation through numerical simulations because of the more common use of high-field scanners. Web-basedaccessible cloud-accessible software is also becoming very popular because of its simplicity to remotely run heavy computation algorithms. Therefore, we  have developed “TESS”, Temperature Estimation from SAR Simulation, a web-accessible numerical simulator that allows running thermal simulations of MRI scans without using local resources, and without the need to install additional software on local machines. TESS enables calculations of SAR and temperature for non-uniform spatial grids, and for temporal variation of the power levels (for example associated with different sequences). Furthermore, TESS allows the user to select which computation method to use, with different levels of accuracy and computation speed.Methods: In order to estimate the temperature with TESS, knowledge of the numerical model of the anatomy with the tissue properties, the SAR distribution, and the power levels of the sequences of the MRI scan are necessary. All this information is passed from the Graphical User Interface (GUI) to the simulator as a parameter file composed of two sections: the first one reports information about the image, such as the dimensions of the field-of-view and the matrix size, while the second section contains all the links to the necessary files. Specifically, these files include the spatial distribution of the patient’s thermal properties that are in the bioheat equation, the spatial distribution of the SAR, the information on the spatial distribution of the mesh points (the mesh can be non-uniform), the temporal variation of the core body temperature and of the power levels of the pulse sequences.TESS allows developers and users to access software applications by means of a standardized web-based GUI [4-6], from which computations are run via Docker containers deployed locally or on the cloud.Results: DifferentThree tabs are used to set the parameters and to view results: Figures 2 and 3 report screenshots of the GUI interface to set the parameters of the calculation. As for other applications in Cloud MR [4-6], TESS has a “Home” tab, where users can manage their data and results files. In the “Set Up” tab (Figure 2), users can customize simulations by choosing the spatial and temporal resolution of the model and the duration of the simulated exam. Since the software allows simulations with non-uniform spatial grids, the user can also upload a file with the spatial variation of the resolution. The GUI can read a scalar matrix (i.e. NIFTI, MHA, MHD, …) or a point cloud (VTK, simple TXT).In the “Results” tab (Figure 3), users can check the status of the simulation tasks and select the successfully completed ones to display. In this tab, thermal map, SAR, and Core Body temperature can be analyzed by means of regions of interest.Conclusion: This work describesintroduces TESS, an open-source software for the safety assessment of MRI scans, which will be made available to the scientific community in 2022 via the Cloud MR portal.The current version enables only the estimation of the final temperature, the new release following beta testing will include the dynamic evaluation of the temperature through the MRI exam. Furthermore, in the future we plan to allow users to generate temperature maps based on non-standard orthogonal views by means of different interpolators, e.g., nearest-neighbors, linear, and b-spline..",
-  authors:[EM,GC,CC,RL],
-  journal: "MR Safety: From Physics & Physiology to Policies & Practice",
-  date:"2022",
-  link:"https://www.ismrm.org/workshops/2022/Safety/reg.htm" ,
-  type:"conference",
-  tags:[_tmri,_twebapp,_tsimulation,_tsnr,_tismrm,_tcloud],
-  image: IMG + "tess.png",
-  download:undefined
-
-},
-  id:-10,
-  title :"Tdgdgdgdgdg",
   abstract:"Purpose: Temperature, one of the most relevant parameters to assess MRI safety, is mainly estimated through numerical simulations. Several methods to compute temperature increase due to SAR exposure were recently proposed, with different levels of accuracy and computation speed [1-3].Most of the temperature computation methods rely on the bioheat equation where W represents the blood perfusion,  the material density, C the heat capacity, k the thermal conductivity, and Q the heat generated by metabolism. The subscripts bl denotes a blood property.Recently, there has been a growing interest in temperature increase estimation through numerical simulations because of the more common use of high-field scanners. Web-basedaccessible cloud-accessible software is also becoming very popular because of its simplicity to remotely run heavy computation algorithms. Therefore, we  have developed “TESS”, Temperature Estimation from SAR Simulation, a web-accessible numerical simulator that allows running thermal simulations of MRI scans without using local resources, and without the need to install additional software on local machines. TESS enables calculations of SAR and temperature for non-uniform spatial grids, and for temporal variation of the power levels (for example associated with different sequences). Furthermore, TESS allows the user to select which computation method to use, with different levels of accuracy and computation speed.Methods: In order to estimate the temperature with TESS, knowledge of the numerical model of the anatomy with the tissue properties, the SAR distribution, and the power levels of the sequences of the MRI scan are necessary. All this information is passed from the Graphical User Interface (GUI) to the simulator as a parameter file composed of two sections: the first one reports information about the image, such as the dimensions of the field-of-view and the matrix size, while the second section contains all the links to the necessary files. Specifically, these files include the spatial distribution of the patient’s thermal properties that are in the bioheat equation, the spatial distribution of the SAR, the information on the spatial distribution of the mesh points (the mesh can be non-uniform), the temporal variation of the core body temperature and of the power levels of the pulse sequences.TESS allows developers and users to access software applications by means of a standardized web-based GUI [4-6], from which computations are run via Docker containers deployed locally or on the cloud.Results: DifferentThree tabs are used to set the parameters and to view results: Figures 2 and 3 report screenshots of the GUI interface to set the parameters of the calculation. As for other applications in Cloud MR [4-6], TESS has a “Home” tab, where users can manage their data and results files. In the “Set Up” tab (Figure 2), users can customize simulations by choosing the spatial and temporal resolution of the model and the duration of the simulated exam. Since the software allows simulations with non-uniform spatial grids, the user can also upload a file with the spatial variation of the resolution. The GUI can read a scalar matrix (i.e. NIFTI, MHA, MHD, …) or a point cloud (VTK, simple TXT).In the “Results” tab (Figure 3), users can check the status of the simulation tasks and select the successfully completed ones to display. In this tab, thermal map, SAR, and Core Body temperature can be analyzed by means of regions of interest.Conclusion: This work describesintroduces TESS, an open-source software for the safety assessment of MRI scans, which will be made available to the scientific community in 2022 via the Cloud MR portal.The current version enables only the estimation of the final temperature, the new release following beta testing will include the dynamic evaluation of the temperature through the MRI exam. Furthermore, in the future we plan to allow users to generate temperature maps based on non-standard orthogonal views by means of different interpolators, e.g., nearest-neighbors, linear, and b-spline..",
   authors:[EM,GC,CC,RL],
   journal: "MR Safety: From Physics & Physiology to Policies & Practice",
@@ -353,7 +368,7 @@ export const PUBLICATIONS: Publication[] = [{
     link: "https://www.ncbi.nlm.nih.gov/pubmed/32009265",
     type:"article",
     tags:[ _tmri, _tdwi, _thn, _ttretresp, _toncology,_trdm],
-    image:"https://onlinelibrary.wiley.com/cms/asset/7f7ed245-0082-4108-8043-d631bf3affc1/nbm4265-fig-0001-m.jpg",
+    image:IMG + "revelevance2020.jpeg",
 //    DOI:10.1007/s11517-019-02109-4
  download:"https://onlinelibrary.wiley.com/doi/epdf/10.1002/nbm.4265"
  },
@@ -396,7 +411,7 @@ export const PUBLICATIONS: Publication[] = [{
     date: "2019",
     link: "https://www.thegreenjournal.com/article/S0167-8140(19)30281-6/abstract",
     type:"conference",
-    tags:[_tmri,_trdm,_tdwi,_ttretresp,_thn,_toncology,_trecist,_tfeatureselection,_tml],
+    tags:[_tmri,_trdm,_tdwi,_ttretresp,_thn,_toncology,_trecist,_tfeatureselection,_tml,_tradiomic,_tfeatureselection],
     image:"https://www.esmo.org/var/esmo/storage/images/media/esmo/meetings/2019/ichno-2019/ichno-2019-head-and-neck-oncology-1000x250/2489049-5-eng-GB/ichno-2019-head-and-neck-oncology-1000x250.jpg",
     download:DOC + "bolo2019.pdf"
 //    DOI:10.1007/s11517-019-02109-4
