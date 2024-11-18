@@ -141,12 +141,12 @@ export class authorsListNoInterfaces{
         let logopoli = "assets/logos/POLIMIlogo.png";
         let logoint = "assets/logos/INTlogo.png";
         let logonyu = "assets/logos/NYUlogo.png";
-        let logoieo = "assets/logos/IEOlogo.png";
+        let logoieo = "assets/logos/IEOlogo.jpg";
         let logolnf = "assets/logos/BPlogo.png";
         let logossc = "assets/logos/SClogo.png";
         let logoiodc = "assets/logos/IODClogo.jpg";
         let logobr = "assets/logos/BRlogo.png";
-        let logoasst = "assets/logos/layout_set_logo.jpeg";
+        let logoasst = "assets/logos/ASSTlogo.png";
         let logoge = "assets/logos/AINI.png";
         
 

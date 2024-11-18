@@ -247,7 +247,7 @@ export const PUBLICATIONS: Publication[] = [
   link:"https://ieeexplore.ieee.org/abstract/document/10297760",
   type:"conference",
   tags:[_tmri,_tsimulation,_tir,_tis,_tsafety,_tsar],
-  image: IMG + "cylinder23.png",
+  image: "",
   download:undefined
 
 },{
@@ -260,7 +260,7 @@ export const PUBLICATIONS: Publication[] = [
   link:"https://ieeexplore.ieee.org/document/10289426",
   type:"conference",
   tags:[_tmri,_tsimulation,_tir,_tis,_tsafety,_tsar],
-  image: IMG + "RF23.png",
+  image:  "",
   download:undefined
 
 },{
@@ -351,7 +351,7 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://ieeexplore.ieee.org/abstract/document/10289426" ,
         type:"conference",
         tags:[_tmri,_twebapp,_tsimulation,_tsnr,_tismrm,_tcloud],
-        image: IMG + "ursi23.png",
+        image:  "",
         download:undefined
 
       },{
@@ -364,7 +364,7 @@ export const PUBLICATIONS: Publication[] = [
   link:"https://www.ismrm.org/workshops/2022/Safety/reg.htm" ,
   type:"conference",
   tags:[_tmri,_twebapp,_tsimulation,_tsnr,_tismrm,_tcloud],
-  image: IMG + "tess.png",
+  image:  "",
   download:undefined
 
 },
@@ -378,7 +378,7 @@ export const PUBLICATIONS: Publication[] = [
     link:"https://aifi.net/iscrizioni-aperte-allinternational-scientific-congress-aifi-2022-online-il-programma-preliminare/" ,
     type:"conference",
     tags:[_tmri,_twebapp,_tsimulation,_tsnr,_tismrm,_tcloud],
-    image: IMG + "cvi.jpg",
+    image:  "",
     download:undefined
 
   },  
@@ -392,7 +392,7 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://esmed.org/video-detail/?id=147" ,
         type:"conference",
         tags:[_tmri,_twebapp,_tsimulation,_tsnr,_tismrm,_tcloud],
-        image: IMG + "esmed22.png",
+        image:  "",
         download:undefined
 
       },    {
@@ -405,8 +405,8 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://www.auntminnie.com/index.aspx?sec=ser&sub=def&pag=dis&ItemID=135830" ,
         type:"conference",
         tags:[_tmri,_twebapp,_tsimulation,_tsnr,_tismrm,_tcloud],
-        image: IMG + "hip22.png",
-        download:undefined
+        image:  "",
+                download:undefined
 
       }, {
         id:-5,
@@ -418,7 +418,7 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://www.auntminnie.com/index.aspx?sec=ser&sub=def&pag=dis&ItemID=135830" ,
         type:"conference",
         tags:[_tmri,_twebapp,_tsimulation,_tsnr,_tismrm,_tcloud],
-        image: IMG + "tess.png",
+        image:  "",
         download:undefined
 
       },{
@@ -431,7 +431,7 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://www.ismrm.org/22m/" ,
         type:"conference",
         tags:[_tmri,_twebapp,_tsimulation,_tsnr,_tismrm,_tcloud],
-        image: IMG + "poirot.png",
+        image:  "",
         download:undefined
 
       },{
@@ -444,7 +444,7 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://www.ismrm.org/22m/" ,
         type:"conference",
         tags:[_tmri,_twebapp,_tsimulation,_tsnr,_tismrm,_tcloud],
-        image: IMG + "temp22.png",
+        image: "",
         download:undefined
 
       },{
@@ -457,7 +457,7 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://onlinelibrary.wiley.com/doi/10.1002/jmri.27816" ,
         type:"article",
         tags:[_tmri,_twebapp,_tsimulation,_tsnr,_tismrm,_tcloud],
-        image: IMG + "snr.png",
+        image: "",
         download:undefined
 
       },{
@@ -470,7 +470,7 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://ismrm-smrt21.us3.pathable.com/" ,
         type:"conference",
         tags:[_tmri,_tcloud,_tem,_tismrm],
-        image: IMG + "dgf.png",
+        image:  "",
         download:undefined
 
       },
@@ -496,7 +496,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ismrm.org/20m/",
     type:"conference",
     tags:[_tmri,_tismrm, _tsimulation,_tem,_tcloud,_twebapp],
-    image: IMG + "camrie.png",
+    image:  "",
     download:DOC + "camrie.pdf"
 },
 {
@@ -509,7 +509,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://link.springer.com/article/10.1007/s11517-019-02109-4",
     type:"article",
     tags:[ _tmri, _tir, _tis, _tneuro, _tped, _toncology, _tbrain, _tdwi, _tdti,_tradiotherapy],
-    image:IMG + "montin2020.png",
+    image:"",
 //    DOI:10.1007/s11517-019-02109-4
     download:DOC + "montin2020.pdf"
 },
@@ -523,8 +523,8 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ncbi.nlm.nih.gov/pubmed/32009265",
     type:"article",
     tags:[ _tmri, _tdwi, _thn, _ttretresp, _toncology,_trdm],
-    image:IMG + "revelevance2020.jpeg",
-//    DOI:10.1007/s11517-019-02109-4
+    image:  "",
+    //    DOI:10.1007/s11517-019-02109-4
  download:"https://onlinelibrary.wiley.com/doi/epdf/10.1002/nbm.4265"
  },
 
@@ -538,7 +538,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.sciencedirect.com/science/article/abs/pii/S1350453320300072",
     type:"article",
     tags:[_tcardio,_tcsd,_tcad,_tis,_toct],
-    image:IMG+"sumi2020.png",
+    image:  "",
     download:DOC + "sumi2020.pdf"
 
 //    DOI:10.1007/s11517-019-02109-4
@@ -596,8 +596,8 @@ export const PUBLICATIONS: Publication[] = [
     link: "http://www.cloudmrhub.com",
     type:"conference",
     tags:[_tmri,_tismrm, _tsimulation,_tem,_tcloud,_twebapp],
-    image: IMG + "mroptimum.png",
-    download:DOC + "mroptimum.pdf"
+    image:  "",
+        download:DOC + "mroptimum.pdf"
 },
 
 
@@ -640,7 +640,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ncbi.nlm.nih.gov/pubmed/30440511",
     type:"conference",
     tags:[_tmri,_toncology,_tped,_tbrain,_tdwi,_trdm,_tml,_tfeatureselection],
-    image:"http://biodimensional.com/RESOURCES/img/MB.png",
+    image:"",
     download:DOC + "boloEMBS.pdf"
 //    DOI:10.1007/s11517-019-02109-4
 },
@@ -654,7 +654,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ncbi.nlm.nih.gov/pubmed/28653477",
     type:"article",
     tags:[_tmri,_trdm,_tstaging,_toncology,_tml,_tfeatureselection,_tsarcomas],
-    image:"http://biodimensional.com/RESOURCES/img/VaCoEM.png",
+    image:"",
     download:"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5456060/pdf/pone.0177495.pdf"
 },
   {
@@ -667,8 +667,8 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ncbi.nlm.nih.gov/pubmed/28711588",
     type:"article",
     tags:[_tcardio,_tcsd,_tcad,_tis,_toct],
-    image:IMG+ "sumi2017.png",
-    download:DOC + "sumi2017.pdf"
+    image:  "",
+        download:DOC + "sumi2017.pdf"
 },
   {
     id:14,
@@ -680,8 +680,8 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ncbi.nlm.nih.gov/pubmed/28574987",
     type:"article",
     tags:[_tcardio,_tcsd,_tcad,_tis,_toct],
-    image:IMG+ "chiastra2017.png",
-    // download:"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5456060/pdf/pone.0177495.pdf"
+    image:  "",
+        // download:"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5456060/pdf/pone.0177495.pdf"
     download:"https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0177495&type=printable"
 },
   {
@@ -708,8 +708,8 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://ieeexplore.ieee.org/document/7591644",
     type:"conference",
     tags:[_tcardio,_tcsd,_tcad,_tis,_toct],
-    image:IMG+"montin2016.png",
-    download:DOC + "montin2016.pdf"
+    image:  "",
+        download:DOC + "montin2016.pdf"
 
 
 },
@@ -723,8 +723,8 @@ export const PUBLICATIONS: Publication[] = [
     link:"https://link.springer.com/chapter/10.1007/978-3-319-11128-5_53" ,
     type:"conference",
     tags:[_tmri,_tstaging,_toncology,_tml,_tfeatureselection,_thn],
-    image:IMG+"montin2015.png",
-    download:"https://www.researchgate.net/profile/Eros_Montin/publication/282373770_Nasopharyngeal_Carcinoma_Lymph_Nodes_Evaluation_during_Therapy_through_Diffusion_Weighted_Magnetic_Resonance_Images/links/566e9adb08aea0892c529df7/Nasopharyngeal-Carcinoma-Lymph-Nodes-Evaluation-during-Therapy-through-Diffusion-Weighted-Magnetic-Resonance-Images.pdf",
+    image:  "",
+        download:"https://www.researchgate.net/profile/Eros_Montin/publication/282373770_Nasopharyngeal_Carcinoma_Lymph_Nodes_Evaluation_during_Therapy_through_Diffusion_Weighted_Magnetic_Resonance_Images/links/566e9adb08aea0892c529df7/Nasopharyngeal-Carcinoma-Lymph-Nodes-Evaluation-during-Therapy-through-Diffusion-Weighted-Magnetic-Resonance-Images.pdf",
 
 
 },
@@ -738,8 +738,8 @@ export const PUBLICATIONS: Publication[] = [
     link:"http://meeting2016.enginsoft.it/poster/PosterAward2016_nominated%2046.pdf" ,
     type:"conference",
     tags:[],
-    image:IMG+"cutriposter.png",
-    download:DOC + "cutri2015.pdf"
+    image:  "",
+        download:DOC + "cutri2015.pdf"
 
 
 },
@@ -753,8 +753,8 @@ export const PUBLICATIONS: Publication[] = [
     link:"https://www.thegreenjournal.com/article/S0167-8140(15)41523-3/fulltext" ,
     type:"conference",
     tags:[_tmri,_tct,_tir,_tped,_tbrain,_toncology,_tradiotherapy,_ttretresp,_tneuro],
-    image:IMG + "sm2015.png",
-    download:undefined
+    image:  "",
+        download:undefined
 
 
 },
@@ -768,8 +768,8 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://www.ncbi.nlm.nih.gov/pubmed/26737734" ,
         type:"conference",
         tags:[],
-        image:IMG+"montin2015a.png",
-        download:"http://150.162.46.34:8080/embc-2015/papers/16272050.pdf"
+        image:  "",
+                download:"http://150.162.46.34:8080/embc-2015/papers/16272050.pdf"
 
 
     },
@@ -783,8 +783,8 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://www.ncbi.nlm.nih.gov/pubmed/26736411" ,
         type:"conference",
         tags:[],
-        image:IMG+"cutri2015.png",
-        download:undefined
+        image:  "",
+                download:undefined
 
 
     }, {
@@ -797,8 +797,8 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://link.springer.com/chapter/10.1007/978-3-319-00846-2_55" ,
         type:"conference",
         tags:[],
-        image:IMG+"sarcoma.png",
-        download:undefined
+        image:  "",
+                download:undefined
 
 
     }, {
@@ -811,8 +811,8 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://www.ncbi.nlm.nih.gov/pubmed/26736411" ,
         type:"conference",
         tags:[],
-        image:IMG+"chiastra2013.png",
-        download:undefined
+        image:  "",
+                download:undefined
 
 
     }, {
@@ -825,7 +825,7 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://www.ncbi.nlm.nih.gov/pubmed/26736411" ,
         type:"conference",
         tags:[],
-        image:IMG+"montin2012a.png",
+        image:  "",
         download:undefined
 
 
@@ -839,8 +839,8 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://ashpublications.org/blood/article/120/21/2913/102443/Results-of-a-Prospective-Study-Comparing-WholeBody" ,
         type:"conference",
         tags:[],
-        image:IMG+"montin2012a.png",
-        download:undefined
+        image:  "",
+                download:undefined
 
     }, {
         id:26,
@@ -852,8 +852,8 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://moh-it.pure.elsevier.com/en/publications/a-registration-framework-for-evaluation-of-t1-t2-and-dwi-signal-i" ,
         type:"conference",
         tags:[],
-        image:IMG+"montin2012.png",
-        download:"https://scitepress.org/papers/2012/37775/37775.pdf"
+        image:  "",
+                download:"https://scitepress.org/papers/2012/37775/37775.pdf"
 
     }, {
         id:27,
@@ -865,8 +865,8 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://www.ncbi.nlm.nih.gov/pubmed/23367133" ,
         type:"conference",
         tags:[],
-        image:IMG+"veronese2012.png",
-        download:undefined
+        image:  "",
+                download:undefined
 
     }, {
         id:28,
@@ -878,8 +878,8 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://epos.myesr.org/esr/viewing/index.php?module=viewing_poster&task=&pi=101103" ,
         type:"conference",
         tags:[],
-        image:IMG+"passera2010.png",
-        download:"https://epos.myesr.org/esr/viewing/index.php?module=viewing_posteraction&task=downloadpdf&pi=101103"
+        image:  "",
+                download:"https://epos.myesr.org/esr/viewing/index.php?module=viewing_posteraction&task=downloadpdf&pi=101103"
 
     },
      {
@@ -892,8 +892,8 @@ export const PUBLICATIONS: Publication[] = [
       link:"https://re.public.polimi.it/handle/11311/580342#.YMJzCZpKikA" ,
       type:"conference",
       tags:[],
-      image:IMG+"montin2012a.png",
-      download:undefined
+      image:  "",
+            download:undefined
 
   },
      {
@@ -906,8 +906,8 @@ export const PUBLICATIONS: Publication[] = [
       link:"https://re.public.polimi.it/handle/11311/580342#.YMJzCZpKikA" ,
       type:"conference",
       tags:[],
-      image:IMG+"montin2012a.png",
-      download:undefined
+      image:  "",
+            download:undefined
 
   }, {
       id:28.3,
@@ -919,7 +919,8 @@ export const PUBLICATIONS: Publication[] = [
       link:"https://www.sciencedirect.com/science/article/pii/S0923753420336073" ,
       type:"conference",
       tags:[],
-      image:IMG+"montin2012a.png",
+      image:  "",
+
       download:undefined
 
   },
@@ -933,7 +934,8 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://www.ncbi.nlm.nih.gov/pubmed/20011033" ,
         type:"article",
         tags:[],
-        image:IMG+"tana.png",
+        image:  "",
+
         download:"https://downloads.hindawi.com/journals/cin/2010/329213.pdf"
 
     }, {
@@ -946,7 +948,8 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://psycnet.apa.org/record/2009-17266-037" ,
         type:"article",
         tags:[],
-        image:IMG+"bonacina.png",
+        image:  "",
+
         download:"https://issuu.com/bepperiva/docs/arctt_2009/168"
 
     }, {
@@ -959,7 +962,8 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://www.ncbi.nlm.nih.gov/pubmed/19592754" ,
         type:"article",
         tags:[],
-        image:IMG+"bonacina.png",
+        image:  "",
+
         download:undefined
 
     }

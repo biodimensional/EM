@@ -17,8 +17,7 @@
             <app-publication-entry-tags [tags]="publication.tags " class="cardobj ">
             </app-publication-entry-tags>
         </div>
-        <img mat-card-image src="{{publication.image}} " alt="{{publication.image}} ">
-
+        <img mat-card-image [src]="publication.image || 'assets/default-image.png'" alt="{{publication.title}}">        
         <mat-expansion-panel *ngIf="publication.abstract.length>0">
 
             <mat-expansion-panel-header>
