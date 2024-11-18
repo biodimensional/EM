@@ -127,16 +127,27 @@ export class authorsListNoInterfaces{
 
     getAffiliationsIcon(){
 
-        let logopoli="http://biodimensional.com/RESOURCES/logos/POLIMIlogo.png";
-        let logoint='http://biodimensional.com/RESOURCES/logos/INTlogo.png';
-        let logonyu='http://biodimensional.com/RESOURCES/logos/NYUlogo.png';
-        let logoieo='http://biodimensional.com/RESOURCES/logos/IEOlogo.png';
-        let logolnf='http://biodimensional.com/RESOURCES/logos/BPlogo.png';
-        let logossc='http://biodimensional.com/RESOURCES/logos/SClogo.png';
-        let logoiodc='http://biodimensional.com/RESOURCES/logos/IODClogo.jpg';
-        let logobr='http://biodimensional.com/RESOURCES/logos/BRlogo.png';
-        let logoasst='http://biodimensional.com/RESOURCES/logos/layout_set_logo.jpeg';
-        let logoge='http://biodimensional.com/RESOURCES/logos/AINI.png';
+        // let logopoli="http://biodimensional.com/RESOURCES/logos/POLIMIlogo.png";
+        // let logoint='http://biodimensional.com/RESOURCES/logos/INTlogo.png';
+        // let logonyu='http://biodimensional.com/RESOURCES/logos/NYUlogo.png';
+        // let logoieo='http://biodimensional.com/RESOURCES/logos/IEOlogo.png';
+        // let logolnf='http://biodimensional.com/RESOURCES/logos/BPlogo.png';
+        // let logossc='http://biodimensional.com/RESOURCES/logos/SClogo.png';
+        // let logoiodc='http://biodimensional.com/RESOURCES/logos/IODClogo.jpg';
+        // let logobr='http://biodimensional.com/RESOURCES/logos/BRlogo.png';
+        // let logoasst='http://biodimensional.com/RESOURCES/logos/layout_set_logo.jpeg';
+        // let logoge='http://biodimensional.com/RESOURCES/logos/AINI.png';
+
+        let logopoli = "assets/logos/POLIMIlogo.png";
+        let logoint = "assets/logos/INTlogo.png";
+        let logonyu = "assets/logos/NYUlogo.png";
+        let logoieo = "assets/logos/IEOlogo.png";
+        let logolnf = "assets/logos/BPlogo.png";
+        let logossc = "assets/logos/SClogo.png";
+        let logoiodc = "assets/logos/IODClogo.jpg";
+        let logobr = "assets/logos/BRlogo.png";
+        let logoasst = "assets/logos/layout_set_logo.jpeg";
+        let logoge = "assets/logos/AINI.png";
         
 
       
