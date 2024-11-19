@@ -144,7 +144,7 @@ export class authorsListNoInterfaces{
         let logoieo = "assets/logos/IEOlogo.jpg";
         let logolnf = "assets/logos/BPlogo.png";
         let logossc = "assets/logos/SClogo.png";
-        let logoiodc = "assets/logos/IODClogo.jpg";
+        let logoiodc = "assets/logos/IODClogo.png";
         let logobr = "assets/logos/BRlogo.png";
         let logoasst = "assets/logos/ASSTlogo.png";
         let logoge = "assets/logos/AINI.png";
