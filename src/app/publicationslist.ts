@@ -208,7 +208,7 @@ export const PUBLICATIONS: Publication[] = [
   link:"https://ieeexplore.ieee.org/abstract/document/10404125",
   type:"conference",
   tags:["deep learning","mri","cloud"],
-  image: "",
+  image: "assets/figure/ImpactoftheComplexity.png",
   download:null
 
 },{
@@ -247,7 +247,7 @@ export const PUBLICATIONS: Publication[] = [
   link:"https://ieeexplore.ieee.org/abstract/document/10297760",
   type:"conference",
   tags:[_tmri,_tsimulation,_tir,_tis,_tsafety,_tsar],
-  image: "",
+  image: "assets/figure/Awa.png",
   download:undefined
 
 },{

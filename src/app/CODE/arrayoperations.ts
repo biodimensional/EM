@@ -28,13 +28,15 @@ export class StringArrayOperations extends ArrayOperations{
 
         return new Promise(resolve => {
           var OUT='';
+          console.log(this.getArray())
             this.getArray().forEach((element,index) => {
                
               OUT=OUT.concat(element + comma);
-              if(index==this.getArray().length-1){
-                
-                   resolve(OUT.substring(0, OUT.length - comma.length))
-              }
+              console.log(element)
+
+            if (index == this.getArray().length - 1) {
+                resolve(OUT.endsWith(', ') ? OUT.substring(0, OUT.length - 3) : OUT);
+            }
     
             });
                 
