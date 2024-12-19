@@ -194,7 +194,7 @@ export const PUBLICATIONS: Publication[] = [
     link:"https://onlinelibrary.wiley.com/doi/full/10.1002/jor.25952",
     type:"article",
     tags:["radiomics","mri","fai","cloud"],
-    image: "https://onlinelibrary.wiley.com/cms/asset/0f42c710-c7af-41d3-a9a7-8ab4ed710ce0/jor25952-fig-0001-m.jpg",
+    image: "https://onlinelibrary.wiley.com/cms/asset/d1adde8a-0e4d-4fce-946b-fd28184b7794/jor25952-fig-0001-m.jpg",
     download:"https://onlinelibrary.wiley.com/doi/epdf/10.1002/jor.25952"
   
   },
