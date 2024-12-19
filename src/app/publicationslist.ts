@@ -260,7 +260,7 @@ export const PUBLICATIONS: Publication[] = [
   link:"https://ieeexplore.ieee.org/document/10289426",
   type:"conference",
   tags:[_tmri,_tsimulation,_tir,_tis,_tsafety,_tsar],
-  image:  "",
+  image:  "assets/figure/AdlR.png",
   download:undefined
 
 },{
@@ -351,7 +351,7 @@ export const PUBLICATIONS: Publication[] = [
         link:"https://ieeexplore.ieee.org/abstract/document/10289426" ,
         type:"conference",
         tags:[_tmri,_twebapp,_tsimulation,_tsnr,_tismrm,_tcloud],
-        image:  "",
+        image:  "assets/figure/SART.png",
         download:undefined
 
       },{
