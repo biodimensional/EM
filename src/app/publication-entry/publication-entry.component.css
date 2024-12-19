@@ -1,12 +1,30 @@
 .emboxes {
-    -webkit-border-radius: 0px 21px 0px 0px;
-    -moz-border-radius: 0px 21px 0px 0px;
     border-radius: 0px 21px 0px 0px;
-    border-color: rgba(14, 182, 244, 0.8);
-    border-width: thin;
-    border-style: groove;
+    border: 1px solid rgba(14, 182, 244, 0.8);
     padding: 5%;
     margin: 1%;
-    -webkit-box-shadow: 4px 2px 9px -1px rgba(0, 0, 0, 0.72);
-    box-shadow: 4px 2px 9px -1px rgba(0, 0, 0, 0.72);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.emboxes:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card container styles */
+.cardobj {
+    margin: 1em;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    word-wrap: break-word; /* Break long words to wrap correctly */
+    height: 500px; /* Fixed height for the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

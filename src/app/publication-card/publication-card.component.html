@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card class="cardobj">
     <mat-card-title> {{publication.title}}</mat-card-title>
     <mat-card-subtitle *ngIf="publication.type=='article'">{{publication.type}} published in {{publication.journal}} ({{publication.date}})</mat-card-subtitle>
     <mat-card-subtitle *ngIf="publication.type!='article'">{{publication.type}} {{publication.journal}} ({{publication.date}})</mat-card-subtitle>
@@ -17,6 +17,7 @@
             <app-publication-entry-tags [tags]="publication.tags " class="cardobj ">
             </app-publication-entry-tags>
         </div>
+
         <img mat-card-image [src]="publication.image || 'assets/default-image.png'" alt="{{publication.title}}">        
         <mat-expansion-panel *ngIf="publication.abstract.length>0">
 

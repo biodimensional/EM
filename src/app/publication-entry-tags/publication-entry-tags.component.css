@@ -1,4 +1,17 @@
 .mytags {
     font-size: small;
     font-weight: lighter;
+    color: #555;
+    margin: 0.5em 0;
+    padding: 0.3em 0.6em;
+    background-color: #e0f7fa;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mytags:hover {
+    background-color: #b2ebf2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

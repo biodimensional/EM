@@ -1,30 +1,57 @@
+* Card container styles */
 .cardobj {
     margin: 1em;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    word-wrap: break-word; /* Break long words to wrap correctly */
 }
 
+.cardobj:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card title styles */
 .cardtitle {
-    font-weight: bold;
-}
-
-mat-card-title {
-    font-size: 21px;
-    font-weight: 400;
+    font-weight: 600; /* Semi-bold */
+    font-size: 20px; /* Slightly smaller font size */
+    color: #007bff; /* Primary color */
     text-align: center;
+    margin-bottom: 0.5em;
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 1px; /* Spacing between letters */
+}
+/* Image styles */
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+    object-fit: cover;
 }
 
-mat-card-subtitle {
-    FONT-WEIGHT: 400;
-    font-size: 13px;
-    font-weight: 300;
-    text-align: center;
+
+/* Abstract panel styles */
+.abstract-panel {
+    margin-top: 1em;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.cardpublication {
-    /* border-color: black !important;
-    border-width: thick !important;
-    border-style: double; */
+.abstract-panel .mat-expansion-panel-header {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
 }
 
-.cardabstract {
-    /* border-color: grey !important; */
+.abstract-panel .mat-expansion-panel-body {
+    padding: 1em;
+    font-size: 14px;
+    color: #333;
 }

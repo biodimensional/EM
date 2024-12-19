@@ -1,15 +1,113 @@
 /* You can add global styles to this file, and also import other style files */
 
 html,
-body {
-    height: 100%;
-}
 
+/* General styles */
 body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+/* Main content styles */
+.main-content {
+    margin-bottom: 100px; /* Adjust this value as needed */
+    padding: 20px;
+    text-align: center;
 }
 
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #282c34, #3a3f47);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+    color: #ffffff;
+}
+
+footer a {
+    color: #61dafb;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #21a1f1;
+    text-decoration: underline;
+}
+
+/* Additional styles for other elements */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-top: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #555;
+    margin: 0.5em 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.btnInfo {
+    font-size: 1.2em;
+    color: #007bff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.btnInfo:hover {
+    color: #0056b3;
+}
+
+/* CV button styles */
+.cv-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+}
+
+.cv-button:hover {
+    background: linear-gradient(45deg, #00d4ff, #007bff);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cv-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 .emboxes {
     -webkit-border-radius: 0px 21px 0px 0px;
     -moz-border-radius: 0px 21px 0px 0px;
