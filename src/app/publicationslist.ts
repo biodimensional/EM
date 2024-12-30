@@ -184,6 +184,34 @@ var ISMRM23 = "31th Scientific Meeting of the International Society for Magnetic
 
 
 export const PUBLICATIONS: Publication[] = [
+
+  {
+    id:-23,
+    title :"Deep Learning Networks Trained with Eccentric and Concentric Cylinders to Estimate the Electric Fields.",
+    abstract:"Estimation of radiofrequency electric fields is of great importance in Magnetic Resonance Imaging to estimate Specific Absorption Rate (SAR) and SNR in tissues. In order to develop a quick patient-specific estimation of SAR, recent publications have shown that use of deep learning networks can provide a valid alternative to numerical electromagnetic simulations, which can be time consuming. Analytical solutions have the benefit of providing an exact distribution of the fields in a very short time, therefore they can be suitable to generate large amounts of data for deep learning networks training. On the other hand, analytical solutions can be calculated only for simple specific geometries. In this work, we explore the ability of three neural networks to estimate the distribution of the electric fields when a B, map is used as an input. The networks were trained with only data generated through analytical solutions representing the fields of eccentric and concentric infinitely long cylinders excited by an infinitely long wire. The networks could predict the fields calculated with the analytical solutions with a very high accuracy also when tested with geometries not part of the training dataset. Hence, the networks can well generalize the transformation from B1 maps to electric fields and the analytical solutions can be used as an alternative data augmentation method for datasets comprising more complicated and heterogeneous structures with the fields are computed with numerical solutions.",
+    authors:[EM,GC,CC,RL],
+    journal: "2024 E-Health and Bioengineering Conference (EHB)",
+    date:"2024",
+    link:"https://ieeexplore.ieee.org/abstract/document/10805600",
+    type:"article",
+    tags:["mri","cloud",_tsimulation,_tir,_tis,_tsafety,_tsar],
+    image: "assets/figure/circle.gif",
+    download:null
+  
+  },  {
+    id:-23,
+    title :"A Serverless Implementation of a Tool for Temperature and SAR Estimation (TESS 2.0)",
+    abstract:"Temperature Estimation from SAR Simulation (TESS) stands as a Cloud-based tool specifically designed for evaluating the safety aspects of MRI examinations. It utilizes a customized version of the bioheat equation, incorporating factors like the temporal changes in body temperature and various physiological parameters in its numerical solutions. Here we present TESS 2.0, with new functionalities and a more user-friendly interface. Notably, the computations occur in a serverless manner, utilizing AWS to enhance efficiency and accessibility.",
+    authors:[EM,GC,CC,RL],
+    journal: "2024 E-Health and Bioengineering Conference (EHB)",
+    date:"2024",
+    link:"https://ieeexplore.ieee.org/abstract/document/10805647",
+    type:"article",
+    tags:["mri","cloud"],
+    image: "assets/figure/tess2.gif",
+    download:null
+  
+  },
   {
     id:-22,
     title :"Radiomics features outperform standard radiological measurements in detecting femoroacetabular impingement on three-dimensional magnetic resonance imaging.",
