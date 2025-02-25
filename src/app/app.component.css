@@ -1,31 +1,63 @@
-.btnInfo {
-    padding: 1rem;
+.avatar-background {
+    background-image: url('../assets/wall.png'); /* Path to your background image */
+    background-size: cover; /* Scales the image to cover the container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from tiling */
+    position: relative; /* Ensures the container can hold the background */
+    width: 100%; /* Extends the background horizontally across the full width */
+    height: 300px; /* Adjust height to control the strip size (you can modify this) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* filter: brightness(70%); Darkens the background for better text contrast */
 }
 
+.avatar-background img {
+    position: relative; /* Ensures the image stays on top of the background */
+    z-index: 1; /* Keeps the image above the background */
+}
 
+/* Style the rest of the content (outside the avatar background) */
+.background-wrapper {
+    /* No background needed here, but you can set a default background if desired */
+    min-height: 100%;
+}
+
+.background-wrapper h1, .background-wrapper h3, .background-wrapper a {
+    color: #000000; /* Black text for default content (assuming a light page background) */
+    font-weight: bold;
+}
+
+/* Make the CV button smaller */
 .cv-button {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 8px 16px; /* Reduced padding */
+    font-size: 14px; /* Smaller font size */
     color: #fff;
     background: linear-gradient(45deg, #007bff, #00d4ff);
     border: none;
-    border-radius: 25px;
+    border-radius: 20px; /* Slightly smaller radius for consistency */
     text-decoration: none;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1em; /* Add margin-bottom here */
-
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow */
+    margin-bottom: 1em;
 }
 
 .cv-button:hover {
     background: linear-gradient(45deg, #00d4ff, #007bff);
     transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15);
 }
 
 .cv-button:active {
     transform: translateY(0);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Existing styles for social icons */
+.btnInfo {
+    padding: 1rem;
 }
