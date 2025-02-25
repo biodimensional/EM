@@ -17,6 +17,12 @@
 .avatar-background img {
     position: relative; /* Ensures the image stays on top of the background */
     z-index: 1; /* Keeps the image above the background */
+    transition: transform 1s ease; /* Smooth transition for the rotation */
+}
+
+/* Add rotation on hover */
+.avatar-background img:hover {
+    transform: rotate(360deg); /* Rotates the image 360 degrees */
 }
 
 /* Style the rest of the content (outside the avatar background) */
