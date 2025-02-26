@@ -50,7 +50,7 @@ export class PublicationCardComponent implements OnInit {
   public parsestringarray(ARRAY) {
     let SAO = new StringArrayOperations(ARRAY);
     return new Promise(resolve => {
-        resolve(SAO.getList());        
+        resolve(SAO.getList(' '));        
     });
   }
   
@@ -62,7 +62,7 @@ export class PublicationCardComponent implements OnInit {
      
         ARRAY.forEach((element,index) => {
            
-          OUT=OUT.concat(element.name +" " + element.surname + ", ");
+          OUT=OUT.concat(element.name +" " + element.surname + " ");
           if(index==ARRAY.length-1){
             
                resolve(OUT.substring(0, OUT.length - 2))

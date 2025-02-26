@@ -17,6 +17,7 @@ export interface Authors {
     tags:Array<string>;
     image:string;
     download:string;
+    DOI:string;
     getAuthors?():Function;
     // getAuthors2?():return "dede";
   };

@@ -24,7 +24,7 @@ export class StringArrayOperations extends ArrayOperations{
     }
 
     
-    public getList(comma:string=', ') {
+    public getList(comma:string=' ') {
 
         return new Promise(resolve => {
           var OUT='';
@@ -35,7 +35,7 @@ export class StringArrayOperations extends ArrayOperations{
               console.log(element)
 
             if (index == this.getArray().length - 1) {
-                resolve(OUT.endsWith(', ') ? OUT.substring(0, OUT.length - 3) : OUT);
+                resolve(OUT.endsWith(' ') ? OUT.substring(0, OUT.length - 3) : OUT);
             }
     
             });
