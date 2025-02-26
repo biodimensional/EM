@@ -55,3 +55,35 @@
     font-size: 14px;
     color: #333;
 }
+
+
+/* Parent container for cards (e.g., in app.component.scss or a specific component) */
+.card-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: center; /* Center cards horizontally */
+    gap: 2rem; /* Space between cards */
+    padding: 2rem; /* Padding around the container */
+  }
+  
+  /* Ensure cards maintain size within the container */
+  .card-container .card {
+    flex: 0 1 calc(33.33% - 2rem); /* 3 cards per row on desktop, accounting for gap */
+    min-width: 250px; /* Minimum width to prevent shrinking too much */
+    max-width: 300px; /* Maximum width to maintain uniformity */
+  }
+  
+  /* Responsive adjustments for mobile */
+  @media (max-width: 768px) {
+    .card-container .card {
+      flex: 0 1 calc(50% - 2rem); /* 2 cards per row on tablet */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-container .card {
+      flex: 0 1 100%; /* 1 card per row on mobile */
+      width: 100%; /* Full width on mobile */
+      height: 350px; /* Slightly smaller height on mobile if needed */
+    }
+  }
