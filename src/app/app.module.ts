@@ -22,7 +22,8 @@ import { PeopleMainComponent } from './people-main/people-main.component';
 import { AuthorsUniverseComponent } from './authors-universe/authors-universe.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
+import { faOrcid } from '@fortawesome/free-brands-svg-icons';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -55,4 +56,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    // Add the ORCID icon to the library for global usage
+    library.addIcons(faOrcid);
+  }
+ }
