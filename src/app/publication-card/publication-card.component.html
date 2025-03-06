@@ -8,6 +8,6 @@
     <mat-expansion-panel *ngIf="publication.abstract.length>0"><mat-expansion-panel-header><mat-panel-title>Abstract</mat-panel-title></mat-expansion-panel-header><span style="font-style: italic;">{{publication.abstract}}</span></mat-expansion-panel>
   </mat-card-content>
   <mat-card-actions>
-    <a (click)="getCitation(publication.link)"><i class="material-icons" title="Go to publisher page" style="cursor:pointer;">public</i></a><a (click)="citeme()"><i class="material-icons" title="Get Bibtex File" style="cursor:pointer;">note_add</i></a><a style="color:black" [href]="publication.download" [download]="publication.journal" target="_blank" rel="noopener noreferrer" *ngIf="canidownloadit"><i class="material-icons" style="cursor:pointer;" *ngIf="publication.download!=null">cloud_download</i></a>
+    <a (click)="getCitation(publication.link)"><i class="material-icons" title="Go to publisher page" style="cursor:pointer;">public</i></a><a (click)="citeme()"><i class="material-icons" title="Get Bibtex File" style="cursor:pointer;">note_add</i></a><a [href]="publication.download" [download]="publication.journal" target="_blank" rel="noopener noreferrer" *ngIf="canidownloadit"><i class="material-icons" style="cursor:pointer;" *ngIf="publication.download!=null">cloud_download</i></a>
   </mat-card-actions>
 </mat-card>
