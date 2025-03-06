@@ -243,7 +243,7 @@ export const PUBLICATIONS: Publication[] = [
     type: "article",
     tags: ["mri", _tradiomic, _tml, _tfeatureselection],
     // image: "https://onlinelibrary.wiley.com/cms/asset/eccc9ac9-53e8-48f8-9c85-ff424fde06e8/jmri29731-fig-0003-m.jpg",
-    image: "/publications/assets/dalle/-24.png",
+    image: "assets/dalle/-24.png",
     download: null,
     DOI: "10.1002/jmri.29732"
   },
@@ -258,7 +258,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://ieeexplore.ieee.org/abstract/document/10805647",
     type: "article",
     tags: ["mri", "cloud"],
-    image: "/publications/assets/dalle/-23.png",
+    image: "assets/dalle/-23.png",
     download: null,
     DOI: null
   },
@@ -273,7 +273,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://onlinelibrary.wiley.com/doi/full/10.1002/jor.25952",
     type: "article",
     tags: ["radiomics", "mri", "fai", "cloud"],
-    image: "/publications/assets/dalle/-22.png",
+    image: "assets/dalle/-22.png",
     download: "https://onlinelibrary.wiley.com/doi/epdf/10.1002/jor.25952",
     DOI: "10.1002/jor.25952"
   },
@@ -288,7 +288,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://ieeexplore.ieee.org/abstract/document/10404125",
     type: "conference",
     tags: ["deep learning", "mri", "cloud"],
-    image: "/publications/assets/dalle/-21.png",
+    image: "assets/dalle/-21.png",
     download: null,
     DOI: null
   },
@@ -303,7 +303,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.sciencedirect.com/science/article/pii/S2352914823002903#fig5",
     type: "article",
     tags: ["deep learning", "mri", "fai", "cloud"],
-    image: "/publications/assets/dalle/-20.png",
+    image: "assets/dalle/-20.png",
     download:
       "https://www.sciencedirect.com/science/article/pii/S2352914823002903/pdfft?md5=abcbc7caad8856414e021c946ab6d3f4&pid=1-s2.0-S2352914823002903-main.pdf",
     DOI: null
@@ -319,7 +319,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://pubmed.ncbi.nlm.nih.gov/37492381/",
     type: "article",
     tags: ["radiomics", "mri", "fai", "cloud"],
-    image: "/publications/assets/dalle/-19.png",
+    image: "assets/dalle/-19.png",
     download: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10365279/pdf/fradi-03-1151258.pdf",
     DOI: null
   },
@@ -334,7 +334,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://ieeexplore.ieee.org/abstract/document/10297760",
     type: "conference",
     tags: [_tmri, _tsimulation, _tir, _tis, _tsafety, _tsar],
-    image: "/publications/assets/dalle/-18.png",
+    image: "assets/dalle/-18.png",
     download: undefined,
     DOI: null
   },
@@ -350,7 +350,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://ieeexplore.ieee.org/abstract/document/10289426",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "/publications/assets/dalle/-17.png",
+    image: "assets/dalle/-17.png",
     download: undefined,
     DOI: null
   },
@@ -429,7 +429,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://submissions.mirasmart.com/ISMRM2023/Itinerary/PresentationDetail.aspx?evdid=5682",
     type: "conference",
     tags: [_tmri, _tradiomic, _tml, _tfeatureselection],
-    image: "/publications/assets/dalle/-12.png",      
+    image: "assets/dalle/-12.png",      
     download: undefined,
     DOI: null
   },
@@ -444,7 +444,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://submissions.mirasmart.com/ISMRM2023/Itinerary/PresentationDetail.aspx?evdid=1236",
     type: "conference",
     tags: [_tmri, _tsimulation, _tir, _tis, _tsafety, _tsar],
-    image: "/publications/assets/dalle/-12_1.png",
+    image: "assets/dalle/-12_1.png",
     download: undefined,
     DOI: null
   },
@@ -460,7 +460,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://ieeexplore.ieee.org/abstract/document/10289426",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "/publications/assets/dalle/-10.png",
+    image: "assets/dalle/-10.png",
     download: undefined,
     DOI: null
   },
@@ -475,7 +475,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ismrm.org/workshops/2022/Safety/reg.htm",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "/publications/assets/dalle/-9.png",
+    image: "assets/dalle/-9.png",
     download: undefined,
     DOI: null
   },
@@ -490,7 +490,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://aifi.net/iscrizioni-aperte-allinternational-scientific-congress-aifi-2022-online-il-programma-preliminare/",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "/publications/assets/dalle/-8.png",
+    image: "assets/dalle/-8.png",
     download: undefined,
     DOI: null
   },
@@ -505,7 +505,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://esmed.org/video-detail/?id=147",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "/publications/assets/dalle/-7.png",
+    image: "assets/dalle/-7.png",
     download: undefined,
     DOI: null
   },
@@ -521,7 +521,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.auntminnie.com/index.aspx?sec=ser&sub=def&pag=dis&ItemID=135830",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "/publications/assets/dalle/-6.png",
+    image: "assets/dalle/-6.png",
     download: undefined,
     DOI: null
   },
@@ -537,7 +537,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.auntminnie.com/index.aspx?sec=ser&sub=def&pag=dis&ItemID=135830",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "/publications/assets/dalle/-5.png",
+    image: "assets/dalle/-5.png",
     download: undefined,
     DOI: null
   },
@@ -553,7 +553,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ismrm.org/22m/",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "/publications/assets/dalle/-4.png",
+    image: "assets/dalle/-4.png",
     download: undefined,
     DOI: null
   },
@@ -569,7 +569,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ismrm.org/22m/",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "/publications/assets/dalle/-3.png",
+    image: "assets/dalle/-3.png",
     download: undefined,
     DOI: null
   },
@@ -584,7 +584,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://onlinelibrary.wiley.com/doi/10.1002/jmri.27816",
     type: "article",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "/publications/assets/dalle/-2.png",
+    image: "assets/dalle/-2.png",
     download: undefined,
     DOI: null
   },
@@ -599,7 +599,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://ismrm-smrt21.us3.pathable.com/",
     type: "conference",
     tags: [_tmri, _tcloud, _tem, _tismrm],
-    image: "/publications/assets/dalle/-1.png",
+    image: "assets/dalle/-1.png",
     download: DOC + "camrie.pdf",
     DOI: null
   },
@@ -614,7 +614,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0247748",
     type: "article",
     tags: [_trdm, _tneuro, _tbrain, _toncology, _tradiotherapy, _tped, _tmri],
-    image: "/publications/assets/dalle/0.png",
+    image: "assets/dalle/0.png",
     download:
       "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0247748&type=printable",
     DOI: "10.1371/journal.pone.0247748"
@@ -629,7 +629,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ismrm.org/20m/",
     type: "conference",
     tags: [_tmri, _tismrm, _tsimulation, _tem, _tcloud, _twebapp],
-    image: "/publications/assets/dalle/1.png",
+    image: "assets/dalle/1.png",
     download: DOC + "camrie.pdf",
     DOI: null
   },
@@ -644,7 +644,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://link.springer.com/article/10.1007/s11517-019-02109-4",
     type: "article",
     tags: [_tmri, _tir, _tis, _tneuro, _tped, _toncology, _tbrain, _tdwi, _tdti, _tradiotherapy],
-    image: "/publications/assets/dalle/2.png",
+    image: "assets/dalle/2.png",
     download: DOC + "montin2020.pdf",
     DOI: "10.1007/s11517-019-02109-4"
   },
@@ -659,7 +659,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ncbi.nlm.nih.gov/pubmed/32009265",
     type: "article",
     tags: [_tmri, _tdwi, _thn, _ttretresp, _toncology, _trdm],
-    image: "/publications/assets/dalle/3.png",
+    image: "assets/dalle/3.png",
     download: "https://onlinelibrary.wiley.com/doi/epdf/10.1002/nbm.4265",
     DOI: "10.1002/nbm.4265"
   },
@@ -674,7 +674,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.sciencedirect.com/science/article/abs/pii/S1350453320300072",
     type: "article",
     tags: [_tcardio, _tcsd, _tcad, _tis, _toct],
-    image: "/publications/assets/dalle/4.png",
+    image: "assets/dalle/4.png",
     download: DOC + "sumi2020.pdf",
     DOI: null
   },
@@ -689,7 +689,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ncbi.nlm.nih.gov/pubmed/30870477",
     type: "article",
     tags: [_tcardio, _tcsd, _tcad, _tis, _toct],
-    image: "/publications/assets/dalle/5.png",      
+    image: "assets/dalle/5.png",      
     download:"https://www.researchgate.net/publication/331759079_Automatic_segmentation_of_optical_coherence_tomography_pullbacks_of_coronary_arteries_treated_with_bioresorbable_vascular_scaffolds_Application_to_hemodynamics_modeling/fulltext/5c8affbea6fdcc3817541e30/Automatic-segmentation-of-optical-coherence-tomography-pullbacks-of-coronary-arteries-treated-with-bioresorbable-vascular-scaffolds-Application-to-hemodynamics-modeling.pdf",
    DOI:"10.1007/s11517-019-02109-4"
 },
@@ -703,7 +703,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.thegreenjournal.com/article/S0167-8140(19)30281-6/abstract",
     type:"conference",
     tags:[_tmri,_trdm,_tdwi,_ttretresp,_thn,_toncology,_trecist,_tfeatureselection,_tml,_tradiomic,_tfeatureselection],
-    image: "/publications/assets/dalle/6.png",
+    image: "assets/dalle/6.png",
     download:DOC + "bolo2019.pdf",
    DOI:"0.1007/s11517-019-02109-4"
 },
@@ -717,7 +717,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ncbi.nlm.nih.gov/pubmed/29725965",
     type:"article",
     tags:[_tmri,_trdm,_tdwi,_thn,_toncology,_trecist,_tfeatureselection,_tml],
-    image: "/publications/assets/dalle/7.png",
+    image: "assets/dalle/7.png",
     download:"https://link.springer.com/content/pdf/10.1007/s10278-018-0092-9.pdf",
    DOI:"10.1007/s11517-019-02109-4"
 },
@@ -732,7 +732,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "http://www.cloudmrhub.com",
     type:"conference",
     tags:[_tmri,_tismrm, _tsimulation,_tem,_tcloud,_twebapp],
-    image: "/publications/assets/dalle/8.png",
+    image: "assets/dalle/8.png",
         download:DOC + "mroptimum.pdf",
         DOI:null
 },{
@@ -745,7 +745,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.mdpi.com/2076-3417/8/9/1510",
   type: "article",
   tags: [_tmri],
-    image: "/publications/assets/dalle/9.png",
+    image: "assets/dalle/9.png",
   download: "https://www.mdpi.com/2076-3417/8/9/1510/pdf",
   DOI: "10.3390/app8091510"
 },
@@ -759,7 +759,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.sciencedirect.com/science/article/abs/pii/S1120179718301194",
   type: "article",
   tags: [_tmri, _toncology, _tped, _tbrain, _tdwi, _tct, _tir, _tradiotherapy],
-    image: "/publications/assets/dalle/10.png",
+    image: "assets/dalle/10.png",
   download: DOC + "meroni.pdf",
   DOI: "10.1016/j.physmed.2018.04.003"
 },
@@ -773,7 +773,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/30440511",
   type: "conference",
   tags: [_tmri, _toncology, _tped, _tbrain, _tdwi, _trdm, _tml, _tfeatureselection],
-    image: "/publications/assets/dalle/11.png",
+    image: "assets/dalle/11.png",
   download: DOC + "boloEMBS.pdf",
   DOI: null
 },
@@ -787,7 +787,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/28653477",
   type: "article",
   tags: [_tmri, _trdm, _tstaging, _toncology, _tml, _tfeatureselection, _tsarcomas],
-    image: "/publications/assets/dalle/12.png",
+    image: "assets/dalle/12.png",
   download: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5456060/pdf/pone.0177495.pdf",
   DOI: null
 },
@@ -801,7 +801,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/28711588",
   type: "article",
   tags: [_tcardio, _tcsd, _tcad, _tis, _toct],
-    image: "/publications/assets/dalle/13.png",
+    image: "assets/dalle/13.png",
   download: DOC + "sumi2017.pdf",
   DOI: "10.1016/j.medengphy.2016.10.012"
 },
@@ -815,7 +815,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/28574987",
   type: "article",
   tags: [_tcardio, _tcsd, _tcad, _tis, _toct],
-    image: "/publications/assets/dalle/14.png",
+    image: "assets/dalle/14.png",
   download: "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0177495&type=printable",
   DOI: "10.1371/journal.pone.0177495"
 },
@@ -829,7 +829,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.semanticscholar.org/paper/Reconstruction-of-stented-coronary-arteries-for-CFD-Migliori-Bologna/d034dfd1769efae5deec18524c5842ddd55944c2",
   type: "conference",
   tags: [_tcardio, _tcsd, _tcad, _tis, _toct],
-    image: "/publications/assets/dalle/15.png",
+    image: "assets/dalle/15.png",
   download: DOC + "chiastra2017.pdf",
   DOI: null
 },
@@ -843,7 +843,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://ieeexplore.ieee.org/document/7591644",
   type: "conference",
   tags: [_tcardio, _tcsd, _tcad, _tis, _toct],
-    image: "/publications/assets/dalle/16.png",
+    image: "assets/dalle/16.png",
   download: DOC + "montin2016.pdf",
   DOI: "10.1109/EMBC.2016.7591644"
 },
@@ -857,7 +857,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://link.springer.com/chapter/10.1007/978-3-319-11128-5_53",
   type: "conference",
   tags: [_tmri, _tstaging, _toncology, _tml, _tfeatureselection, _thn],
-    image: "/publications/assets/dalle/17.png",
+    image: "assets/dalle/17.png",
   download: "https://www.researchgate.net/profile/Eros_Montin/publication/282373770_Nasopharyngeal_Carcinoma_Lymph_Nodes_Evaluation_during_Therapy_through_Diffusion_Weighted_Magnetic_Resonance_Images/links/566e9adb08aea0892c529df7/Nasopharyngeal-Carcinoma-Lymph-Nodes-Evaluation-during-Therapy-through-Diffusion-Weighted-Magnetic-Resonance-Images.pdf",
   DOI: "10.1007/978-3-319-11128-5_53"
 },
@@ -871,7 +871,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "http://meeting2016.enginsoft.it/poster/PosterAward2016_nominated%2046.pdf",
   type: "conference",
   tags: [],
-    image: "/publications/assets/dalle/18.png",
+    image: "assets/dalle/18.png",
   download: DOC + "cutri2015.pdf",
   DOI: null
 },
@@ -885,7 +885,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.thegreenjournal.com/article/S0167-8140(15)41523-3/fulltext",
   type: "conference",
   tags: [_tmri, _tct, _tir, _tped, _tbrain, _toncology, _tradiotherapy, _ttretresp, _tneuro],
-    image: "/publications/assets/dalle/19.png",
+    image: "assets/dalle/19.png",
   download: undefined,
   DOI: "10.1016/j.radonc.2015.06.008"
 },
@@ -899,7 +899,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/26737734",
   type: "conference",
   tags: [],
-    image: "/publications/assets/dalle/20.png",
+    image: "assets/dalle/20.png",
   download: "https://scitepress.org/papers/2012/37775/37775.pdf", // Note: original download URL provided
   DOI: "10.1109/EMBC.2015.7319664"
 },
@@ -913,7 +913,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/26736411",
   type: "conference",
   tags: [],
-    image: "/publications/assets/dalle/21.png",
+    image: "assets/dalle/21.png",
   download: undefined,
   DOI: null
 },
@@ -927,7 +927,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://link.springer.com/chapter/10.1007/978-3-319-00846-2_55",
   type: "conference",
   tags: [],
-    image: "/publications/assets/dalle/22.png",
+    image: "assets/dalle/22.png",
   download: undefined,
   DOI: null
 },
@@ -941,7 +941,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/26736411",
   type: "conference",
   tags: [],
-    image: "/publications/assets/dalle/23.png",
+    image: "assets/dalle/23.png",
   download: undefined,
   DOI: null
 },
@@ -955,7 +955,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/26736411",
   type: "conference",
   tags: [],
-    image: "/publications/assets/dalle/24.png",
+    image: "assets/dalle/24.png",
   download: undefined,
   DOI: null
 },
@@ -969,7 +969,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://ashpublications.org/blood/article/120/21/2913/102443/Results-of-a-Prospective-Study-Comparing-WholeBody",
   type: "conference",
   tags: [],
-    image: "/publications/assets/dalle/25.png",
+    image: "assets/dalle/25.png",
   download: undefined,
   DOI: "10.1182/blood-2012-03-415367"
 },
@@ -983,7 +983,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://moh-it.pure.elsevier.com/en/publications/a-registration-framework-for-evaluation-of-t1-t2-and-dwi-signal-i",
   type: "conference",
   tags: [],
-    image: "/publications/assets/dalle/26.png",
+    image: "assets/dalle/26.png",
   download: "https://scitepress.org/papers/2012/37775/37775.pdf",
   DOI: null
 },
@@ -997,7 +997,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/23367133",
   type: "conference",
   tags: [],
-    image: "/publications/assets/dalle/27.png",
+    image: "assets/dalle/27.png",
   download: undefined,
   DOI: null
 },
@@ -1011,7 +1011,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://epos.myesr.org/esr/viewing/index.php?module=viewing_poster&task=&pi=101103",
   type: "conference",
   tags: [],
-    image: "/publications/assets/dalle/28.png",
+    image: "assets/dalle/28.png",
   download: "https://epos.myesr.org/esr/viewing/index.php?module=viewing_posteraction&task=downloadpdf&pi=101103",
   DOI: null
 },
@@ -1025,7 +1025,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://re.public.polimi.it/handle/11311/580342#.YMJzCZpKikA",
   type: "conference",
   tags: [],
-    image: "/publications/assets/dalle/28.1.png",
+    image: "assets/dalle/28.1.png",
   download: undefined,
   DOI: null
 },
@@ -1039,7 +1039,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://re.public.polimi.it/handle/11311/580342#.YMJzCZpKikA",
   type: "conference",
   tags: [],
-    image: "/publications/assets/dalle/28.2.png",
+    image: "assets/dalle/28.2.png",
   download: undefined,
   DOI: null
 },
@@ -1053,7 +1053,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.sciencedirect.com/science/article/pii/S0923753420336073",
   type: "conference",
   tags: [],
-    image: "/publications/assets/dalle/28.3.png",
+    image: "assets/dalle/28.3.png",
   download: undefined,
   DOI: null
 },
@@ -1067,7 +1067,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/20011033",
   type: "article",
   tags: [],
-    image: "/publications/assets/dalle/29.png",
+    image: "assets/dalle/29.png",
   download: "https://downloads.hindawi.com/journals/cin/2010/329213.pdf",
   DOI: "10.1155/2010/329213"
 },
@@ -1081,7 +1081,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://psycnet.apa.org/record/2009-17266-037",
   type: "article",
   tags: [],
-    image: "/publications/assets/dalle/30.png",
+    image: "assets/dalle/30.png",
   download: "https://issuu.com/bepperiva/docs/arctt_2009/168",
   DOI: null
 },
@@ -1095,7 +1095,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/19592754",
   type: "article",
   tags: [],
-    image: "/publications/assets/dalle/31.png",
+    image: "assets/dalle/31.png",
   download: undefined,
   DOI: null
 }
