@@ -18,7 +18,11 @@
             </app-publication-entry-tags>
         </div>
 
-        <img mat-card-image [src]="publication.image || 'assets/default-image.png'" alt="{{publication.title}}">        
+
+        <div style="display:flex;flex-direction: row;flex-wrap: wrap;padding: 2rem; ">
+            <img mat-card-image [src]="publication.image || 'assets/default-image.png'" alt="{{publication.title}}">            
+        </div>
+        
         <mat-expansion-panel *ngIf="publication.abstract.length>0">
 
             <mat-expansion-panel-header>

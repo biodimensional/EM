@@ -196,7 +196,7 @@ export const PUBLICATIONS: Publication[] = [
     type: "conference",
     tags: [_tmri, _tfai, _tradiomic, _tml, _tfeatureselection],
     image:
-      "assets/images/DALL·E 2025-02-26 17.05.11 - A simple black and white icon using lines, dots, and sketches representing the concept of fully automated radiomic analysis to differentiate pain prof.webp",
+      "assets/dalle/-26.webp",
     download: undefined,
     DOI: null
   }, 
@@ -211,7 +211,7 @@ export const PUBLICATIONS: Publication[] = [
     type: "conference",
     tags: [_tmri, _tsimulation, _tir, _tis, _tsafety, _tsar],
     image:
-      "assets/images/DALL·E 2025-02-26 16.58.04 - A simple black and white icon using lines, dots, and sketches representing the concept of a modular end-to-end open-source software pipeline to simula.webp",
+      "assets/dalle/-25.webp",
     download: undefined,
     DOI: null
   },
@@ -243,7 +243,7 @@ export const PUBLICATIONS: Publication[] = [
     type: "article",
     tags: ["mri", _tradiomic, _tml, _tfeatureselection],
     // image: "https://onlinelibrary.wiley.com/cms/asset/eccc9ac9-53e8-48f8-9c85-ff424fde06e8/jmri29731-fig-0003-m.jpg",
-    image: "assets/images/DALL·E 2025-02-24 18.19.00 - A simple black and white icon using lines, dots, and sketches representing the concept of the diagnosis of sacroiliitis through semi-supervised segmen.webp",
+    image: "assets/dalle/-24.webp",
     download: null,
     DOI: "10.1002/jmri.29732"
   },
@@ -258,7 +258,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://ieeexplore.ieee.org/abstract/document/10805647",
     type: "article",
     tags: ["mri", "cloud"],
-    image: "assets/images/DALL·E 2025-02-24 18.17.41 - A simple black and white icon using lines, dots, and sketches representing the concept of a serverless implementation of a tool for temperature and SA.webp",
+    image: "assets/dalle/-23.webp",
     download: null,
     DOI: null
   },
@@ -273,7 +273,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://onlinelibrary.wiley.com/doi/full/10.1002/jor.25952",
     type: "article",
     tags: ["radiomics", "mri", "fai", "cloud"],
-    image: "assets/images/DALL·E 2025-02-24 18.13.47 - A simple black and white icon using lines, dots, and sketches representing the concept of radiomics features outperforming standard radiological measu.webp",
+    image: "assets/dalle/-22.webp",
     download: "https://onlinelibrary.wiley.com/doi/epdf/10.1002/jor.25952",
     DOI: "10.1002/jor.25952"
   },
@@ -288,7 +288,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://ieeexplore.ieee.org/abstract/document/10404125",
     type: "conference",
     tags: ["deep learning", "mri", "cloud"],
-    image: "assets/images/DALL·E 2025-02-24 18.08.33 - A simple black and white icon using lines, dots, and sketches representing the concept of the impact of the complexity of the geometry in an analytica.webp",
+    image: "assets/dalle/-21.webp",
     download: null,
     DOI: null
   },
@@ -303,7 +303,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.sciencedirect.com/science/article/pii/S2352914823002903#fig5",
     type: "article",
     tags: ["deep learning", "mri", "fai", "cloud"],
-    image: "assets/images/DALL·E 2025-02-24 18.05.47 - A simple black and white icon using lines, dots, and sketches representing the concept of the impact of data augmentation and transfer learning on the.webp",
+    image: "assets/dalle/-20.webp",
     download:
       "https://www.sciencedirect.com/science/article/pii/S2352914823002903/pdfft?md5=abcbc7caad8856414e021c946ab6d3f4&pid=1-s2.0-S2352914823002903-main.pdf",
     DOI: null
@@ -335,7 +335,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://ieeexplore.ieee.org/abstract/document/10297760",
     type: "conference",
     tags: [_tmri, _tsimulation, _tir, _tis, _tsafety, _tsar],
-    image: "assets/images/DALL·E 2025-02-24 18.04.59 - A simple black and white icon using lines, dots, and sketches representing the concept of a web-accessible tool for 2D analytical solutions of electro.webp",
+    image: "assets/dalle/-18.webp",
     download: undefined,
     DOI: null
   },
@@ -351,7 +351,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://ieeexplore.ieee.org/abstract/document/10289426",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "assets/images/DALL·E 2025-02-24 18.04.32 - A simple black and white icon using lines, dots, and sketches representing the concept of a deep learning model for the estimation of RF (Radio Freque.webp",
+    image: "assets/dalle/-17.webp",
     download: undefined,
     DOI: null
   },
@@ -367,7 +367,7 @@ export const PUBLICATIONS: Publication[] = [
     type: "conference",
     tags: [_tmri, _tsimulation, _tir, _tis, _tsafety, _tsar],
     image:
-      "assets/images/DALL·E 2025-02-26 16.24.41 - A simple black and white icon using lines, dots, and sketches representing the concept of tuning and validation of an image registration procedure for.webp",
+      "assets/dalle/-16.webp",
     download: undefined,
     DOI: null
   },
@@ -383,7 +383,7 @@ export const PUBLICATIONS: Publication[] = [
     type: "conference",
     tags: [_tmri, _tradiomic, _tml, _tfeatureselection, _tneuro, _tms],
     image:
-      "assets/images/DALL·E 2025-02-26 16.26.18 - A simple black and white icon using lines, dots, and sketches representing the concept of radiomics applied to phase contrast MRI images to distinguis.webp",
+      "assets/dalle/-15.webp",
     download: undefined,
     DOI: null
   },
@@ -399,7 +399,7 @@ export const PUBLICATIONS: Publication[] = [
     type: "conference",
     tags: [_tmri, _tsimulation, _tdl, _tml, _tfai],
     image:
-      "assets/images/DALL·E 2025-02-26 16.27.10 - A simple black and white icon using lines, dots, and sketches representing the concept of a neural network to estimate the hip center of rotation for .webp",
+      "assets/dalle/-14.webp",
     download: undefined,
     DOI: null
   },
@@ -415,7 +415,7 @@ export const PUBLICATIONS: Publication[] = [
     type: "conference",
     tags: [_tmri, _tradiomic, _tml, _tfeatureselection, _tfai],
     image:
-      "assets/images/DALL·E 2025-02-24 18.02.49 - A simple black and white icon using lines, dots, and sketches representing the concept of a radiomics approach to the diagnosis of femoroacetabular im.webp",
+      "assets/dalle/13.webp",
     download: undefined,
     DOI: null
   },
@@ -430,13 +430,12 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://submissions.mirasmart.com/ISMRM2023/Itinerary/PresentationDetail.aspx?evdid=5682",
     type: "conference",
     tags: [_tmri, _tradiomic, _tml, _tfeatureselection],
-    image:
-      "assets/images/DALL·E 2025-02-24 18.11.21 - A simple black and white icon using lines, dots, and sketches representing the concept of Rado – a cloud-based toolbox for radiomics analysis. The ico.webp",
+    image: "assets/dalle/-12.webp",      
     download: undefined,
     DOI: null
   },
   {
-    id: -12,
+    id: -12.1,
     title: "SAR And Temperature Safety Assessment On Patient Specific Models Generated With A Registration Method",
     abstract:
       "Patient specific models are required to improve the accuracy of the simulations to perform safety assessment related to interaction of the RF fields with the body tissues. One registration method allows non-rigid transformations: this can be used to reshape a numerical body model to match the images of a patient, and generate a model similar to the shape of the patient. We performed SAR and temperature simulations to evaluate the ability of the registered model to perform a patient-specific safety assessment. The evaluation has been successful: the SAR and temperature patterns were corresponding to the ones of the target anatomy.",
@@ -446,8 +445,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://submissions.mirasmart.com/ISMRM2023/Itinerary/PresentationDetail.aspx?evdid=1236",
     type: "conference",
     tags: [_tmri, _tsimulation, _tir, _tis, _tsafety, _tsar],
-    image:
-      "assets/images/DALL·E 2025-02-24 18.10.35 - A simple black and white icon using lines, dots, and sketches representing the concept of SAR (Specific Absorption Rate) and temperature safety assess.webp",
+    image: "assets/dalle/-12_1.webp",
     download: undefined,
     DOI: null
   },
@@ -463,7 +461,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://ieeexplore.ieee.org/abstract/document/10289426",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "assets/images/DALL·E 2025-02-26 16.33.53 - A simple black and white icon using lines, dots, and sketches representing the concept of a deep learning model for the estimation of RF field trained.webp",
+    image: "assets/dalle/-10.webp",
     download: undefined,
     DOI: null
   },
@@ -478,7 +476,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ismrm.org/workshops/2022/Safety/reg.htm",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "assets/images/DALL·E 2025-02-26 16.35.35 - A simple black and white icon using lines, dots, and sketches representing the concept of TESS_ A web-accessible tool for temperature estimation from .webp",
+    image: "assets/dalle/-9.webp",
     download: undefined,
     DOI: null
   },
@@ -493,7 +491,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://aifi.net/iscrizioni-aperte-allinternational-scientific-congress-aifi-2022-online-il-programma-preliminare/",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "assets/images/DALL·E 2025-02-26 16.36.31 - A simple black and white icon using lines, dots, and sketches representing the concept of the effectiveness of game-based software in rehabilitation t.webp",
+    image: "assets/dalle/-8.webp",
     download: undefined,
     DOI: null
   },
@@ -508,7 +506,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://esmed.org/video-detail/?id=147",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "assets/images/DALL·E 2025-02-26 16.37.43 - A simple black and white icon using lines, dots, and sketches representing the concept of a multi-metric registration framework for the alignment of m.webp",
+    image: "assets/dalle/-7.webp",
     download: undefined,
     DOI: null
   },
@@ -524,7 +522,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.auntminnie.com/index.aspx?sec=ser&sub=def&pag=dis&ItemID=135830",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "assets/images/DALL·E 2025-02-24 18.02.10 - A simple black and white icon using lines, dots, and sketches representing the concept of automatic segmentation of the hip bony structures on 3D Dixo.webp",
+    image: "assets/dalle/-6.webp",
     download: undefined,
     DOI: null
   },
@@ -540,7 +538,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.auntminnie.com/index.aspx?sec=ser&sub=def&pag=dis&ItemID=135830",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "assets/images/DALL·E 2025-02-26 16.35.35 - A simple black and white icon using lines, dots, and sketches representing the concept of TESS_ A web-accessible tool for temperature estimation from .webp",
+    image: "assets/dalle/-5.webp",
     download: undefined,
     DOI: null
   },
@@ -556,7 +554,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ismrm.org/22m/",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "assets/images/DALL·E 2025-02-26 16.39.45 - A simple black and white icon using lines, dots, and sketches representing the concept of a software tool to assess radiofrequency (RF) coil designs w.webp",
+    image: "assets/dalle/-4.webp",
     download: undefined,
     DOI: null
   },
@@ -572,7 +570,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ismrm.org/22m/",
     type: "conference",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "assets/images/DALL·E 2025-02-24 18.01.33 - A simple black and white icon using lines, dots, and sketches representing the concept of comparison of 2D vs 3D deep learning algorithms to estimate .webp",
+    image: "assets/dalle/-3.webp",
     download: undefined,
     DOI: null
   },
@@ -587,7 +585,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://onlinelibrary.wiley.com/doi/10.1002/jmri.27816",
     type: "article",
     tags: [_tmri, _twebapp, _tsimulation, _tsnr, _tismrm, _tcloud],
-    image: "assets/images/DALL·E 2025-02-26 16.21.28 - A simple black and white icon using lines, dots, and sketches representing the concept of seeking a widely adoptable practical standard to estimate si.webp",
+    image: "assets/dalle/-2.webp",
     download: undefined,
     DOI: null
   },
@@ -602,7 +600,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://ismrm-smrt21.us3.pathable.com/",
     type: "conference",
     tags: [_tmri, _tcloud, _tem, _tismrm],
-    image: "assets/images/DALL·E 2025-02-24 17.38.30 - A simple black and white icon using lines, dots, and sketches representing the concept of a web-accessible tool for rapid analytical simulations of MR.webp",
+    image: "assets/dalle/-1.webp",
     download: DOC + "camrie.pdf",
     DOI: null
   },
@@ -617,8 +615,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0247748",
     type: "article",
     tags: [_trdm, _tneuro, _tbrain, _toncology, _tradiotherapy, _tped, _tmri],
-    image:
-      "assets/images/DALL·E 2025-02-24 17.27.18 - A simple black and white icon using lines, dots, and sketches representing the concept of a retrospective study of late radiation-induced damages afte.webp",
+    image: "assets/dalle/0.webp",
     download:
       "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0247748&type=printable",
     DOI: "10.1371/journal.pone.0247748"
@@ -633,7 +630,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ismrm.org/20m/",
     type: "conference",
     tags: [_tmri, _tismrm, _tsimulation, _tem, _tcloud, _twebapp],
-    image: "assets/images/DALL·E 2025-02-24 17.35.07 - A simple black and white icon using lines, dots, and sketches representing the concept of CAMRIE - Cloud-Accessible MRI Emulator. The icon should depi.webp",
+    image: "assets/dalle/1.webp",
     download: DOC + "camrie.pdf",
     DOI: null
   },
@@ -648,7 +645,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://link.springer.com/article/10.1007/s11517-019-02109-4",
     type: "article",
     tags: [_tmri, _tir, _tis, _tneuro, _tped, _toncology, _tbrain, _tdwi, _tdti, _tradiotherapy],
-    image: "assets/images/DALL·E 2025-02-24 17.05.28 - A simple black and white icon using lines, dots, and sketches representing the concept of a multi-metric registration strategy for the alignment of lo.webp",
+    image: "assets/dalle/2.webp",
     download: DOC + "montin2020.pdf",
     DOI: "10.1007/s11517-019-02109-4"
   },
@@ -663,7 +660,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ncbi.nlm.nih.gov/pubmed/32009265",
     type: "article",
     tags: [_tmri, _tdwi, _thn, _ttretresp, _toncology, _trdm],
-    image: "assets/images/DALL·E 2025-02-24 17.00.47 - A simple black and white icon using lines, dots, and sketches representing the concept of the relevance of apparent diffusion coefficient (ADC) featur.webp",
+    image: "assets/dalle/3.webp",
     download: "https://onlinelibrary.wiley.com/doi/epdf/10.1002/nbm.4265",
     DOI: "10.1002/nbm.4265"
   },
@@ -678,7 +675,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.sciencedirect.com/science/article/abs/pii/S1350453320300072",
     type: "article",
     tags: [_tcardio, _tcsd, _tcad, _tis, _toct],
-    image: "assets/images/DALL·E 2025-02-26 16.43.56 - A simple black and white icon using lines, dots, and sketches representing the concept of the application of an OCT-based 3D reconstruction framework .webp",
+    image: "assets/dalle/4.webp",
     download: DOC + "sumi2020.pdf",
     DOI: null
   },
@@ -693,8 +690,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ncbi.nlm.nih.gov/pubmed/30870477",
     type: "article",
     tags: [_tcardio, _tcsd, _tcad, _tis, _toct],
-    image:
-      "assets/images/DALL·E 2025-02-24 15.46.40 - A simple black and white icon using lines, dots, and sketches representing the concept of automatic segmentation of optical coherence tomography pullb.webp",
+    image: "assets/dalle/5.webp",      
     download:"https://www.researchgate.net/publication/331759079_Automatic_segmentation_of_optical_coherence_tomography_pullbacks_of_coronary_arteries_treated_with_bioresorbable_vascular_scaffolds_Application_to_hemodynamics_modeling/fulltext/5c8affbea6fdcc3817541e30/Automatic-segmentation-of-optical-coherence-tomography-pullbacks-of-coronary-arteries-treated-with-bioresorbable-vascular-scaffolds-Application-to-hemodynamics-modeling.pdf",
    DOI:"10.1007/s11517-019-02109-4"
 },
@@ -708,7 +704,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.thegreenjournal.com/article/S0167-8140(19)30281-6/abstract",
     type:"conference",
     tags:[_tmri,_trdm,_tdwi,_ttretresp,_thn,_toncology,_trecist,_tfeatureselection,_tml,_tradiomic,_tfeatureselection],
-    image:"assets/images/DALL·E 2025-02-24 15.53.19 - A simple black and white icon using lines, dots, and sketches representing the concept of radiomics-based prediction of response to induction chemothe.webp",
+    image: "assets/dalle/6.webp",
     download:DOC + "bolo2019.pdf",
    DOI:"0.1007/s11517-019-02109-4"
 },
@@ -722,7 +718,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://www.ncbi.nlm.nih.gov/pubmed/29725965",
     type:"article",
     tags:[_tmri,_trdm,_tdwi,_thn,_toncology,_trecist,_tfeatureselection,_tml],
-    image:"assets/images/DALL·E 2025-02-24 15.48.07 - A simple black and white icon using lines, dots, and sketches representing the concept of stability assessment of first order statistics features comp.webp",
+    image: "assets/dalle/7.webp",
     download:"https://link.springer.com/content/pdf/10.1007/s10278-018-0092-9.pdf",
    DOI:"10.1007/s11517-019-02109-4"
 },
@@ -737,7 +733,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "http://www.cloudmrhub.com",
     type:"conference",
     tags:[_tmri,_tismrm, _tsimulation,_tem,_tcloud,_twebapp],
-    image:  "assets/images/DALL·E 2025-02-24 17.34.46 - A simple black and white icon using lines, dots, and sketches representing the concept of MR Optimum – a web-based application for signal-to-noise rat.webp",
+    image: "assets/dalle/8.webp",
         download:DOC + "mroptimum.pdf",
         DOI:null
 },{
@@ -750,7 +746,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.mdpi.com/2076-3417/8/9/1510",
   type: "article",
   tags: [_tmri],
-  image: "assets/images/DALL·E 2025-02-24 15.44.09 - A simple black and white icon using lines, dots, and sketches representing the concept of_ A patient-specific study investigating the relation between.webp",
+    image: "assets/dalle/9.webp",
   download: "https://www.mdpi.com/2076-3417/8/9/1510/pdf",
   DOI: "10.3390/app8091510"
 },
@@ -764,7 +760,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.sciencedirect.com/science/article/abs/pii/S1120179718301194",
   type: "article",
   tags: [_tmri, _toncology, _tped, _tbrain, _tdwi, _tct, _tir, _tradiotherapy],
-  image: "assets/images/DALL·E 2025-02-24 15.50.06 - A simple black and white icon using lines, dots, and sketches representing the concept of a retrospective study of late radiation damages after focal .webp",
+    image: "assets/dalle/10.webp",
   download: DOC + "meroni.pdf",
   DOI: "10.1016/j.physmed.2018.04.003"
 },
@@ -778,7 +774,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/30440511",
   type: "conference",
   tags: [_tmri, _toncology, _tped, _tbrain, _tdwi, _trdm, _tml, _tfeatureselection],
-  image: "assets/images/DALL·E 2025-02-26 16.48.02 - A simple black and white icon using lines, dots, and sketches representing the concept of using apparent diffusion coefficient (ADC) images to predict.webp",
+    image: "assets/dalle/11.webp",
   download: DOC + "boloEMBS.pdf",
   DOI: null
 },
@@ -792,7 +788,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/28653477",
   type: "article",
   tags: [_tmri, _trdm, _tstaging, _toncology, _tml, _tfeatureselection, _tsarcomas],
-  image: "assets/images/DALL·E 2025-02-24 14.56.06 - A simple black and white icon using lines, dots, and sketches representing the concept of_ Radiomic analysis of soft tissue sarcomas can distinguish i.webp",
+    image: "assets/dalle/12.webp",
   download: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5456060/pdf/pone.0177495.pdf",
   DOI: null
 },
@@ -806,7 +802,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/28711588",
   type: "article",
   tags: [_tcardio, _tcsd, _tcad, _tis, _toct],
-  image: "assets/images/DALL·E 2025-02-24 14.41.37 - A simple black and white icon using lines, dots, and sketches representing the concept of_ A framework for computational fluid dynamic analyses of pat.webp",
+    image: "assets/dalle/13.webp",
   download: DOC + "sumi2017.pdf",
   DOI: "10.1016/j.medengphy.2016.10.012"
 },
@@ -820,7 +816,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/28574987",
   type: "article",
   tags: [_tcardio, _tcsd, _tcad, _tis, _toct],
-  image: "assets/images/DALL·E 2025-02-24 14.41.36 - A simple black and white icon using lines, dots, and sketches representing the concept of_ Reconstruction of stented coronary arteries from optical co.webp",
+    image: "assets/dalle/14.webp",
   download: "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0177495&type=printable",
   DOI: "10.1371/journal.pone.0177495"
 },
@@ -834,7 +830,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.semanticscholar.org/paper/Reconstruction-of-stented-coronary-arteries-for-CFD-Migliori-Bologna/d034dfd1769efae5deec18524c5842ddd55944c2",
   type: "conference",
   tags: [_tcardio, _tcsd, _tcad, _tis, _toct],
-  image: "assets/images/DALL·E 2025-02-24 15.00.57 - A simple black and white icon using lines, dots, and sketches representing the concept of_ Reconstruction of stented coronary arteries for CFD analyse.webp",
+    image: "assets/dalle/15.webp",
   download: DOC + "chiastra2017.pdf",
   DOI: null
 },
@@ -848,7 +844,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://ieeexplore.ieee.org/document/7591644",
   type: "conference",
   tags: [_tcardio, _tcsd, _tcad, _tis, _toct],
-  image: "assets/images/DALL·E 2025-02-24 15.02.47 - A simple black and white icon using lines, dots, and sketches representing the concept of_ A method for coronary bifurcation centerline reconstruction.webp",
+    image: "assets/dalle/16.webp",
   download: DOC + "montin2016.pdf",
   DOI: "10.1109/EMBC.2016.7591644"
 },
@@ -862,7 +858,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://link.springer.com/chapter/10.1007/978-3-319-11128-5_53",
   type: "conference",
   tags: [_tmri, _tstaging, _toncology, _tml, _tfeatureselection, _thn],
-  image: "assets/images/DALL·E 2025-02-24 15.48.54 - A simple black and white icon using lines, dots, and sketches representing the concept of Nasopharyngeal Carcinoma Lymph Nodes Evaluation during Thera.webp",
+    image: "assets/dalle/17.webp",
   download: "https://www.researchgate.net/profile/Eros_Montin/publication/282373770_Nasopharyngeal_Carcinoma_Lymph_Nodes_Evaluation_during_Therapy_through_Diffusion_Weighted_Magnetic_Resonance_Images/links/566e9adb08aea0892c529df7/Nasopharyngeal-Carcinoma-Lymph-Nodes-Evaluation-during-Therapy-through-Diffusion-Weighted-Magnetic-Resonance-Images.pdf",
   DOI: "10.1007/978-3-319-11128-5_53"
 },
@@ -876,7 +872,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "http://meeting2016.enginsoft.it/poster/PosterAward2016_nominated%2046.pdf",
   type: "conference",
   tags: [],
-  image: "assets/images/DALL·E 2025-02-24 16.02.39 - A simple black and white icon using lines, dots, and sketches representing the concept of biomechanical evaluation of skin and melanocytic naevi. The .webp",
+    image: "assets/dalle/18.webp",
   download: DOC + "cutri2015.pdf",
   DOI: null
 },
@@ -890,7 +886,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.thegreenjournal.com/article/S0167-8140(15)41523-3/fulltext",
   type: "conference",
   tags: [_tmri, _tct, _tir, _tped, _tbrain, _toncology, _tradiotherapy, _ttretresp, _tneuro],
-  image: "assets/images/DALL·E 2025-02-24 16.03.22 - A simple black and white icon using lines, dots, and sketches representing the concept of an image registration framework to investigate children neur.webp",
+    image: "assets/dalle/19.webp",
   download: undefined,
   DOI: "10.1016/j.radonc.2015.06.008"
 },
@@ -904,7 +900,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/26737734",
   type: "conference",
   tags: [],
-  image: "assets/images/DALL·E 2025-02-24 15.00.28 - A simple black and white icon using lines, dots, and sketches representing the concept of_ Tuning of a deformable image registration procedure for ski.webp",
+    image: "assets/dalle/20.webp",
   download: "https://scitepress.org/papers/2012/37775/37775.pdf", // Note: original download URL provided
   DOI: "10.1109/EMBC.2015.7319664"
 },
@@ -918,7 +914,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/26736411",
   type: "conference",
   tags: [],
-  image: "assets/images/DALL·E 2025-02-24 18.15.16 - A simple black and white icon using lines, dots, and sketches representing the concept of a combined approach for the biomechanical characterization o.webp",
+    image: "assets/dalle/21.webp",
   download: undefined,
   DOI: null
 },
@@ -932,7 +928,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://link.springer.com/chapter/10.1007/978-3-319-00846-2_55",
   type: "conference",
   tags: [],
-  image: "assets/images/DALL·E 2025-02-24 15.46.12 - A simple black and white icon using lines, dots, and sketches representing the concept of a fully automatic method for soft tissue sarcoma treatment r.webp",
+    image: "assets/dalle/22.webp",
   download: undefined,
   DOI: null
 },
@@ -946,7 +942,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/26736411",
   type: "conference",
   tags: [],
-  image: "assets/images/DALL·E 2025-02-26 16.53.03 - A simple black and white icon using lines, dots, and sketches representing the concept of coronary stenting_ from optical coherence tomography to flui.webp",
+    image: "assets/dalle/23.webp",
   download: undefined,
   DOI: null
 },
@@ -960,7 +956,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/26736411",
   type: "conference",
   tags: [],
-  image: "assets/images/DALL·E 2025-02-24 15.50.30 - A simple black and white icon using lines, dots, and sketches representing the concept of Whole-Body Diffusion MRI and Skeletal Lesions in Thyroid Can.webp",
+    image: "assets/dalle/24.webp",
   download: undefined,
   DOI: null
 },
@@ -974,7 +970,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://ashpublications.org/blood/article/120/21/2913/102443/Results-of-a-Prospective-Study-Comparing-WholeBody",
   type: "conference",
   tags: [],
-  image: "assets/images/DALL·E 2025-02-24 14.57.02 - A simple black and white icon using lines, dots, and sketches representing the concept of_ Results of a Prospective Study Comparing Whole-Body Diffusi.webp",
+    image: "assets/dalle/25.webp",
   download: undefined,
   DOI: "10.1182/blood-2012-03-415367"
 },
@@ -988,7 +984,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://moh-it.pure.elsevier.com/en/publications/a-registration-framework-for-evaluation-of-t1-t2-and-dwi-signal-i",
   type: "conference",
   tags: [],
-  image: "assets/images/DALL·E 2025-02-24 15.49.16 - A simple black and white icon using lines, dots, and sketches representing the concept of a registration framework for evaluation of T1, T2, and DWI s.webp",
+    image: "assets/dalle/26.webp",
   download: "https://scitepress.org/papers/2012/37775/37775.pdf",
   DOI: null
 },
@@ -1002,7 +998,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/23367133",
   type: "conference",
   tags: [],
-  image: "assets/images/DALL·E 2025-02-24 14.58.15 - A simple black and white icon using lines, dots, and sketches representing the concept of_ Quantitative characterization and identification of lymph n.webp",
+    image: "assets/dalle/27.webp",
   download: undefined,
   DOI: null
 },
@@ -1016,7 +1012,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://epos.myesr.org/esr/viewing/index.php?module=viewing_poster&task=&pi=101103",
   type: "conference",
   tags: [],
-  image: "assets/images/DALL·E 2025-02-24 16.04.31 - A simple black and white icon using lines, dots, and sketches representing the concept of an effective 3D segmentation method for sinonasal cancer in .webp",
+    image: "assets/dalle/28.webp",
   download: "https://epos.myesr.org/esr/viewing/index.php?module=viewing_posteraction&task=downloadpdf&pi=101103",
   DOI: null
 },
@@ -1030,7 +1026,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://re.public.polimi.it/handle/11311/580342#.YMJzCZpKikA",
   type: "conference",
   tags: [],
-  image: "assets/images/DALL·E 2025-02-24 16.01.55 - A simple black and white icon using lines, dots, and sketches representing the concept of an efficient and effective segmentation software to investig.webp",
+    image: "assets/dalle/28.1.webp",
   download: undefined,
   DOI: null
 },
@@ -1044,7 +1040,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://re.public.polimi.it/handle/11311/580342#.YMJzCZpKikA",
   type: "conference",
   tags: [],
-  image: "assets/images/DALL·E 2025-02-24 16.04.07 - A simple black and white icon using lines, dots, and sketches representing the concept of whole-body DWI, whole-body, and whole-spine MRI in multiple .webp",
+    image: "assets/dalle/28.2.webp",
   download: undefined,
   DOI: null
 },
@@ -1058,7 +1054,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.sciencedirect.com/science/article/pii/S0923753420336073",
   type: "conference",
   tags: [],
-  image: "assets/images/DALL·E 2025-02-24 15.50.30 - A simple black and white icon using lines, dots, and sketches representing the concept of Whole-Body Diffusion MRI and Skeletal Lesions in Thyroid Can.webp",
+    image: "assets/dalle/28.3.webp",
   download: undefined,
   DOI: null
 },
@@ -1072,7 +1068,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/20011033",
   type: "article",
   tags: [],
-  image: "assets/images/DALL·E 2025-02-24 15.45.39 - A simple black and white icon using lines, dots, and sketches representing the concept of exploring the cortical attentional system using fMRI during .webp",
+    image: "assets/dalle/29.webp",
   download: "https://downloads.hindawi.com/journals/cin/2010/329213.pdf",
   DOI: "10.1155/2010/329213"
 },
@@ -1086,7 +1082,7 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://psycnet.apa.org/record/2009-17266-037",
   type: "article",
   tags: [],
-  image: "assets/images/DALL·E 2025-02-24 14.58.38 - A simple black and white icon using lines, dots, and sketches representing the concept of_ A web-based tool for cooperating behaviors in eating and ph.webp",
+    image: "assets/dalle/30.webp",
   download: "https://issuu.com/bepperiva/docs/arctt_2009/168",
   DOI: null
 },
@@ -1100,10 +1096,8 @@ export const PUBLICATIONS: Publication[] = [
   link: "https://www.ncbi.nlm.nih.gov/pubmed/19592754",
   type: "article",
   tags: [],
-  image: "assets/images/DALL·E 2025-02-24 18.03.10 - A simple black and white icon using lines, dots, and sketches representing the concept of a web-based tool for cooperating behaviors in eating and act.webp",
+    image: "assets/dalle/31.webp",
   download: undefined,
   DOI: null
 }
-// }
 ];
-
