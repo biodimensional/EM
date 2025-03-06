@@ -319,8 +319,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "https://pubmed.ncbi.nlm.nih.gov/37492381/",
     type: "article",
     tags: ["radiomics", "mri", "fai", "cloud"],
-    image:
-      "assets/images/DALL·E 2025-02-24 18.02.49 - A simple black and white icon using lines, dots, and sketches representing the concept of a radiomics approach to the diagnosis of femoroacetabular im.webp",
+    image: "assets/dalle/-19.webp",
     download: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10365279/pdf/fradi-03-1151258.pdf",
     DOI: null
   },
