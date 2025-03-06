@@ -1,7 +1,7 @@
 
 ```
 ng build
-cjhange cv here
+change cv here
 https://erosmontin.s3.us-east-1.amazonaws.com/CV.pdf
 
 ```
