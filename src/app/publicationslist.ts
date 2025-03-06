@@ -226,8 +226,7 @@ export const PUBLICATIONS: Publication[] = [
     link: "",
     type: "conference",
     tags: [_tmri, _tfai, _tradiomic, _tml, _tfeatureselection],
-    image:
-      "assets/images/DALL·E 2025-02-26 17.08.31 - A simple black and white icon using lines, dots, and sketches representing the concept of a comparison of mtrk, Pulseq, and vendor sequences using sim.png",
+    image:"assets/dalle/-24.1.png",
     download: undefined,
     DOI: null
   }, 

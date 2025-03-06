@@ -1,55 +1,13 @@
-<mat-card class="cardobj" style="display: flex; flex-direction: column; height: 100%;">
-    <mat-card-title> {{publication.title}}</mat-card-title>
-    <mat-card-subtitle *ngIf="publication.type=='article'">{{publication.type}} published in {{publication.journal}} ({{publication.date}})</mat-card-subtitle>
-    <mat-card-subtitle *ngIf="publication.type!='article'">{{publication.type}} {{publication.journal}} ({{publication.date}})</mat-card-subtitle>
-    <mat-card-content>
-        <div style="display:flex;flex-direction: column;">
-            <div style="justify-content:center;padding-bottom: 0rem;">
-                <app-publication-entry-authors [authors]="publication.authors " class="cardobj ">
-                </app-publication-entry-authors>
-            </div>
-            <div style="display:flex;flex-direction: row;flex-wrap: wrap;padding: 1rem;padding-top:0rem; ">
-                <a style="color:black " target="_blank " href="{{logo.url}} " *ngFor=" let logo of logos " title={{logo.name}}><img src={{logo.src}} style="width:34px;height:34px;border-radius: 50%; "></a>
-            </div>
-        </div>
-
-        <div style="padding: 1rem; ">
-            <app-publication-entry-tags [tags]="publication.tags " class="cardobj ">
-            </app-publication-entry-tags>
-        </div>
-
-
-        <div style="display:flex;flex-direction: row;flex-wrap: wrap;padding: 2rem; ">
-            <img mat-card-image [src]="publication.image || 'assets/default-image.png'" alt="{{publication.title}}">            
-        </div>
-        
-        <mat-expansion-panel *ngIf="publication.abstract.length>0">
-
-            <mat-expansion-panel-header>
-                <mat-panel-title>
-                    Abstract
-                </mat-panel-title>
-                <!-- <mat-panel-description>
-                        This is a summary of the content
-                    </mat-panel-description> -->
-            </mat-expansion-panel-header>
-
-            <div style="text-align: justify" class="cardobj" *ngIf="publication.abstract!=undefined">
-                <span class="csspublications " style="font-style: italic; ">{{publication.abstract}}</span>
-            </div>
-        </mat-expansion-panel>
-
-
-
-    </mat-card-content>
-    <mat-card-actions>
-        <a (click)="getCitation(publication.link)"><i class="material-icons" style="cursor:pointer;" title="Go to publisher page" >public</i></a>
-        <a (click)="citeme()"><i class="material-icons" style="cursor:pointer;" title="Get Bibtex File">note_add</i></a>
-
-
-        <a style="color:black" [href]="publication.download" [download]="publication.journal" target="_blank" rel="noopener noreferrer" *ngIf="canidownloadit"><i class=" material-icons "  style="cursor:pointer; "  *ngIf="publication.download!=null ">cloud_download</i></a>
-        <!-- <a (click)="downloadit() " *ngIf="publication.download!=null "><i class="material-icons "  style="cursor:pointer; "  >cloud_download</i></a> -->
-        <!-- <mat-checkbox class="example-margin " [(ngModel)]="selected ">Checked</mat-checkbox> -->
-    </mat-card-actions>
-
+<mat-card class="cardobj" style="display:flex;flex-direction:column;height:100%;">
+  <mat-card-header><mat-card-title>{{publication.title}}</mat-card-title><mat-card-subtitle *ngIf="publication.type=='article'">{{publication.type}} published in {{publication.journal}} ({{publication.date}})</mat-card-subtitle><mat-card-subtitle *ngIf="publication.type!='article'">{{publication.type}} {{publication.journal}} ({{publication.date}})</mat-card-subtitle></mat-card-header>
+  <mat-card-content>
+    <app-publication-entry-authors [authors]="publication.authors"></app-publication-entry-authors><app-publication-entry-tags [tags]="publication.tags" class="cardobj"></app-publication-entry-tags>
+    <div style="display:flex;flex-direction: row;flex-wrap: wrap;padding: 3rem; ">
+    <img mat-card-image [src]="publication.image || 'assets/default-image.png'" alt="{{publication.title}}">
+    </div>
+    <mat-expansion-panel *ngIf="publication.abstract.length>0"><mat-expansion-panel-header><mat-panel-title>Abstract</mat-panel-title></mat-expansion-panel-header><span style="font-style: italic;">{{publication.abstract}}</span></mat-expansion-panel>
+  </mat-card-content>
+  <mat-card-actions>
+    <a (click)="getCitation(publication.link)"><i class="material-icons" title="Go to publisher page" style="cursor:pointer;">public</i></a><a (click)="citeme()"><i class="material-icons" title="Get Bibtex File" style="cursor:pointer;">note_add</i></a><a style="color:black" [href]="publication.download" [download]="publication.journal" target="_blank" rel="noopener noreferrer" *ngIf="canidownloadit"><i class="material-icons" style="cursor:pointer;" *ngIf="publication.download!=null">cloud_download</i></a>
+  </mat-card-actions>
 </mat-card>
