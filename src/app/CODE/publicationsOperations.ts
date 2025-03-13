@@ -148,6 +148,7 @@ export class authorsListNoInterfaces{
         let logobr = "assets/logos/BRlogo.png";
         let logoasst = "assets/logos/ASSTlogo.png";
         let logoge = "assets/logos/AINI.png";
+        let logof2 = "assets/logos/federico2.jpg";
         
 
       
@@ -195,7 +196,10 @@ export class authorsListNoInterfaces{
                       image={src:logoge,name:"Department of Neuroscience, Rehabilitation, Ophthalmology, Genetics and Maternal Child Health (DINOGMI)",url:"https://www.aini.it/department-of-neurology-rehabilitation-ophthalmology-genetics-maternal-and-child-health-dinogmi/"};
                       break;
                       
-                    default:
+                      case "f2":
+                        image={src:logof2,name:"Federico II University",url:"https://www.unina.it/"};
+
+                        default:
                     image=logoint;
             }
             if( logolist.some(x => x.src === image.src)){

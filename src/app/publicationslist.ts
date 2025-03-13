@@ -138,6 +138,8 @@ var IoGe={id:5,name:"Ioannis", surname:"Georgakis",affiliation:"nyu"}
 var AnAn={id:5,name:"Anna", surname:"Anzani",affiliation:"asst"}
 var ElRa={id:5,name:"Elisa", surname:"Ravizzotti",affiliation:"ge"}
 
+var DaRi={ id:5,name:"Daniele", surname:"Riccio",affiliation:"nyu"};
+var GiRu={id:5,name:"Giuseppe", surname:"Ruello",affiliation:"f2"};
 var _tmri="mri";
 var _tct="ct";
 var _toct="oct";
@@ -184,6 +186,22 @@ var ISMRM23 = "31th Scientific Meeting of the International Society for Magnetic
 var ISMRM25 = "33th Scientific Meeting of the International Society for Magnetic Resonance in Medicine (ISMRM). Honolulu 06-16 May 2025";
 
 export const PUBLICATIONS: Publication[] = [
+  {
+    id: -27,
+    title: "Deep Learning Networks to Estimate Electric Fields From Noisy B1 Maps",
+    abstract:
+      "Deep learning networks have shown promising results in estimating electric fields from B1 maps. Some recent studies have shown that 2D analytical solutions can quickly generate data to be used as potential data augmentation with numerically simulated data. Since the ultimate goal is to have the developed deep learning networks able to operate with experimentally acquired data which might be affected by noise, in this study we have developed and tested the ability of these 2D networks to accurately predict the electric fields from noisy B1 maps. The networks could predict well the electric fields also in presence of noise, with a maximum NRMSE of 13.6%.",  
+      authors: [EM, GC, CC, RL,DaRi,GiRu],
+    journal:"2025 United States National Committee of URSI National Radio Science Meeting (USNC-URSI NRSM)",
+    date: "2025",
+    link: "https://ieeexplore.ieee.org/iel8/10906696/10906700/10907031.pdf",
+    type: "conference",
+    tags: [_tmri, _tfai, _tradiomic, _tml, _tfeatureselection],
+    image:
+      "assets/dalle/-27.png",
+    download: "https://ieeexplore.ieee.org/iel8/10906696/10906700/10907031.pdf",
+    DOI: "10.23919/USNC-URSINRSM66067.2025.10907031"
+  }, 
   {
     id: -26,
     title: "Oral Preentation: Fully Automated Radiomic Analysis to Differentiate Pain Profiles in Femoroacetabular Impingement: A Robust MRI-Based Model",
