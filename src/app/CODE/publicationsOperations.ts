@@ -148,7 +148,8 @@ export class authorsListNoInterfaces{
         let logobr = "assets/logos/BRlogo.png";
         let logoasst = "assets/logos/ASSTlogo.png";
         let logoge = "assets/logos/AINI.png";
-        let logof2 = "assets/logos/federico2.jpg";
+        let logof2 = "assets/logos/federico2.jpeg";
+        let logox = "assets/logos/ox.png";
         
 
       
@@ -198,8 +199,12 @@ export class authorsListNoInterfaces{
                       
                       case "f2":
                         image={src:logof2,name:"Federico II University",url:"https://www.unina.it/"};
+                        break;
 
-                        default:
+                    case "ox":
+                        image={src:logox,name:"University of Oxford",url:"https://www.ox.ac.uk/"};
+                        break;
+                    default:
                     image=logoint;
             }
             if( logolist.some(x => x.src === image.src)){

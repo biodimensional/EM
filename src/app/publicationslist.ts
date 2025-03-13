@@ -59,7 +59,7 @@ var AGi={id:4,name:"A", surname:"Gianluca",affiliation:"int"};
 var SiCe={id:4,name:"Simona", surname:"Celi",affiliation:_iODC};
 
 
-var MLe={id:4,name:"M", surname:"Lecchi",affiliation:""};
+var MLe={id:4,name:"M", surname:"Lecchi",affiliation:"int"};
 var FrSp= {id:4,name:"F", surname:"Spreafico",affiliation:"int"};
 var ElSc= {id:4,name:"E", surname:"Schiavello",affiliation:"int"};
 var PaVe = {id:4,name:"Paolo", surname:"Verderio",affiliation:"int"};
@@ -140,6 +140,19 @@ var ElRa={id:5,name:"Elisa", surname:"Ravizzotti",affiliation:"ge"}
 
 var DaRi={ id:5,name:"Daniele", surname:"Riccio",affiliation:"nyu"};
 var GiRu={id:5,name:"Giuseppe", surname:"Ruello",affiliation:"f2"};
+
+
+var KaLo={id:5,name:"Kartik", surname:"Logishetty",affiliation:"ox"};
+var  SrNa={id:5,name:"Srikar", surname:"Namireddy",affiliation:"ox"};
+var HaSuPo={id:5,name:"Hariharan Subbiah", surname:"Ponniah",affiliation:"ox"};
+var SiGlJo={id:5,name:"Sion", surname:"Glin-Jones",affiliation:"ox"};
+
+
+
+var AnAr={id:5,name:"Anais", surname:"Artiges",affiliation:"poli"};
+var ImKh={id:5,name:"Iman", surname:"Khodarahmi",affiliation:"ox"};
+
+
 var _tmri="mri";
 var _tct="ct";
 var _toct="oct";
@@ -207,7 +220,7 @@ export const PUBLICATIONS: Publication[] = [
     title: "Oral Preentation: Fully Automated Radiomic Analysis to Differentiate Pain Profiles in Femoroacetabular Impingement: A Robust MRI-Based Model",
     abstract:
       "Motivation: This study aims to enhance MRI-based differentiation of pain profiles in femoroacetabular impingement (FAI) for improved treatment planning. Goal(s): Develop a robust radiomic model to distinguish symptomatic, asymptomatic, and healthy hips in FAI patients. Approach: We used MRI data from three cohorts, including an external validation set of over 185 independently acquired patients, with automated segmentation, radiomic feature extraction, and machine learning to classify hip states. Results: The model achieved >85% accuracy, with some classifiers reaching 100%, demonstrating reliability and generalizability across varied imaging protocols and independently acquired data. Impact This fully automated, reliable model allows clinicians to accurately differentiate pain profiles in FAI patients across diverse imaging protocols, enhancing personalized treatment strategies. It paves the way for broader clinical adoption of MRI-based radiomics for musculoskeletal disorders, supporting efficient, reproducible diagnostics. ",  
-      authors: [EM, GC, CC, RL],
+      authors: [EM, KaLo, HaSuPo,SrNa, ImKh,SiGlJo,RL],
     journal: ISMRM25 + "(TBD)",
     date: "2025",
     link: "",
@@ -238,7 +251,7 @@ export const PUBLICATIONS: Publication[] = [
     title: "Comparison of mtrk, Pulseq, and vendor sequences using simulated, phantom, and in-vivo acquisitions",
     abstract:
       "This work leverages a human-readable sequence description language and a web-based graphical interface, allowing users to create sequences as time diagrams through an intuitive drag-and-drop system. These sequences can be directly used at the scanner with the mtrk driver sequence or converted to Pulseq for wider compatibility. In this abstract, we developed a pulse sequence using mtrk and compared it to its conversion to Pulseq and an equivalent product sequence. ",  
-      authors: [EM, GC, CC, RL],
+      authors: [AnAr,ToBl,EM, RL],
     journal: ISMRM25 + "(TBD)",
     date: "2025",
     link: "",

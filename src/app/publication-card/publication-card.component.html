@@ -11,6 +11,7 @@
     <mat-card-subtitle *ngIf="publication.type=='article'">{{publication.type}} published in {{publication.journal}} ({{publication.date}})</mat-card-subtitle><mat-card-subtitle *ngIf="publication.type!='article'">{{publication.type}} {{publication.journal}} ({{publication.date}})</mat-card-subtitle></mat-card-header>
   <mat-card-content>
     <app-publication-entry-authors [authors]="publication.authors"></app-publication-entry-authors><app-publication-entry-tags [tags]="publication.tags" class="cardobj"></app-publication-entry-tags>
+
     <div style="display:flex;flex-direction: row;flex-wrap: wrap;padding: 3rem; ">
     <img mat-card-image [src]="publication.image || 'assets/default-image.png'" alt="{{publication.title}}">
     </div>
@@ -18,5 +19,8 @@
   </mat-card-content>
   <mat-card-actions>
     <!-- <a (click)="getCitation(publication.link)"><i class="material-icons" title="Go to publisher page" style="cursor:pointer;">public</i></a><a (click)="citeme()"><i class="material-icons" title="Get Bibtex File" style="cursor:pointer;">note_add</i></a><a [href]="publication.download" [download]="publication.journal" target="_blank" rel="noopener noreferrer" *ngIf="canidownloadit"><i class="material-icons" style="cursor:pointer;" *ngIf="publication.download!=null">cloud_download</i></a> -->
+    <div style="display:flex;flex-direction: row;flex-wrap: wrap;padding: 1rem;padding-top:0rem; ">
+      <a style="color:black " target="_blank " href="{{logo.url}} " *ngFor=" let logo of logos " title={{logo.name}}><img src={{logo.src}} style="width:34px;height:34px;border-radius: 50%; "></a>
+  </div>
   </mat-card-actions>
 </mat-card>
