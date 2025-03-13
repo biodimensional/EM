@@ -148,7 +148,7 @@ export class authorsListNoInterfaces{
         let logobr = "assets/logos/BRlogo.png";
         let logoasst = "assets/logos/ASSTlogo.png";
         let logoge = "assets/logos/AINI.png";
-        let logof2 = "assets/logos/federico2.jpeg";
+        let logof2 = "assets/logos/federico2.png";
         let logox = "assets/logos/ox.png";
         
 
