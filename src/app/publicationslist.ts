@@ -153,6 +153,15 @@ var AnAr={id:5,name:"Anais", surname:"Artiges",affiliation:"poli"};
 var ImKh={id:5,name:"Iman", surname:"Khodarahmi",affiliation:"ox"};
 
 
+var AnVa={id:5,name:"Andrea", surname:"Vanvulli",affiliation:"int"};
+var LuViSc={id:5,name:"Lucilla Violetta", surname:"Sciacqua",affiliation:"int"};
+var FiPa={id:5,name:"Filippo", surname:"Patti",affiliation:"int"};
+var RoDr={id:5,name:"Roza", surname:"Drebot",affiliation:"int"};
+var LaanMaLo={id:5,name:"Laura Anna Maria", surname:"Lozza",affiliation:"int"};
+var SeVi={id:5,name:"Sergio", surname:"Villa",affiliation:"int"};
+var DaSc={id:5,name:"Davide", surname:"Scaramuzza",affiliation:"int"};
+
+
 var _tmri="mri";
 var _tct="ct";
 var _toct="oct";
@@ -199,6 +208,22 @@ var ISMRM23 = "31th Scientific Meeting of the International Society for Magnetic
 var ISMRM25 = "33th Scientific Meeting of the International Society for Magnetic Resonance in Medicine (ISMRM). Honolulu 06-16 May 2025";
 
 export const PUBLICATIONS: Publication[] = [
+  {
+    id: -28,
+    title: "Radiomics to predict tumor response to combination chemoradiotherapy in squamous cell carcinoma of the anal canal: a preliminary investigation",
+    abstract:
+      "Deep learning networks have shown promising results in estimating electric fields from B1 maps. Some recent studies have shown that 2D analytical solutions can quickly generate data to be used as potential data augmentation with numerically simulated data. Since the ultimate goal is to have the developed deep learning networks able to operate with experimentally acquired data which might be affected by noise, in this study we have developed and tested the ability of these 2D networks to accurately predict the electric fields from noisy B1 maps. The networks could predict well the electric fields also in presence of noise, with a maximum NRMSE of 13.6%.",  
+      authors: [AnVa, LuViSc, FiPa, EM,RL, RoDr, LaanMaLo, SeVi, DaSc],
+    journal:"European Radiology Experimental",
+    date: "2025",
+    link: "https://eurradiolexp.springeropen.com/articles/10.1186/s41747-025-00559-0",
+    type: "article",
+    tags: [_tmri, _tradiomic, _tml, _tfeatureselection, _toncology, _tstaging],
+    image:
+      "assets/dalle/-28.png",
+    download: null,
+    DOI: "10.1186/s41747-025-00559-0"
+  },
   {
     id: -27,
     title: "Deep Learning Networks to Estimate Electric Fields From Noisy B1 Maps",
