@@ -25,7 +25,7 @@ export class AppComponent {
     // Update the meta tag with a description
     this.meta.updateTag({
       name: 'description',
-      content: 'Explore Dr. Eros Montin expertise in biomedical imaging, big data, clud computing, AI, and biodimensional innovations.'
+      content: 'Explore Dr. Eros Montin expertise in biomedical imaging, big data, cloud computing, AI, and biodimensional innovations.'
     });
   }
 }
