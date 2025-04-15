@@ -24,6 +24,7 @@ import { AuthorsUniverseComponent } from './authors-universe/authors-universe.co
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faOrcid } from '@fortawesome/free-brands-svg-icons';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
     PublicationEntryTagsComponent,
     PeopleMainComponent,
     AuthorsUniverseComponent,
+    HomeComponent,
    
 
   ],
