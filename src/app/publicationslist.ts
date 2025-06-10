@@ -209,6 +209,22 @@ var ISMRM25 = "33th Scientific Meeting of the International Society for Magnetic
 
 export const PUBLICATIONS: Publication[] = [
   {
+    id: -29,
+    title: "Radiomics for Precision Diagnosis of FAI: How Close Are We to Clinical Translation? A Multi-Center Validation of a Single-Center Trained Model",
+    abstract:
+      "Background: Femoroacetabular impingement (FAI) is a complex hip disorder characterized by abnormal contact between the femoral head and acetabulum, often leading to joint damage, chronic pain, and early-onset osteoarthritis. Despite MRI being the imaging modality of choice, diagnosis remains challenging due to subjective interpretation, lack of standardized imaging criteria, and difficulty differentiating symptomatic from asymptomatic cases. This study aimed to develop and externally validate radiomics-based machine learning (ML) models capable of classifying healthy, asymptomatic, and symptomatic FAI cases with high diagnostic accuracy and generalizability. Methods: A total of 82 hip MRI datasets (31 symptomatic, 31 asymptomatic, 20 healthy) from a single center were used for training and cross-validation. Radiomic features were extracted from four segmented anatomical regions (femur, acetabulum, gluteus medius, gluteus maximus). A four-step feature selection pipeline was implemented, followed by training 16 ML classifiers. External validation was conducted on a separate multi-center cohort of 185 symptomatic FAI cases acquired with heterogeneous MRI protocols. Results: The best-performing models achieved a cross-validation accuracy of up to 90.9% in distinguishing among healthy, asymptomatic, and symptomatic hips. External validation on the independent multi-center cohort demonstrated 100% accuracy in identifying symptomatic FAI cases. Since this metric reflects performance on symptomatic cases only, it should be interpreted as a detection rate (true positive rate) rather than overall multi-class accuracy. Gini index-based feature selection consistently outperformed F-statistic-based methods across all the models. Conclusions: This is the first study to systematically integrate radiomics and multiple ML models for FAI classification for these three phenotypes, trained on a single-center dataset and externally validated on multi-institutional MRI data. The demonstrated robustness and generalizability of radiomic features support their use in clinical workflows and future large-scale studies targeting standardized, data-driven FAI diagnosis.",  
+      authors: [EM, KaLo, HaSuPo,SrNa, ImKh,SiGlJo,RL],
+    journal:"Journal Of Clinical Medicine",
+    date: "2025",
+    link: "https://www.mdpi.com/2077-0383/14/12/4042",
+    type: "article",
+    tags: [_tmri, _tradiomic, _tml, _tfeatureselection, _tfai, _tstaging],
+    image:
+      "assets/dalle/-29.png",
+    download: null,
+    DOI: "10.3390/jcm14124042"
+  },
+  {
     id: -28,
     title: "Radiomics to predict tumor response to combination chemoradiotherapy in squamous cell carcinoma of the anal canal: a preliminary investigation",
     abstract:
