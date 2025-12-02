@@ -74,7 +74,7 @@ a:hover {
 .btnInfo {
     font-size: 1.2em;
     color: #007bff;
-    margin: 0 10px;
+    margin: 0 5px;
     transition: color 0.3s ease;
 }
 
@@ -161,6 +161,7 @@ footer a:hover {
     --secondary-color: #00d4ff;
     --text-color: #333333;
     --background-color: #ffffff;
+  --badge-width: 360px; /* shared badge/left-box width for pixel parity */
     --hover-color: #0056b3;
   }
   
@@ -257,8 +258,8 @@ footer a:hover {
 .header-mobile-portrait { display: none; }
 .header-desktop { display: none; }
 
-/* Show mobile portrait header for small screens in portrait orientation */
-@media (max-width: 899px) and (orientation: portrait) {
+/* Show mobile header for small screens (portrait or landscape) */
+@media (max-width: 899px) {
   .header-mobile-portrait { display: block !important; }
   .header-desktop { display: none !important; }
   /* hide fallback duplicates on mobile portrait */
@@ -279,9 +280,44 @@ footer a:hover {
 .mobile-badge-bg { display:flex; align-items:center; justify-content:center; width:100%; max-width:none; margin:0; padding:18px 0; border-radius:0; background-image: url('/assets/wall.png'); background-size:cover; background-position:center; box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
 .mobile-badge-bg .LI-profile-badge { background: rgba(255,255,255,0.6); padding: 8px; border-radius: 6px; }
 
+/* Mobile stacked cards (avatar + socials/CVs and LinkedIn badge) */
+.mobile-box-stack { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.6rem; width:100%; max-width:760px; padding: 0 12px; }
+.mobile-card { width: calc(100% - 24px); max-width:520px; display:flex; flex-direction:column; align-items:center; background: rgba(255,255,255,0.95); border-radius: 10px; border: 1px solid rgba(0,0,0,0.06); padding: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+.mobile-card .spinning-avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; }
+.mobile-card .avatar-spin-wrapper { border-radius: 50%; overflow: hidden; }
+
+/* entrance animation for the two stacked mobile cards */
+.keyframes-slideUpFade-placeholder {}
+@keyframes slideUpFade {
+  0% { opacity: 0; transform: translateY(12px); }
+  60% { opacity: 0.8; transform: translateY(4px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.mobile-card { animation: slideUpFade 420ms cubic-bezier(.16,.84,.24,1) both; transition: transform 180ms ease, box-shadow 180ms ease; }
+.mobile-box-stack .mobile-card:nth-child(2) { animation-delay: 120ms; }
+
+/* hover / active polish for mobile cards (works on non-touch devices) */
+.mobile-card:hover { transform: translateY(-8px); box-shadow: 0 14px 32px rgba(0,0,0,0.14); }
+.mobile-card:active { transform: translateY(-2px); }
+.mobile-card .spinning-avatar:hover { transform: scale(1.03); }
+.mobile-card .social-bg { width: 100%; justify-content:center; gap:6px; }
+.mobile-card .cv-button { margin: 4px; }
+.mobile-linkedin-card .LI-profile-badge { background: transparent; padding: 6px; }
+
+
 @media (max-width: 420px) {
   .mobile-badge-bg { padding: 12px; }
   .mobile-badge-bg .LI-profile-badge { transform: scale(0.95); }
+}
+
+/* When mobile is in landscape, show two-column layout that resembles desktop */
+@media (max-width: 899px) and (orientation: landscape) {
+  .mobile-box-stack { flex-direction: row; align-items: center; gap: 1rem; padding: 0 18px; }
+  .mobile-card { width: 48%; max-width: none; padding: 14px; }
+  .mobile-card .spinning-avatar { width: 140px; height: 140px; }
+  .mobile-card .social-bg { justify-content: center; gap: 6px; }
+  .mobile-linkedin-card { display:flex; align-items:center; justify-content:center; }
+  .mobile-linkedin-card .LI-profile-badge { transform: scale(0.95); }
 }
 
 /* Spinning avatar for aesthetic effect (desktop only) */
@@ -321,4 +357,51 @@ footer a:hover {
 
 @media (max-width: 420px) {
   .social-bg { padding: 8px 10px; }
+}
+
+/* left-box: translucent white square for avatar + socials + CVs (desktop) */
+.left-box {
+  width: var(--badge-width); /* preserved width controlled by --badge-width for parity */
+  min-width: 280px;
+  padding: 14px; /* slightly tighter padding like the LinkedIn card */
+  border-radius: 8px; /* more similar to the LinkedIn badge corner radius */
+  background: rgba(255,255,255,0.95); /* slightly brighter to match card */
+  border: 1px solid rgba(0,0,0,0.06); /* subtle edge like a card */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10); /* softer shadow, less 'floating' */
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  position:relative; /* ensure internal overflow can be clipped */
+  overflow: hidden; /* keep child content visually inside the box */
+  z-index: 2; /* keep the box above the header background */
+}
+
+.left-box .avatar-spin-wrapper { padding: 8px; border-radius: 12px; background: rgba(255,255,255,0.0); box-shadow: none; }
+.left-box .spinning-avatar { width: 160px; height: 160px; border-radius:50%; }
+
+/* Keep social icons constrained inside the left-box, allow wrapping and smaller internal padding */
+.left-box .social-bg { max-width: calc(100% - 36px); justify-content: center; /* force tighter single-row layout */ flex-wrap: nowrap !important; gap: 8px !important; box-sizing: border-box; background: rgba(255,255,255,0.88); padding: 6px 8px; border-radius: 10px; box-shadow: none; }
+.left-box .social-bg .btnInfo { padding: 0.25rem; margin: 0 4px; font-size: 0.98rem; color: #1a73e8; }
+
+/* CV buttons inside the left-box should be slightly smaller and aligned */
+.left-box .cv-button { padding: 6px 12px; font-size: 0.95rem; border-radius: 16px; box-shadow: 0 3px 8px rgba(0,0,0,0.06); }
+
+@media (min-width: 1200px) {
+  /* increase badge width globally so left-box and LinkedIn widget match */
+  :root { --badge-width: 420px; }
+  .left-box { width: var(--badge-width); }
+  .left-box .spinning-avatar { width:190px; height:190px; }
+}
+
+/* make the desktop LinkedIn widget use the same width as the left-box */
+.desktop-right .LI-profile-badge { width: var(--badge-width); max-width: 100%; display:block; }
+
+@media (max-width: 899px) {
+  .left-box { display:none; }
+}
+
+/* On larger screens, hide the mobile badge background so we don't duplicate the wall image */
+@media (min-width: 900px) {
+  .mobile-badge-bg { display: none !important; }
 }

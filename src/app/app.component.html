@@ -5,13 +5,14 @@
     <div class="header-mobile-portrait" style="display:none; margin-bottom:1.2em;">
         <!-- Mobile: LinkedIn badge on top of a background (wall.png) -->
         <div class="mobile-badge-bg" aria-hidden="false">
-            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="eros-montin-46645aab" data-version="v1">
-                <!-- anchor left empty so LinkedIn widget renders visually, keep aria-label for accessibility -->
-                <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/eros-montin-46645aab" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"></a>
-            </div>
-        </div>
-
-        <div class="social-bg" style="display:flex; gap:1rem; justify-content:center; margin-top:0.8rem;">
+            <!-- stacked mobile cards: avatar+socials+CVs on top, LinkedIn badge below -->
+            <div class="mobile-box-stack">
+                <div class="mobile-card mobile-avatar-card">
+                    <div class="avatar-spin-wrapper">
+                        <img src="assets/me.png" alt="Avatar" class="spinning-avatar" />
+                    </div>
+                    <div style="margin-top:0.6rem; display:flex; flex-direction:column; gap:0.6rem; align-items:center; width:100%;">
+                        <div class="social-bg" style="display:flex; gap:0.6rem; justify-content:center; width:100%;">
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eros.montin@gmail.com&su=Hello" target="_blank" title="Email Eros">
                 <fa-icon [icon]="at" class="btnInfo" aria-hidden="false"></fa-icon>
             </a>
@@ -30,11 +31,23 @@
             <a href="https://orcid.org/0000-0002-1773-0064" target="_blank" title="ORCID">
                 <fa-icon [icon]="['fab','orcid']" class="btnInfo" aria-hidden="false"></fa-icon>
             </a>
-        </div>
+                        </div>
 
-        <div style="display:flex; gap:1rem; justify-content:center; margin-top:0.8rem;">
+                        <div style="display:flex; gap:0.6rem; justify-content:center; margin-top:0.6rem; width:100%;">
             <a href="https://erosmontin.s3.us-east-1.amazonaws.com/CV_short.pdf" download="Eros_Montin_CV_Short.pdf" class="cv-button" target="_blank">Download Short CV</a>
             <a href="https://erosmontin.s3.us-east-1.amazonaws.com/CV_long.pdf" download="Eros_Montin_CV_Long.pdf" class="cv-button" target="_blank">Download Long CV</a>
+            </div>
+                    </div>
+                </div>
+
+                <div class="mobile-card mobile-linkedin-card" style="margin-top:0.5rem;">
+                    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="eros-montin-46645aab" data-version="v1">
+                        <!-- anchor left empty so LinkedIn widget renders visually, keep aria-label for accessibility -->
+                        <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/eros-montin-46645aab" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"></a>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
     
@@ -42,10 +55,12 @@
     <!-- Desktop header: background -> left: spinning avatar, links+CVs under it; right: LinkedIn badge -->
     <div class="header-desktop" style="display:none; margin-bottom:1.5em;">
         <div class="header-desktop-inner" style="display:flex; align-items:center; justify-content:center; gap:2rem; width:100%; max-width:1200px; margin:0 auto; padding:1rem; border-radius:8px; background-repeat:no-repeat; background-size:cover; background-position:center;">
-            <div class="desktop-left" style="flex:0 0 320px; display:flex; flex-direction:column; align-items:center;">
-                <div class="avatar-spin-wrapper" style="padding:12px; border-radius:12px; background: rgba(255,255,255,0.9); box-shadow:0 10px 30px rgba(0,0,0,0.08);">
-                    <img src="assets/me.png" alt="Avatar" class="spinning-avatar" style="width:220px; height:220px; border-radius:50%; object-fit:cover; display:block;" />
-                </div>
+            <div class="desktop-left" style="flex:0 0 auto; display:flex; flex-direction:column; align-items:center;">
+                <!-- left-box: white translucent square containing avatar + socials + CVs; sized to match linkedin badge area -->
+                <div class="left-box">
+                    <div class="avatar-spin-wrapper">
+                        <img src="assets/me.png" alt="Avatar" class="spinning-avatar" />
+                    </div>
                 <div style="margin-top:1rem; display:flex; flex-direction:column; gap:0.6rem; align-items:center;">
                     <div class="social-bg" style="display:flex; gap:1rem;">
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eros.montin@gmail.com&su=Hello" target="_blank" title="Email Eros">
@@ -53,9 +68,6 @@
                         </a>
                         <a href="https://cai2r.net/about/team/#eros-montin" target="_blank" title="CAI2R profile">
                             <fa-icon [icon]="ad" class="btnInfo"></fa-icon>
-                        </a>
-                        <a href="https://www.linkedin.com/in/eros-montin-46645aab" target="_blank" title="LinkedIn">
-                            <fa-icon [icon]="lin" class="btnInfo"></fa-icon>
                         </a>
                         <a href="https://github.com/erosmontin" target="_blank" title="GitHub">
                             <fa-icon [icon]="gi" class="btnInfo"></fa-icon>
@@ -71,6 +83,7 @@
                         <a href="https://erosmontin.s3.us-east-1.amazonaws.com/CV_short.pdf" download="Eros_Montin_CV_Short.pdf" class="cv-button" target="_blank">Download Short CV</a>
                         <a href="https://erosmontin.s3.us-east-1.amazonaws.com/CV_long.pdf" download="Eros_Montin_CV_Long.pdf" class="cv-button" target="_blank">Download Long CV</a>
                     </div>
+                </div>
                 </div>
             </div>
 
