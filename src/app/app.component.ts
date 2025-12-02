@@ -11,6 +11,7 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class AppComponent {
   title = 'Eros Montin';
+  buildDate: string = new Date().toLocaleString();
   lin = faLinkedin;
   fa = faFacebook;
   in = faInstagram;

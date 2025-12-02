@@ -209,6 +209,38 @@ var ISMRM25 = "33th Scientific Meeting of the International Society for Magnetic
 
 export const PUBLICATIONS: Publication[] = [
   {
+    id: -31,
+    title: "Radiomics in FAI: current status and perspectives",
+    abstract:
+      "Femoroacetabular impingement (FAI) is caused by abnormal contact between the femur and acetabulum, resulting in pain, limited motion, and early osteoarthritis. Existing imaging techniques for diagnosing FAI face considerable challenges. Radiomics involves the quantitative extraction and analysis of imaging features using advanced algorithms, often combined with machine learning (ML), to enhance diagnostic and prognostic precision. When integrated with ML, radiomics can identify patterns beyond conventional imaging measurements, potentially enabling automated, precise, and reproducible assessment of hip morphology and pathology. Early studies demonstrate its potential to differentiate between normal, symptomatic, and asymptomatic cam-type hips. However, challenges persist, including the standardization of imaging protocols, feature selection, access to large datasets, and the explainability of models. This review summarizes the state of the art in radiomics for FAI and highlights its future applications.",  
+      authors: [HaSuPo, SrNa, RL,KaLo],
+    journal:"Bone & Joint Research",
+    date: "2025",
+    link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12492042/",
+    type: "article",
+    tags: [_tmri, _tradiomic, _tml, _tfeatureselection, _tfai, _tstaging],
+    image:
+      "assets/dalle/-31.png",
+    download: "https://boneandjoint.org.uk/Article/10.1302/2046-3758.1410.BJR-2024-0353.R2/pdf",
+    DOI: "10.1302/2046-3758.1410.BJR-2024-0353.R2"
+  },
+  {
+    id: -30,
+    title: "AUTOMATED MACHINE LEARNING-BASED MRI RADIOMIC ANALYSIS TO IDENTIFY AND DIAGNOSE PATIENTS WITH FEMOROACETABULAR IMPINGEMENT",
+    authors: [KaLo,EM,  HaSuPo,SrNa, ImKh,SiGlJo,RL],
+    abstract:
+      "Diagnosing femoroacetabular impingement (FAI) using manual radiographic, CT and MRI analysis is user-dependent and has only moderate accuracy. We leverage radiomics and machine learning techniques—proven successful in oncology—to automatically extract quantitative MRI features beyond the human eye: first-order statistics, shape-based metrics, and texture matrices. We aimed to differentiate healthy, symptomatic, and asymptomatic hips; measuring reliability and generalisability through external validation. We investigated femoroacetabular impingement (FAI) using three distinct cohorts: 1) a primary cohort of 31 FAI patients (22F, mean age 36) imaged with/without contrast on 3T MRI using four-phase Dixon sequences; 2) healthy volunteers (20 patients); 3) cohort of asymptomatic FAI (31 patients); compared with an external validation cohort of 185 monolateral symptomatic FAI patients’ water-only Dixon images. Automated segmentation (Total Segmentator and STAPLE algorithm) isolated key hip structures. PyRadiomics extracted 6,752 radiomic features across ROIs after 1mm isotropic resampling. Ten machine learning models were evaluated using four-fold cross-validation, maintaining patient-level data separation between training/validation/testing sets. This yielded 480 unique models (10 classifiers × 48 feature sets), with top performers validated against the test set (three-label classification) and cohort 3 (symptomatic identification). Seven out of ten models achieved accuracy >0.85. Notably, Random Forest Classifier (RFC), Gradient Boosting Classifier (GBC), Extra Trees Classifier (ETC), and Bagging Classifier (BC) attained perfect accuracy at least once using fewer than 20 features. In the external validation cohort, eight models also surpassed 0.85 accuracy, including five methods—Support Vector Classifier (SVC), Decision Tree Classifier (DTC), Gaussian Naive Bayes (GNB), Quadratic Discriminant Analysis (QDA), and K-Nearest Neighbours (KNN)— with perfect accuracy though with increased variability. This study highlights the effectiveness of 20 novel MRI-based radiomic features to reliably differentiate between symptomatic FAI, asymptomatic FAI, and healthy hips. Decision Tree Classifier and Bagging Classifier predicted correctly 100% of the FAI patients even with varied imaging protocols. Additionally, automated radiomic selection identified novel gluteal muscle features specific to symptomatic FAI, improving the diagnostic yield of MRI beyond bone, cartilage and labrum in FAI.",        
+    journal:"The British Hip Society (BHS) Meeting 2025, Harrogate, England, 5-7 March 2025",
+    date: "2025",
+    link: "https://boneandjoint.org.uk/article/10.1302/1358-992X.2025.2.007",
+    type: "conference",
+    tags: [_tmri, _tradiomic, _tml, _tfeatureselection, _tfai, _tstaging],
+    image:
+      "assets/dalle/-30.png",
+    download: null,
+    DOI: "10.1302/1358-992X.2025.2.007"
+  },
+  {
     id: -29,
     title: "Radiomics for Precision Diagnosis of FAI: How Close Are We to Clinical Translation? A Multi-Center Validation of a Single-Center Trained Model",
     abstract:
