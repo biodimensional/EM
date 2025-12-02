@@ -250,3 +250,75 @@ footer a:hover {
     outline: 2px solid #007bff;
     outline-offset: 2px;
   }
+
+/* ===== NEW: mobile vs desktop header rules and avatar spin ===== */
+
+/* Default: hide mobile portrait header and desktop header (will be enabled via media queries) */
+.header-mobile-portrait { display: none; }
+.header-desktop { display: none; }
+
+/* Show mobile portrait header for small screens in portrait orientation */
+@media (max-width: 899px) and (orientation: portrait) {
+  .header-mobile-portrait { display: block !important; }
+  .header-desktop { display: none !important; }
+  /* hide fallback duplicates on mobile portrait */
+  .social-fallback, .fallback-cv { display: none !important; }
+}
+
+/* Show desktop header on wider screens (landscape or large displays) */
+@media (min-width: 900px) {
+  .header-desktop { display: block !important; }
+  .header-mobile-portrait { display: none !important; }
+}
+
+/* Desktop header inner background uses the wall.png (assets) */
+.header-desktop { background-image: url('/assets/wall.png'); background-size: cover; background-position: center; padding: 1rem 0; }
+.header-desktop-inner { background: transparent; }
+
+/* Mobile badge background (shows the wall image behind the LinkedIn badge) */
+.mobile-badge-bg { display:flex; align-items:center; justify-content:center; width:100%; max-width:none; margin:0; padding:18px 0; border-radius:0; background-image: url('/assets/wall.png'); background-size:cover; background-position:center; box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+.mobile-badge-bg .LI-profile-badge { background: rgba(255,255,255,0.6); padding: 8px; border-radius: 6px; }
+
+@media (max-width: 420px) {
+  .mobile-badge-bg { padding: 12px; }
+  .mobile-badge-bg .LI-profile-badge { transform: scale(0.95); }
+}
+
+/* Spinning avatar for aesthetic effect (desktop only) */
+.spinning-avatar { animation: rotate360 12s linear infinite; }
+@keyframes rotate360 { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+/* Hide textual labels inside LinkedIn badges while keeping visual parts (logo / avatar) visible.
+   This removes the repeated name/bio text while the badge UI still renders and remains accessible. */
+.badge-base__link,
+.badge-base__link * {
+  /* hide inline textual content */
+  color: transparent !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  text-indent: -9999px !important;
+}
+
+/* Preserve images / SVGs inside the badge so visuals remain visible */
+.badge-base__link img,
+.badge-base__link svg,
+.badge-base__link .badge-base__entity__badge,
+.badge-base__link .badge-base__entity__image {
+  color: initial !important;
+  font-size: initial !important;
+  line-height: initial !important;
+  text-indent: 0 !important;
+}
+
+/* Accessibility: keep the anchor available for screen readers */
+.badge-base__link[aria-label] { color: inherit; font-size: inherit; line-height: inherit; text-indent: 0; }
+
+/* ------------------------------
+   Social icons background (match avatar wrapper)
+   ------------------------------ */
+.social-bg { padding: 10px 14px; border-radius: 12px; background: rgba(255,255,255,0.92); box-shadow: 0 10px 30px rgba(0,0,0,0.08); display:inline-flex; align-items:center; }
+.social-bg .btnInfo { color: #0078d4; }
+
+@media (max-width: 420px) {
+  .social-bg { padding: 8px 10px; }
+}

@@ -1,71 +1,89 @@
 <div style="display: flex; flex-direction: column; margin-top: 5em;">
-    <!-- Avatar on top -->
-    <div style="display: flex; justify-content: center; margin-bottom: 2em;">
-        <div class="avatar-background">
-            <img src="assets/me.png" alt="Avatar" style="width: 233px; border-radius: 50%; display: block; margin-left: auto; margin-right: auto; max-width: 25%;">
+    <!-- RESPONSIVE HEADER: Mobile portrait vs Desktop layout -->
+
+    <!-- MOBILE PORTRAIT: show banner, then Instagram & ORCID, then CV downloads -->
+    <div class="header-mobile-portrait" style="display:none; margin-bottom:1.2em;">
+        <!-- Mobile: LinkedIn badge on top of a background (wall.png) -->
+        <div class="mobile-badge-bg" aria-hidden="false">
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="eros-montin-46645aab" data-version="v1">
+                <!-- anchor left empty so LinkedIn widget renders visually, keep aria-label for accessibility -->
+                <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/eros-montin-46645aab" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"></a>
+            </div>
+        </div>
+
+        <div class="social-bg" style="display:flex; gap:1rem; justify-content:center; margin-top:0.8rem;">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eros.montin@gmail.com&su=Hello" target="_blank" title="Email Eros">
+                <fa-icon [icon]="at" class="btnInfo" aria-hidden="false"></fa-icon>
+            </a>
+            <a href="https://cai2r.net/about/team/#eros-montin" target="_blank" title="CAI2R profile">
+                <fa-icon [icon]="ad" class="btnInfo" aria-hidden="false"></fa-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/eros-montin-46645aab" target="_blank" title="LinkedIn">
+                <fa-icon [icon]="lin" class="btnInfo" aria-hidden="false"></fa-icon>
+            </a>
+            <a href="https://github.com/erosmontin" target="_blank" title="GitHub">
+                <fa-icon [icon]="gi" class="btnInfo" aria-hidden="false"></fa-icon>
+            </a>
+            <a href="https://www.instagram.com/erosnitnom" target="_blank" title="Instagram">
+                <fa-icon [icon]="in" class="btnInfo" aria-hidden="false"></fa-icon>
+            </a>
+            <a href="https://orcid.org/0000-0002-1773-0064" target="_blank" title="ORCID">
+                <fa-icon [icon]="['fab','orcid']" class="btnInfo" aria-hidden="false"></fa-icon>
+            </a>
+        </div>
+
+        <div style="display:flex; gap:1rem; justify-content:center; margin-top:0.8rem;">
+            <a href="https://erosmontin.s3.us-east-1.amazonaws.com/CV_short.pdf" download="Eros_Montin_CV_Short.pdf" class="cv-button" target="_blank">Download Short CV</a>
+            <a href="https://erosmontin.s3.us-east-1.amazonaws.com/CV_long.pdf" download="Eros_Montin_CV_Long.pdf" class="cv-button" target="_blank">Download Long CV</a>
         </div>
     </div>
     
-    <!-- LinkedIn Banner -->
-    <div style="display: flex; justify-content: center; margin-bottom: 2em;">
-        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="eros-montin-46645aab" data-version="v1">
-            <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/eros-montin-46645aab?trk=profile-badge">Dr. Eros Montin, Ph.D.</a>
+    <!-- (Desktop behaviour below) -->
+    <!-- Desktop header: background -> left: spinning avatar, links+CVs under it; right: LinkedIn badge -->
+    <div class="header-desktop" style="display:none; margin-bottom:1.5em;">
+        <div class="header-desktop-inner" style="display:flex; align-items:center; justify-content:center; gap:2rem; width:100%; max-width:1200px; margin:0 auto; padding:1rem; border-radius:8px; background-repeat:no-repeat; background-size:cover; background-position:center;">
+            <div class="desktop-left" style="flex:0 0 320px; display:flex; flex-direction:column; align-items:center;">
+                <div class="avatar-spin-wrapper" style="padding:12px; border-radius:12px; background: rgba(255,255,255,0.9); box-shadow:0 10px 30px rgba(0,0,0,0.08);">
+                    <img src="assets/me.png" alt="Avatar" class="spinning-avatar" style="width:220px; height:220px; border-radius:50%; object-fit:cover; display:block;" />
+                </div>
+                <div style="margin-top:1rem; display:flex; flex-direction:column; gap:0.6rem; align-items:center;">
+                    <div class="social-bg" style="display:flex; gap:1rem;">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eros.montin@gmail.com&su=Hello" target="_blank" title="Email Eros">
+                            <fa-icon [icon]="at" class="btnInfo"></fa-icon>
+                        </a>
+                        <a href="https://cai2r.net/about/team/#eros-montin" target="_blank" title="CAI2R profile">
+                            <fa-icon [icon]="ad" class="btnInfo"></fa-icon>
+                        </a>
+                        <a href="https://www.linkedin.com/in/eros-montin-46645aab" target="_blank" title="LinkedIn">
+                            <fa-icon [icon]="lin" class="btnInfo"></fa-icon>
+                        </a>
+                        <a href="https://github.com/erosmontin" target="_blank" title="GitHub">
+                            <fa-icon [icon]="gi" class="btnInfo"></fa-icon>
+                        </a>
+                        <a href="https://www.instagram.com/erosnitnom" target="_blank" title="Instagram">
+                            <fa-icon [icon]="in" class="btnInfo"></fa-icon>
+                        </a>
+                        <a href="https://orcid.org/0000-0002-1773-0064" target="_blank" title="ORCID">
+                            <fa-icon [icon]="['fab','orcid']" class="btnInfo"></fa-icon>
+                        </a>
+                    </div>
+                    <div style="display:flex; gap:1rem; margin-top:0.6rem;">
+                        <a href="https://erosmontin.s3.us-east-1.amazonaws.com/CV_short.pdf" download="Eros_Montin_CV_Short.pdf" class="cv-button" target="_blank">Download Short CV</a>
+                        <a href="https://erosmontin.s3.us-east-1.amazonaws.com/CV_long.pdf" download="Eros_Montin_CV_Long.pdf" class="cv-button" target="_blank">Download Long CV</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="desktop-right" style="flex:1 1 auto; display:flex; align-items:center; justify-content:center;">
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="eros-montin-46645aab" data-version="v1">
+                    <!-- visual content controlled by LinkedIn widget; keep anchor empty + accessible -->
+                    <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/eros-montin-46645aab?trk=profile-badge" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+            </div>
         </div>
     </div>
-    
-    <!-- All Social Links -->
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 2em;">
-        <h3>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eros.montin@gmail.com&su=Hey Eros!&body=Let's make great science projects together!" target="_blank" title="Email  Eros Montin">
-                <fa-icon [icon]="at" class="btnInfo"></fa-icon>
-            </a>
-        </h3>
-        <h3>
-            <a href="https://cai2r.net/about/team/#eros-montin" target="_blank" title="Visit Eros Montin's Profile on CAI2R">
-                <fa-icon [icon]="ad" class="btnInfo"></fa-icon>
-            </a>
-        </h3>
-        <h3>
-            <a href="https://www.linkedin.com/in/eros-montin-46645aab" target="_blank" title="Connect with Eros Montin on LinkedIn">
-                <fa-icon [icon]="lin" class="btnInfo"></fa-icon>
-            </a>
-        </h3>
-        <h3>
-            <a href="https://github.com/erosmontin" target="_blank" title="View Eros Montin's GitHub Profile">
-                <fa-icon [icon]="gi" class="btnInfo"></fa-icon>
-            </a>
-        </h3>
-        <h3>
-            <a href="https://www.instagram.com/erosnitnom" target="_blank" title="Follow Eros Montin on Instagram">
-                <fa-icon [icon]="in" class="btnInfo"></fa-icon>
-            </a>
-        </h3>
-        <h3>
-        <a href="https://orcid.org/0000-0002-1773-0064" target="_blank">
-            <fa-icon [icon]="['fab', 'orcid']" class="btnInfo"></fa-icon>
-        </a>
-        </h3>
-        <!-- <h3>
-            <a href="https://www.researchgate.net/profile/Eros-Montin" target="_blank" title="View Eros Montin's ResearchGate Profile">
-                <fa-icon [icon]="rg" class="btnInfo"></fa-icon>
-            </a>
-        </h3> -->
-        <!-- <h3>
-            <a href="https://orcid.org/0000-0002-1773-0064" target="_blank" title="View Eros Montin's ORCID Profile">
-                <fa-icon [icon]="or" class="btnInfo"></fa-icon>
-            </a> 
-        </h3> -->
-    </div>
-    
-    <!-- CV Download Buttons -->
-    <div style="display: flex; flex-direction: row; justify-content: center; gap: 1em; flex-wrap: wrap; margin-bottom: 2em;">
-        <a href="https://erosmontin.s3.us-east-1.amazonaws.com/CV_long.pdf" download="Eros_Montin_CV_Long.pdf" class="cv-button" target="_blank">
-            Download Long CV
-        </a>
-        <a href="https://erosmontin.s3.us-east-1.amazonaws.com/CV_short.pdf" download="Eros_Montin_CV_Short.pdf" class="cv-button" target="_blank">
-            Download Short CV
-        </a>
-    </div>
+
+    <!-- Social / CV fallback removed — replaced by header-mobile-portrait and header-desktop sections -->
 
     <app-people-main></app-people-main>
     <app-publication-entry></app-publication-entry>
