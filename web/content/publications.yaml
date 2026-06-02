@@ -1,6 +1,58 @@
 # All publications - sorted newest first
 # Generated from src/app/publicationslist.ts; summary = full abstract when available
 
+- id: -34
+  title: "MR Optimum: A web-based open-source tool for standardized signal-to-noise ratio evaluation in MRI"
+  authors: Eros Montin, Xuan Thao Nguyen, Riccardo Lattanzi
+  year: 2026
+  journal: Computer Methods and Programs in Biomedicine Update
+  type: article
+  tags:
+    - mri
+    - snr
+    - cloud
+    - webapp
+    - open-source
+  doi: 10.1016/j.cmpbup.2026.100235
+  pubmed: https://www.sciencedirect.com/science/article/pii/S2666990026000054
+  pdf: null
+  summary: MR Optimum is a cloud-native open-source web platform for standardized MRI signal-to-noise ratio analysis. The tool brings multiple SNR estimation methods into a modular interface for upload, computation, visualization, and export of SNR maps, g-factor maps, coil sensitivity information, and related quality-assurance outputs.
+  featured: false
+  thumbnail: /images/dalle/-34.png
+- id: -33
+  title: ACCURATE SEGMENTATIONS OF THE FEMUR AND ACETABULUM ON VOLUMETRIC 3 TESLA MAGNETIC RESONANCE IMAGING FOR FEMOROACETABULAR IMPINGEMENT EVALUATION
+  authors: Ozkan Cigdem, Eros Montin, Naseem Machlovi, James Lee, Riccardo Lattanzi
+  year: 2026
+  journal: Osteoarthritis and Cartilage
+  type: conference
+  tags:
+    - mri
+    - fai
+    - image-segmentation
+  doi: 10.1016/j.joca.2026.03.053
+  pubmed: https://www.oarsijournal.com/article/S1063-4584(26)00739-9/fulltext
+  pdf: null
+  summary: Conference abstract describing segmentation of the femur and acetabulum on volumetric 3T MRI for femoroacetabular impingement evaluation.
+  featured: false
+  thumbnail: /images/dalle/-33.png
+- id: -32
+  title: Four-row MRI receive array with remote circuitry for improved parallel imaging in radiation therapy systems
+  authors: Karthik Lakshmanan, Lindsay Phillips, Bili Wang, Eros Montin, Jerzy Walczyk, Ryan Brown
+  year: 2026
+  journal: Physics in Medicine & Biology
+  type: article
+  tags:
+    - mri
+    - radiation-therapy
+    - parallel-imaging
+    - coil
+    - snr
+  doi: 10.1088/1361-6560/ae54fe
+  pubmed: https://iopscience.iop.org/article/10.1088/1361-6560/ae54fe/meta
+  pdf: https://iopscience.iop.org/article/10.1088/1361-6560/ae54fe/pdf
+  summary: This work evaluates a four-row MRI receive-array design with remote circuitry for MR-guided radiation therapy systems. The design preserves the radiolucent window while improving parallel imaging options in the head-foot direction and supporting multidirectional acceleration.
+  featured: false
+  thumbnail: /images/dalle/-32.png
 - id: -31
   title: "Radiomics in FAI: current status and perspectives"
   authors: Hariharan Subbiah Ponniah, Srikar Namireddy, Riccardo Lattanzi, Kartik Logishetty
