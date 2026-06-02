@@ -3,11 +3,13 @@ import path from "path";
 
 const nextConfig: NextConfig = {
   images: {
+    unoptimized: true,
     remotePatterns: [
       { protocol: "https", hostname: "**" },
     ],
   },
-  output: "standalone",
+  output: "export",
+  trailingSlash: true,
   turbopack: {
     root: path.resolve(__dirname),
   },
