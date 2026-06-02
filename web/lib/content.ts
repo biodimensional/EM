@@ -10,6 +10,8 @@ import type {
   Service,
   ContentItem,
 } from "./types";
+import { slugify } from "./utils";
+export { slugify } from "./utils";
 
 const contentDir = path.join(process.cwd(), "content");
 
@@ -83,4 +85,16 @@ export function getFeaturedContent(): ContentItem[] {
     if ("featured" in item) return item.featured;
     return false;
   });
+}
+
+export function getPublicationById(id: number): Publication | undefined {
+  return getPublications().find((p) => p.id === id);
+}
+
+export function getRepoBySlug(slug: string): Repo | undefined {
+  return getRepos().find((r) => slugify(r.name) === slug);
+}
+
+export function getProjectBySlug(slug: string): Project | undefined {
+  return getProjects().find((p) => slugify(p.title) === slug);
 }

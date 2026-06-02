@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ExternalLink, FileText, BookOpen } from "lucide-react";
 import Image from "next/image";
-import { GithubIcon } from "./icons";
 import type { Publication } from "@/lib/types";
 import TagChip from "./TagChip";
 
@@ -23,13 +22,18 @@ export default function PublicationCard({
       ? "Book Chapter"
       : "Article";
 
-  const doiHref = p.doi ? `https://doi.org/${p.doi}` : p.pubmed ?? null;
-
   return (
-    <article className="card overflow-hidden flex flex-col h-full group">
+    <article className="card overflow-hidden flex flex-col h-full group relative">
+      {/* Stretched link to detail page */}
+      <Link
+        href={`/publications/${p.id}`}
+        className="absolute inset-0 z-0"
+        aria-label={p.title}
+      />
+
       {/* ── Thumbnail ── */}
       {p.thumbnail && (
-        <div className="relative aspect-video bg-slate-100 overflow-hidden shrink-0">
+        <div className="relative aspect-video bg-slate-100 overflow-hidden shrink-0 pointer-events-none">
           <Image
             src={p.thumbnail}
             alt={p.title}
@@ -38,7 +42,7 @@ export default function PublicationCard({
             sizes="(max-width: 768px) 100vw, 400px"
           />
           {/* Type badge overlaid on image */}
-          <div className="absolute top-2.5 left-2.5 flex gap-1.5">
+          <div className="absolute top-2.5 left-2.5 flex gap-1.5 z-10">
             <span className="px-2 py-0.5 rounded text-xs font-semibold bg-white/90 text-slate-700 shadow-sm uppercase tracking-wide">
               {typeLabel}
             </span>
@@ -62,19 +66,8 @@ export default function PublicationCard({
         )}
 
         {/* Title */}
-        <h3 className="font-semibold text-[var(--navy)] text-sm leading-snug line-clamp-3">
-          {doiHref ? (
-            <a
-              href={doiHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[var(--blue-accent)] transition-colors"
-            >
-              {p.title}
-            </a>
-          ) : (
-            p.title
-          )}
+        <h3 className="font-semibold text-[var(--navy)] text-sm leading-snug line-clamp-3 group-hover:text-[var(--blue-accent)] transition-colors">
+          {p.title}
         </h3>
 
         {/* Authors */}
@@ -94,7 +87,7 @@ export default function PublicationCard({
 
         {/* Tags */}
         {p.tags && p.tags.length > 0 && (
-          <div className="flex flex-wrap gap-1.5 mt-auto pt-2">
+          <div className="flex flex-wrap gap-1.5 mt-auto pt-2 relative z-10">
             {p.tags.slice(0, 4).map((tag) => (
               <TagChip key={tag} label={tag} />
             ))}
@@ -107,13 +100,14 @@ export default function PublicationCard({
         )}
 
         {/* Links */}
-        <div className="flex flex-wrap gap-3 pt-2 border-t border-[var(--border)]">
+        <div className="flex flex-wrap gap-3 pt-2 border-t border-[var(--border)] relative z-10">
           {p.doi && (
             <a
               href={`https://doi.org/${p.doi}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-xs font-medium text-[var(--blue-accent)] hover:underline"
+              
             >
               <ExternalLink size={11} /> DOI
             </a>
@@ -124,6 +118,7 @@ export default function PublicationCard({
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-xs font-medium text-[var(--blue-accent)] hover:underline"
+              
             >
               <BookOpen size={11} /> PubMed
             </a>
@@ -134,6 +129,7 @@ export default function PublicationCard({
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-xs font-medium text-[var(--blue-accent)] hover:underline"
+              
             >
               <FileText size={11} /> PDF
             </a>

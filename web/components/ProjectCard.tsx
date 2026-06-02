@@ -1,7 +1,9 @@
+import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import type { Project } from "@/lib/types";
 import TagChip from "./TagChip";
+import { slugify } from "@/lib/utils";
 
 interface ProjectCardProps {
   project: Project;
@@ -9,10 +11,17 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project: p }: ProjectCardProps) {
   return (
-    <article className="card overflow-hidden flex flex-col h-full group">
+    <article className="card overflow-hidden flex flex-col h-full group relative">
+      {/* Stretched link to detail page */}
+      <Link
+        href={`/projects/${slugify(p.title)}`}
+        className="absolute inset-0 z-0"
+        aria-label={p.title}
+      />
+
       {/* Thumbnail */}
       {p.thumbnail && p.thumbnail !== "/images/default-image.png" && (
-        <div className="relative aspect-video bg-slate-100 overflow-hidden shrink-0">
+        <div className="relative aspect-video bg-slate-100 overflow-hidden shrink-0 pointer-events-none">
           <Image
             src={p.thumbnail}
             alt={p.title}
@@ -25,7 +34,7 @@ export default function ProjectCard({ project: p }: ProjectCardProps) {
 
       {/* Content */}
       <div className="p-5 flex flex-col gap-3 flex-1">
-        <h3 className="font-semibold text-[var(--navy)] text-base leading-snug">
+        <h3 className="font-semibold text-[var(--navy)] text-base leading-snug group-hover:text-[var(--blue-accent)] transition-colors">
           {p.title}
         </h3>
 
@@ -40,7 +49,7 @@ export default function ProjectCard({ project: p }: ProjectCardProps) {
         )}
 
         {p.tags && p.tags.length > 0 && (
-          <div className="flex flex-wrap gap-1.5">
+          <div className="flex flex-wrap gap-1.5 relative z-10">
             {p.tags.slice(0, 5).map((tag) => (
               <TagChip key={tag} label={tag} />
             ))}
@@ -48,7 +57,7 @@ export default function ProjectCard({ project: p }: ProjectCardProps) {
         )}
 
         {p.links && p.links.length > 0 && (
-          <div className="pt-2 border-t border-[var(--border)] flex flex-wrap gap-3">
+          <div className="pt-2 border-t border-[var(--border)] flex flex-wrap gap-3 relative z-10">
             {p.links.map((link) => (
               <a
                 key={link.url}
@@ -56,6 +65,7 @@ export default function ProjectCard({ project: p }: ProjectCardProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--blue-accent)] hover:underline"
+                
               >
                 <ExternalLink size={13} /> {link.label}
               </a>

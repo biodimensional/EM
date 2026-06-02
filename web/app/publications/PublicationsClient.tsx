@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useMemo } from "react";
 import type { Publication } from "@/lib/types";
@@ -7,23 +7,23 @@ import GlobalSearch from "@/components/GlobalSearch";
 import FilterPanel from "@/components/FilterPanel";
 import TagChip from "@/components/TagChip";
 
+type Tab = "all" | "articles" | "conferences";
+
 interface PublicationsClientProps {
   publications: Publication[];
   allTags: string[];
   allYears: string[];
-  allTypes: string[];
 }
 
 export default function PublicationsClient({
   publications,
   allTags,
   allYears,
-  allTypes,
 }: PublicationsClientProps) {
   const [query, setQuery] = useState("");
   const [yearFilter, setYearFilter] = useState("");
-  const [typeFilter, setTypeFilter] = useState("");
   const [tagFilter, setTagFilter] = useState("");
+  const [activeTab, setActiveTab] = useState<Tab>("all");
 
   const featured = publications.filter((p) => p.featured);
 
@@ -38,18 +38,45 @@ export default function PublicationsClient({
         (p.summary && p.summary.toLowerCase().includes(q)) ||
         p.tags.some((t) => t.toLowerCase().includes(q));
       const matchesYear = !yearFilter || String(p.year) === yearFilter;
-      const matchesType = !typeFilter || p.type === typeFilter;
+      const matchesTab =
+        activeTab === "all" ||
+        (activeTab === "conferences"
+          ? p.type === "conference"
+          : p.type !== "conference");
       const matchesTag = !tagFilter || p.tags.includes(tagFilter);
-      return matchesQuery && matchesYear && matchesType && matchesTag;
+      return matchesQuery && matchesYear && matchesTab && matchesTag;
     });
-  }, [publications, query, yearFilter, typeFilter, tagFilter]);
+  }, [publications, query, yearFilter, activeTab, tagFilter]);
 
   const sortedFiltered = [...filtered].sort((a, b) => b.year - a.year);
 
+  const TABS: { key: Tab; label: string }[] = [
+    { key: "all", label: "All" },
+    { key: "articles", label: "Articles" },
+    { key: "conferences", label: "Conferences" },
+  ];
+
   return (
     <div>
+      {/* Tabs */}
+      <div className="flex gap-1 border-b border-[var(--border)] mb-8">
+        {TABS.map((tab) => (
+          <button
+            key={tab.key}
+            onClick={() => setActiveTab(tab.key)}
+            className={`px-4 py-2.5 text-sm font-medium transition-colors border-b-2 -mb-px ${
+              activeTab === tab.key
+                ? "border-[var(--blue-accent)] text-[var(--blue-accent)]"
+                : "border-transparent text-[var(--muted)] hover:text-[var(--navy)]"
+            }`}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
+
       {/* Featured */}
-      {featured.length > 0 && !query && !yearFilter && !typeFilter && !tagFilter && (
+      {featured.length > 0 && !query && !yearFilter && !tagFilter && activeTab === "all" && (
         <section className="mb-14">
           <h2 className="text-xl font-semibold text-[var(--navy)] mb-5">
             Featured Publications
@@ -65,7 +92,7 @@ export default function PublicationsClient({
       {/* Search + Filters */}
       <div className="flex flex-col gap-4 mb-8">
         <GlobalSearch
-          placeholder="Search by title, author, journal, tag…"
+          placeholder="Search by title, author, journal, tagâ€¦"
           onSearch={setQuery}
         />
         <FilterPanel
@@ -76,13 +103,6 @@ export default function PublicationsClient({
               options: allYears,
               value: yearFilter,
               onChange: setYearFilter,
-            },
-            {
-              label: "Type",
-              key: "type",
-              options: allTypes,
-              value: typeFilter,
-              onChange: setTypeFilter,
             },
           ]}
         />

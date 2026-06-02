@@ -14,7 +14,6 @@ export default function PublicationsPage() {
   const allYears = [...new Set(publications.map((p) => String(p.year)))].sort(
     (a, b) => Number(b) - Number(a)
   );
-  const allTypes = [...new Set(publications.map((p) => p.type))].sort();
   const allTags = [
     ...new Set(publications.flatMap((p) => p.tags)),
   ].sort();
@@ -32,7 +31,6 @@ export default function PublicationsPage() {
         publications={publications}
         allTags={allTags}
         allYears={allYears}
-        allTypes={allTypes}
       />
     </div>
   );
