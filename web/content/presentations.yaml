@@ -1,0 +1,22 @@
+# TODO: Add Google Slides / presentation content
+# Example structure shown below:
+
+# - title: "MRI Simulation Pipeline — ISMRM 2025"
+#   description: "Power pitch presentation of the modular open-source MRI simulation pipeline."
+#   year: 2025
+#   event: "33rd ISMRM Scientific Meeting, Honolulu"
+#   source: google_slides  # google_slides | pdf | slideshare
+#   embed_url: "https://docs.google.com/presentation/d/EXAMPLE/embed"
+#   thumbnail: "/images/default-image.png"
+#   tags: [mri, simulation, ismrm]
+#   featured: true
+
+- title: "# TODO: Add your presentations here"
+  description: "Add Google Slides embed URLs or PDF links to populate this section."
+  year: 2025
+  event: "# TODO"
+  source: google_slides
+  embed_url: ""
+  thumbnail: "/images/default-image.png"
+  tags: [placeholder]
+  featured: false

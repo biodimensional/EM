@@ -1,0 +1,41 @@
+- title: "Scientific Software Prototyping"
+  description: "From research idea to working prototype. I help translate complex biomedical imaging concepts into modular, well-documented software tools — whether a web app, Python pipeline, or cloud service."
+  tags: [software, research, prototyping, python, cloud]
+  icon: "Code2"
+  featured: true
+  call_to_action: "Discuss a project"
+
+- title: "AI & Radiomics Workflow Development"
+  description: "End-to-end radiomics and machine learning pipelines for medical imaging. From feature extraction (PyRadiomics) to model training, validation, and clinical translation."
+  tags: [radiomics, machine-learning, ai, mri, python]
+  icon: "BrainCircuit"
+  featured: true
+  call_to_action: "Explore this service"
+
+- title: "MRI Simulation Pipelines"
+  description: "Cloud-native and local MRI simulation environments. I design and implement modular simulation pipelines for protocol optimization, safety evaluation, and synthetic data generation."
+  tags: [mri, simulation, cloud, safety, sar]
+  icon: "Layers"
+  featured: true
+  call_to_action: "Learn more"
+
+- title: "Cloud-Native Research Platforms"
+  description: "Serverless and containerized research platforms on AWS. Scalable, reproducible, and accessible by design — so your science can run anywhere."
+  tags: [cloud, aws, serverless, infrastructure, research]
+  icon: "Cloud"
+  featured: true
+  call_to_action: "Discuss infrastructure"
+
+- title: "Medical Imaging Data Analysis"
+  description: "Quantitative analysis of MRI, CT, and other medical imaging data. Segmentation, registration, feature extraction, and statistical reporting for research and clinical studies."
+  tags: [mri, ct, analysis, segmentation, registration]
+  icon: "ScanLine"
+  featured: true
+  call_to_action: "Start a project"
+
+- title: "Grant & Manuscript Technical Support"
+  description: "Technical guidance and implementation support for grant proposals and scientific manuscripts. From figure preparation to software methods sections and reproducibility packages."
+  tags: [grant, manuscript, technical-writing, reproducibility]
+  icon: "FileText"
+  featured: true
+  call_to_action: "Get in touch"

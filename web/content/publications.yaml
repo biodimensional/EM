@@ -1,0 +1,167 @@
+- id: -31
+  title: "Radiomics in FAI: current status and perspectives"
+  authors: "Ponniah HS, Namireddy S, Lattanzi R, Logishetty K"
+  year: 2025
+  journal: "Bone & Joint Research"
+  type: article
+  tags: [mri, radiomics, machine-learning, fai, staging]
+  doi: "10.1302/2046-3758.1410.BJR-2024-0353.R2"
+  pubmed: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12492042/"
+  pdf: "https://boneandjoint.org.uk/Article/10.1302/2046-3758.1410.BJR-2024-0353.R2/pdf"
+  summary: "Review of the current state of the art in radiomics for femoroacetabular impingement (FAI) and highlights of future applications."
+  featured: false
+  thumbnail: "/images/dalle/-31.png"
+
+- id: -29
+  title: "Radiomics for Precision Diagnosis of FAI: How Close Are We to Clinical Translation?"
+  authors: "Montin E, Logishetty K, Ponniah HS, Namireddy S, Khodarahmi I, Glin-Jones S, Lattanzi R"
+  year: 2025
+  journal: "Journal of Clinical Medicine"
+  type: article
+  tags: [mri, radiomics, machine-learning, fai, staging]
+  doi: "10.3390/jcm14124042"
+  pubmed: "https://www.mdpi.com/2077-0383/14/12/4042"
+  pdf: null
+  summary: "First multi-center external validation of a single-center trained radiomics ML model for FAI classification achieving 100% accuracy on symptomatic cases."
+  featured: true
+  thumbnail: "/images/dalle/-29.png"
+
+- id: -28
+  title: "Radiomics to predict tumor response to combination chemoradiotherapy in squamous cell carcinoma of the anal canal"
+  authors: "Vanvulli A, Sciacqua LV, Patti F, Montin E, Lattanzi R, Drebot R, Lozza LAM, Villa S, Scaramuzza D"
+  year: 2025
+  journal: "European Radiology Experimental"
+  type: article
+  tags: [mri, radiomics, machine-learning, oncology, staging]
+  doi: "10.1186/s41747-025-00559-0"
+  pubmed: "https://eurradiolexp.springeropen.com/articles/10.1186/s41747-025-00559-0"
+  pdf: null
+  summary: "Application of radiomics to predict tumor response to chemoradiotherapy in squamous cell carcinoma of the anal canal."
+  featured: false
+  thumbnail: "/images/dalle/-28.png"
+
+- id: -27
+  title: "Deep Learning Networks to Estimate Electric Fields From Noisy B1 Maps"
+  authors: "Montin E, Carluccio G, Collins C, Lattanzi R, Riccio D, Ruello G"
+  year: 2025
+  journal: "2025 USNC-URSI National Radio Science Meeting"
+  type: conference
+  tags: [mri, deep-learning, simulation, sar, safety]
+  doi: "10.23919/USNC-URSINRSM66067.2025.10907031"
+  pubmed: "https://ieeexplore.ieee.org/iel8/10906696/10906700/10907031.pdf"
+  pdf: "https://ieeexplore.ieee.org/iel8/10906696/10906700/10907031.pdf"
+  summary: "Deep learning approach to estimate electric fields from noisy B1 maps, achieving <13.6% NRMSE."
+  featured: false
+  thumbnail: "/images/dalle/-27.png"
+
+- id: -24
+  title: "Editorial: Diagnosis of Sacroiliitis Through Semi-Supervised Segmentation and Radiomics Feature Analysis of MRI Images"
+  authors: "Montin E"
+  year: 2025
+  journal: "JMRI"
+  type: article
+  tags: [mri, radiomics, machine-learning, segmentation]
+  doi: "10.1002/jmri.29732"
+  pubmed: "https://onlinelibrary.wiley.com/doi/10.1002/jmri.29732"
+  pdf: null
+  summary: "Editorial on a cutting-edge framework integrating semi-supervised segmentation with radiomics for sacroiliitis diagnosis."
+  featured: false
+  thumbnail: "/images/dalle/-24.png"
+
+- id: -23
+  title: "A Serverless Implementation of a Tool for Temperature and SAR Estimation (TESS 2.0)"
+  authors: "Montin E, Carluccio G, Collins C, Lattanzi R"
+  year: 2024
+  journal: "2024 E-Health and Bioengineering Conference (EHB)"
+  type: article
+  tags: [mri, cloud, sar, safety, simulation]
+  doi: null
+  pubmed: "https://ieeexplore.ieee.org/abstract/document/10805647"
+  pdf: null
+  summary: "TESS 2.0: a serverless AWS-based cloud tool for temperature and SAR estimation in MRI safety evaluations."
+  featured: true
+  thumbnail: "/images/dalle/-23.png"
+
+- id: -22
+  title: "Radiomics features outperform standard radiological measurements in detecting femoroacetabular impingement on 3D MRI"
+  authors: "Montin E, Kijowski R, Youm T, Lattanzi R"
+  year: 2024
+  journal: "Journal of Orthopaedic Research"
+  type: article
+  tags: [radiomics, mri, fai, machine-learning]
+  doi: "10.1002/jor.25952"
+  pubmed: "https://onlinelibrary.wiley.com/doi/full/10.1002/jor.25952"
+  pdf: "https://onlinelibrary.wiley.com/doi/epdf/10.1002/jor.25952"
+  summary: "First study showing radiomics automatically outperform standard radiological measurements in detecting FAI, achieving 100% accuracy vs 74% for manual measures."
+  featured: true
+  thumbnail: "/images/dalle/-22.png"
+
+- id: -20
+  title: "The impact of data augmentation and transfer learning on deep learning for hip segmentation on 3D MRI"
+  authors: "Montin E, Deniz CM, Kijowski R, Youm T, Lattanzi R"
+  year: 2024
+  journal: "Informatics in Medicine Unlocked"
+  type: article
+  tags: [deep-learning, mri, fai, segmentation]
+  doi: null
+  pubmed: "https://www.sciencedirect.com/science/article/pii/S2352914823002903"
+  pdf: "https://www.sciencedirect.com/science/article/pii/S2352914823002903/pdfft?md5=abcbc7caad8856414e021c946ab6d3f4&pid=1-s2.0-S2352914823002903-main.pdf"
+  summary: "Systematic investigation of data augmentation vs transfer learning for automatic hip segmentation from 3D MRI in FAI patients."
+  featured: false
+  thumbnail: "/images/dalle/-20.png"
+
+- id: -19
+  title: "A radiomics approach to the diagnosis of femoroacetabular impingement"
+  authors: "Montin E, Kijowski R, Youm T, Lattanzi R"
+  year: 2023
+  journal: "Frontiers in Radiology – Artificial Intelligence in Radiology"
+  type: article
+  tags: [radiomics, mri, fai, machine-learning]
+  doi: null
+  pubmed: "https://pubmed.ncbi.nlm.nih.gov/37492381/"
+  pdf: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10365279/pdf/fradi-03-1151258.pdf"
+  summary: "First application of radiomics for FAI diagnosis, automatically distinguishing impingement from healthy joints with >97% accuracy."
+  featured: true
+  thumbnail: "/images/dalle/-19.png"
+
+- id: -18
+  title: "A Web-Accessible Tool for 2D Analytical Solutions of Electromagnetic Fields in Concentric Cylinders"
+  authors: "Carluccio G, Montin E, Collins C, Lattanzi R"
+  year: 2023
+  journal: "2023 ICEAA"
+  type: conference
+  tags: [mri, simulation, electromagnetic, cloud, webapp]
+  doi: null
+  pubmed: "https://ieeexplore.ieee.org/abstract/document/10297760"
+  pdf: null
+  summary: "Web-accessible cloud tool providing 2D analytical solutions of electromagnetic fields for MRI experiments."
+  featured: false
+  thumbnail: "/images/dalle/-18.png"
+
+- id: -17
+  title: "A deep learning model for the estimation of RF field trained from an analytical solution"
+  authors: "Montin E, Carluccio G, Collins C, Lattanzi R"
+  year: 2022
+  journal: "IEEE AP-USNC-URSI 2023, Portland, Oregon"
+  type: conference
+  tags: [mri, deep-learning, simulation, sar, snr]
+  doi: null
+  pubmed: "https://ieeexplore.ieee.org/abstract/document/10289426"
+  pdf: null
+  summary: "Neural network trained on analytical solutions to estimate electric fields from SNR and B1+ maps."
+  featured: false
+  thumbnail: "/images/dalle/-17.png"
+
+- id: 1
+  title: "# TODO: Add more publications from full publicationslist.ts"
+  authors: "Montin E et al."
+  year: 2020
+  journal: "# TODO"
+  type: article
+  tags: [mri, radiomics]
+  doi: null
+  pubmed: null
+  pdf: null
+  summary: "# TODO: Populate full publication list from publicationslist.ts"
+  featured: false
+  thumbnail: "/images/default-image.png"

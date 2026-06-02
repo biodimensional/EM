@@ -1,0 +1,54 @@
+- title: "CloudMR — Cloud-Native MRI Simulation Platform"
+  description: "A modular, open-source cloud platform for MRI research and education."
+  long_description: |
+    CloudMR democratizes magnetic resonance imaging research by providing a cloud-native simulation platform accessible via the web. Researchers can test new technology and radiologists can optimize clinical protocols without operating an actual MR scanner.
+    The platform connects six open-source stand-alone modules to simulate all stages of an MRI experiment — from coil modeling to spin excitation and image reconstruction.
+  tags: [mri, simulation, cloud, aws, open-source, webapp]
+  links:
+    - label: "CloudMR Portal"
+      url: "https://github.com/erosmontin"
+  related_publications: [-25, -23, -18, -17]
+  related_repos: ["CloudMR", "TESS"]
+  featured: true
+  thumbnail: "/images/logos/AINI.png"
+
+- title: "Radiomics for FAI Diagnosis"
+  description: "Automated MRI-based radiomics pipeline for femoroacetabular impingement diagnosis."
+  long_description: |
+    A multi-study research project demonstrating that radiomics features automatically extracted from 3D Dixon MRI outperform standard radiological measurements in detecting FAI. The pipeline achieves >97% accuracy with fully automated segmentation and feature extraction.
+  tags: [radiomics, mri, fai, machine-learning, deep-learning]
+  links:
+    - label: "Publication"
+      url: "https://pubmed.ncbi.nlm.nih.gov/37492381/"
+  related_publications: [-29, -22, -19, -20, -26]
+  related_repos: ["pyRadiomics Pipeline for FAI", "Hip Segmentation DL"]
+  featured: true
+  thumbnail: "/images/default-image.png"
+
+- title: "MRI Safety: SAR and Temperature Estimation"
+  description: "TESS — serverless tool for patient-specific SAR and temperature estimation in MRI."
+  long_description: |
+    TESS (Temperature Estimation from SAR Simulation) uses a customized bioheat equation to evaluate MRI examination safety. Version 2.0 runs serverlessly on AWS, providing efficient and accessible safety assessment. Combined with automated image registration to create patient-specific body models.
+  tags: [mri, safety, sar, simulation, cloud, aws]
+  links:
+    - label: "Paper"
+      url: "https://ieeexplore.ieee.org/abstract/document/10805647"
+  related_publications: [-23, -16]
+  related_repos: ["TESS"]
+  featured: true
+  thumbnail: "/images/default-image.png"
+
+- title: "Deep Learning for Electromagnetic Field Estimation"
+  description: "Neural networks trained on analytical solutions to predict RF fields in MRI from B1 maps."
+  long_description: |
+    Deep learning networks trained on 2D analytical solutions of electromagnetic fields in concentric cylinders. The networks can estimate electric fields from B1+ and SNR maps, even in presence of noise (max NRMSE 13.6%), opening the path to real-time patient-specific safety assessment.
+  tags: [mri, deep-learning, simulation, electromagnetic, sar]
+  links:
+    - label: "Paper"
+      url: "https://ieeexplore.ieee.org/abstract/document/10289426"
+  related_publications: [-27, -21, -17]
+  related_repos: ["CloudMR"]
+  featured: false
+  thumbnail: "/images/default-image.png"
+
+# TODO: Add more projects

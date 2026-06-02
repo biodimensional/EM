@@ -1,0 +1,22 @@
+# TODO: Add video content
+# Example structure shown below:
+
+# - title: "MRI Simulation Demo"
+#   description: "Demonstration of the CloudMR pipeline simulating a full MRI experiment in the cloud."
+#   year: 2024
+#   source: youtube  # youtube | vimeo | mp4
+#   url: "https://www.youtube.com/watch?v=EXAMPLE"
+#   thumbnail: "/images/default-image.png"
+#   duration: "5:30"
+#   tags: [mri, simulation, cloud]
+#   featured: true
+
+- title: "# TODO: Add your video demos here"
+  description: "Add video URLs from YouTube, Vimeo, or local MP4 to populate this section."
+  year: 2024
+  source: youtube
+  url: ""
+  thumbnail: "/images/default-image.png"
+  duration: ""
+  tags: [placeholder]
+  featured: false

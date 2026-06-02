@@ -1,0 +1,55 @@
+- name: "CloudMR"
+  description: "Cloud-native platform for MRI simulation, safety analysis, and protocol optimization. Connects open-source modules for coil modeling, spin excitation, and image reconstruction."
+  github: "https://github.com/erosmontin"
+  language: "Python"
+  tags: [cloud, mri, simulation, aws, open-source]
+  related_publications: [-23, -17, -18]
+  featured: true
+  thumbnail: "/images/logos/AINI.png"
+
+- name: "TESS"
+  description: "Temperature Estimation from SAR Simulation. A serverless AWS-based tool for MRI safety evaluation using the bioheat equation."
+  github: "https://github.com/erosmontin"
+  language: "Python"
+  tags: [mri, safety, sar, aws, serverless]
+  related_publications: [-23]
+  featured: true
+  thumbnail: "/images/default-image.png"
+
+- name: "pyRadiomics Pipeline for FAI"
+  description: "End-to-end automated radiomics pipeline for femoroacetabular impingement diagnosis using PyRadiomics and machine learning classifiers."
+  github: "https://github.com/erosmontin"
+  language: "Python"
+  tags: [radiomics, mri, fai, machine-learning, python]
+  related_publications: [-22, -19, -29]
+  featured: true
+  thumbnail: "/images/default-image.png"
+
+- name: "MRI Simulation Pipeline"
+  description: "Open-source modular pipeline to simulate the entire MRI experiment from coil modeling to image reconstruction. Cloud-compatible and web-accessible."
+  github: "https://github.com/erosmontin"
+  language: "Python / MATLAB"
+  tags: [mri, simulation, cloud, open-source]
+  related_publications: [-25, -17]
+  featured: true
+  thumbnail: "/images/default-image.png"
+
+- name: "Hip Segmentation DL"
+  description: "Deep learning segmentation of femur and acetabulum from 3D Dixon MRI. Investigates data augmentation and transfer learning strategies."
+  github: "https://github.com/erosmontin"
+  language: "Python"
+  tags: [deep-learning, mri, segmentation, fai]
+  related_publications: [-20]
+  featured: false
+  thumbnail: "/images/default-image.png"
+
+- name: "BioDimensional Web App"
+  description: "Personal scientific portfolio and services website. Built with Next.js, TypeScript, and Tailwind CSS. Deployed on AWS Amplify."
+  github: "https://github.com/erosmontin/EM"
+  language: "TypeScript"
+  tags: [nextjs, typescript, tailwind, aws, open-source]
+  related_publications: []
+  featured: false
+  thumbnail: "/images/default-image.png"
+
+# TODO: Add remaining repositories from GitHub profile https://github.com/erosmontin
