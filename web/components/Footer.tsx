@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { BookOpen, Mail, FileText } from "lucide-react";
+import { BookOpen, FileText } from "lucide-react";
+import EmailLink from "./EmailLink";
 import { GithubIcon, LinkedinIcon } from "./icons";
 
 const socialLinks = [
@@ -24,11 +25,6 @@ const socialLinks = [
     href: "https://www.linkedin.com/in/eros-montin-46645aab",
     label: "LinkedIn",
     icon: <LinkedinIcon size={18} />,
-  },
-  {
-    href: "mailto:eros.montin@gmail.com",
-    label: "Email",
-    icon: <Mail size={18} />,
   },
   {
     href: "https://erosmontin.s3.us-east-1.amazonaws.com/CV_long.pdf",
@@ -96,7 +92,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    target={link.href.startsWith("mailto") ? undefined : "_blank"}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-sm text-[var(--muted)] hover:text-[var(--navy)] transition-colors"
                   >
@@ -105,6 +101,13 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
+              <li>
+                <EmailLink
+                  label="Email"
+                  iconSize={18}
+                  className="flex items-center gap-2 text-sm text-[var(--muted)] hover:text-[var(--navy)] transition-colors"
+                />
+              </li>
             </ul>
           </div>
         </div>

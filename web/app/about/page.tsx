@@ -3,11 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   BookOpen,
-  Mail,
   FileText,
   MapPin,
   Building2,
 } from "lucide-react";
+import EmailLink from "@/components/EmailLink";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -84,12 +84,11 @@ export default function AboutPage() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="mailto:eros.montin@gmail.com"
+            <EmailLink
+              label="Email me"
+              iconSize={16}
               className="flex items-center gap-2 text-sm text-[var(--muted)] hover:text-[var(--navy)] transition-colors"
-            >
-              <Mail size={16} /> eros.montin@gmail.com
-            </a>
+            />
           </div>
 
           <div className="flex flex-col gap-2 w-full">

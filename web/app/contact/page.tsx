@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Mail, BookOpen, FileText } from "lucide-react";
+import { BookOpen, FileText } from "lucide-react";
+import EmailLink from "@/components/EmailLink";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -9,12 +10,6 @@ export const metadata: Metadata = {
 };
 
 const links = [
-  {
-    href: "mailto:eros.montin@gmail.com",
-    label: "eros.montin@gmail.com",
-    description: "Email — best for project discussions",
-    icon: <Mail size={20} />,
-  },
   {
     href: "https://www.linkedin.com/in/eros-montin-46645aab",
     label: "LinkedIn",
@@ -54,11 +49,16 @@ export default function ContactPage() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-14">
+        <EmailLink
+          variant="card"
+          label="Email me"
+          description="Best for project discussions"
+        />
         {links.map((link) => (
           <a
             key={link.label}
             href={link.href}
-            target={link.href.startsWith("mailto") ? undefined : "_blank"}
+            target="_blank"
             rel="noopener noreferrer"
             className="card p-5 flex items-start gap-4 hover:shadow-md transition-shadow group"
           >
